@@ -13,7 +13,10 @@ img {
 	vertical-align: middle;
 }
 
-#root {
-	min-height: 100vh;
+body {
 	background-color: black;
+}
+
+main {
+	min-height: 96vh;
 }

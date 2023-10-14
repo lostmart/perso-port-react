@@ -1,7 +1,20 @@
+import { Outlet, Link } from 'react-router-dom'
+
+// components
+import Footer from '../components/Footer'
+
 const Root = () => {
 	return (
 		<>
-			<h1>this test</h1>
+			<header>
+				<nav></nav>
+			</header>
+			<aside></aside>
+			<main>
+				<h1 aria-label="Martin Pedraza Porfolio"></h1>
+				<Outlet />
+			</main>
+			<Footer />
 		</>
 	)
 }
