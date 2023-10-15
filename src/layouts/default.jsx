@@ -2,12 +2,13 @@ import { Outlet, Link } from 'react-router-dom'
 
 // components
 import Footer from '../components/Footer'
+import NavBar from '../components/NavBar'
 
 const Root = () => {
 	return (
 		<>
 			<header>
-				<nav></nav>
+				<NavBar />
 			</header>
 			<aside></aside>
 			<main>

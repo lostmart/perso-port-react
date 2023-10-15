@@ -1,0 +1,35 @@
+@import '../abstracts/variables';
+
+.navBar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px;
+	width: 60%;
+	margin: auto;
+	gap: 20px;
+	position: relative;
+
+	&__closeBtn {
+		position: absolute;
+		right: -20px;
+		top: 20px;
+		cursor: pointer;
+	}
+
+	&__social {
+		display: flex;
+		width: 100%;
+		justify-content: space-evenly;
+	}
+	h3 {
+		color: $font-clr-alt;
+	}
+	a {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
