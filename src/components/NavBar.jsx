@@ -31,7 +31,7 @@ const RenderLinks = () => {
 				return (
 					<Link key={link.path} to={link.path}>
 						<link.component />
-						{link.text}
+						<span>{link.text}</span>
 					</Link>
 				)
 			})}
@@ -39,7 +39,33 @@ const RenderLinks = () => {
 	)
 }
 
-const RenderSocials = () => {}
+const RenderSocials = () => {
+	const socialIcons = [
+		{
+			linkUrl: 'https://github.com/lostmart',
+			text: 'Github',
+			component: GitHub,
+		},
+		{
+			linkUrl: 'https://www.linkedin.com/in/martin-pedraza-dev/',
+			text: 'Linkedin',
+			component: Linkedin,
+		},
+		{
+			linkUrl: 'https://www.youtube.com/channel/UCL48dHz-Ul6OYj3XkD7YiiQ',
+			text: 'Youtube',
+			component: Play,
+		},
+	]
+
+	return socialIcons.map((icon) => {
+		return (
+			<Link title={icon.text} key={icon.text} target="_blank" to={icon.linkUrl}>
+				<icon.component />
+			</Link>
+		)
+	})
+}
 
 const NavBar = () => {
 	return (
@@ -51,15 +77,7 @@ const NavBar = () => {
 			<RenderLinks />
 			<h3>Social</h3>
 			<div className="navBar__social">
-				<Link target="_blank" to="https://github.com/lostmart">
-					<GitHub />
-				</Link>
-				<Link target="_blank" to="https://github.com/lostmart">
-					<Linkedin />
-				</Link>
-				<Link target="_blank" to="https://github.com/lostmart">
-					<Play />
-				</Link>
+				<RenderSocials />
 			</div>
 		</nav>
 	)
