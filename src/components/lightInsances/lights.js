@@ -4,7 +4,7 @@ import LightBoxClass from '../../classes/LightBox'
 export const mainLight = new LightBoxClass(
 	'99%',
 	'80%',
-	'linear-gradient(rgb(255 255 255 / 99%) -21%, rgb(116 137 255 / 0%) 94%)',
+	'linear-gradient(rgba(255, 255, 255, 1) 0%, #090d12 73%)',
 	'blur(250px)',
 	'50%',
 	0.5,
@@ -14,7 +14,7 @@ export const mainLight = new LightBoxClass(
 export const secLight = new LightBoxClass(
 	'100%',
 	'100%',
-	'linear-gradient(244deg, rgba(163, 255, 148, 0.035) 22.51%, rgba(0, 0, 0, 0.12) 95.16%)',
+	'linear-gradient(244deg, rgba(163, 255, 148, 0.035) 22.51%, #090d12 95.16%)',
 	'blur(90px)',
 	'50%',
 	0.5,

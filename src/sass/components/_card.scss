@@ -1,0 +1,27 @@
+.card {
+	max-width: 350px;
+	margin: auto;
+
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		padding: 2em 0.5em;
+		align-items: center;
+	}
+	h2 {
+		color: $primary-clr;
+		font-family: 'Julius Sans One', sans-serif;
+		font-size: 34px;
+		font-weight: 400;
+	}
+	span {
+		display: block;
+		width: 150px;
+		text-align: right;
+		font-size: 18px;
+	}
+
+	@media (min-width: 768px) {
+		margin: 0;
+	}
+}
