@@ -20,6 +20,19 @@
 		text-align: right;
 		font-size: 18px;
 	}
+	&__img {
+		border-radius: 25px;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		aspect-ratio: 1/1;
+		max-width: 250px;
+		margin: auto;
+	}
+	&__img img {
+		object-fit: cover;
+		min-width: 360px;
+	}
 
 	@media (min-width: 768px) {
 		margin: 0;

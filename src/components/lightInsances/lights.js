@@ -7,7 +7,7 @@ export const mainLight = new LightBoxClass(
 	'linear-gradient(rgba(255, 255, 255, 1) 0%, #090d12 73%)',
 	'blur(250px)',
 	'50%',
-	0.5,
+	1,
 	'-38%'
 )
 
