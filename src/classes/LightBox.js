@@ -1,13 +1,13 @@
 export default class LightBoxClass {
 	constructor(
-		width,
+		{width,
 		height,
 		background,
 		filter,
 		borderRadius,
 		opacity,
 		top,
-		left
+		left}
 	) {
 		this.width = width ?? '0'
 		this.height = height ?? '0'
