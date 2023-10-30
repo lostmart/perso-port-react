@@ -2,21 +2,29 @@ import PropTypes from 'prop-types'
 import portImg from '../assets/martin_pedraza_avatar.jpg'
 import { GitHub, Linkedin, Youtube, Mail } from 'react-feather'
 
+/*  atom components  */
+import CardTitle from './atoms/CardTitle'
+import CardImg from './atoms/CardImg'
+import CardBody from './atoms/CardBody'
+
+/* render fn  */
+const RenderBody = () => {
+	return (
+		<div className="card__body">
+			<p>codeme.martin@gmail.com</p>
+			<p>Based in Yvelines, France</p>
+		</div>
+	)
+}
+
 const Card = (props) => {
-	const { cardTitle } = props
+	const { cardTitle, subTitle } = props
 	return (
 		<article className="card">
-			<div className="card__title">
-				<h2>Martin</h2>
-				<span>FullStack Web Developer</span>
-			</div>
-			<div className="card__img">
-				<img src={portImg} alt="Martin Pedraza avatar" />
-			</div>
-			<div className="card__body">
-				<p>codeme.martin@gmail.com</p>
-				<p>Based in Yvelines, France</p>
-			</div>
+			{cardTitle && <CardTitle cardTitle={cardTitle} subTitle={subTitle} />}
+			<CardImg imgUrl={portImg} imgAlt={`${cardTitle} ${subTitle}`} />
+
+			<CardBody CardBody={RenderBody} />
 			<div className="card__social">
 				<GitHub />
 				<Linkedin />
@@ -33,6 +41,7 @@ const Card = (props) => {
  */
 Card.propTypes = {
 	cardTitle: PropTypes.string,
+	subTitle: PropTypes.string,
 }
 
 export default Card

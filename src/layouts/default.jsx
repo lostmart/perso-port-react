@@ -21,7 +21,7 @@ const Root = () => {
 			<main>
 				<section>
 					<h1 aria-label="Martin Pedraza Porfolio"></h1>
-					<Card></Card>
+					<Card cardTitle="Martin" subTitle="FullStack Web Developer" />
 				</section>
 				<Outlet />
 			</main>

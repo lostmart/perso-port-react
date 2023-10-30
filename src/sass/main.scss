@@ -4,10 +4,14 @@
 @import './layout/navigation';
 @import './components/lightBox';
 @import './components/card';
-@import  './layout/errorPage';
+@import './layout/errorPage';
 
 .container {
 	background-color: $prim-bg;
 	position: relative;
 	z-index: 0;
+}
+
+section {
+	perspective: 54em;
 }
