@@ -1,5 +1,8 @@
+import React, { Fragment } from 'react'
+
 import { Outlet } from 'react-router-dom'
 import { useState } from 'react'
+import Media from 'react-media'
 
 // components
 import Footer from '../components/Footer'
@@ -10,23 +13,24 @@ import Card from '../components/Card'
 // light imports
 import { mainLight, secLight } from '../components/lightInsances/lights.js'
 
+// screen sizes
+import SmallScreen from './SmallScreen'
+import LargeScreen from './LargeScreen'
+
 const Root = () => {
 	return (
-		<div className="container">
-			<LightBox lightBoxCss={mainLight} />
-			<LightBox lightBoxCss={secLight} />
-			<header>
-				<NavBar />
-			</header>
-			<main>
-				<section>
-					<h1 aria-label="Martin Pedraza Porfolio"></h1>
-					<Card cardTitle="Martin" subTitle="FullStack Web Developer" />
-				</section>
-				<Outlet />
-			</main>
-			<Footer />
-		</div>
+		<Media
+			queries={{
+				small: '(max-width: 767px)',
+				large: '(min-width: 768px)',
+			}}>
+			{(matches) => (
+				<Fragment>
+					{matches.small && <SmallScreen />}
+					{matches.large && <LargeScreen />}
+				</Fragment>
+			)}
+		</Media>
 	)
 }
 

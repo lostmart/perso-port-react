@@ -10,10 +10,10 @@ import CardBody from './atoms/CardBody'
 /* render fn  */
 const RenderBody = () => {
 	return (
-		<div className="card__body">
+		<>
 			<p>codeme.martin@gmail.com</p>
 			<p>Based in Yvelines, France</p>
-		</div>
+		</>
 	)
 }
 

@@ -2,7 +2,11 @@ import PropTypes from 'prop-types'
 
 const CardBody = (props) => {
 	const { CardBody } = props
-	return <CardBody />
+	return (
+		<div className="card__body">
+			<CardBody />
+		</div>
+	)
 }
 
 CardBody.propTypes = {

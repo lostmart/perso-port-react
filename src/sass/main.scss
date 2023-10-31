@@ -6,10 +6,15 @@
 @import './components/card';
 @import './layout/errorPage';
 
-.container {
+body {
 	background-color: $prim-bg;
+}
+
+.container {
 	position: relative;
 	z-index: 0;
+	max-width: 1280px;
+	margin: auto;
 }
 
 section {
