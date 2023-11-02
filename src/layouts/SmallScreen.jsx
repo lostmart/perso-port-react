@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 // components
 import Footer from '../components/Footer'
@@ -53,8 +53,16 @@ const RenderCard = () => {
 }
 
 const SmallScreen = () => {
+	const navigate = useNavigate()
+
 	window.addEventListener('resize', () => {
-		console.log('run now !!!')
+		// viewportWidth = window.visualViewport.width
+		// console.log(window.visualViewport.width)
+		if (window.visualViewport.width >= 768) {
+			navigate('/about')
+		} else {
+			navigate('/')
+		}
 	})
 	return (
 		<div className="container">

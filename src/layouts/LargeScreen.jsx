@@ -28,7 +28,7 @@ const LargeScreen = () => {
 				<NavBar />
 			</header>
 			<main>
-				<section>
+				<section className='section__personal'>
 					<h1 aria-label="Martin Pedraza Porfolio"></h1>
 					<Card
 						cardTitle="Martin"
