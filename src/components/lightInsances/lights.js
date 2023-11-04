@@ -4,11 +4,12 @@ import LightBoxClass from '../../classes/LightBox'
 export const mainLight = new LightBoxClass({
 	width: '99%',
 	height: '80%',
-	background: 'linear-gradient(rgba(255, 255, 255, 1) 0%, #090d12 73%)',
-	filter: 'blur(250px)',
+	background:
+		'radial-gradient(circle, rgb(255, 255, 255) -19%, rgb(9, 13, 18) 50%)',
+	filter: 'blur(25px)',
 	borderRadius: '50%',
-	opacity: 1,
-	top: '-38%',
+	opacity: 0.2,
+	top: '-60%',
 })
 
 export const secLight = new LightBoxClass({
@@ -19,4 +20,5 @@ export const secLight = new LightBoxClass({
 	filter: 'blur(90px)',
 	borderRadius: '50%',
 	opacity: 0.5,
+	top: '-170px',
 })
