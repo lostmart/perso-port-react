@@ -1,15 +1,16 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import { useLocation, useNavigate } from 'react-router-dom'
+import React, { useState, useEffect } from "react"
+
+import { Outlet } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 
 // components
-import Footer from '../components/Footer'
-import NavBar from '../components/NavBar'
-import LightBox from '../components/LighBox'
-import Card from '../components/Card'
+import Footer from "../components/Footer"
+import NavBar from "../components/NavBar"
+import LightBox from "../components/LighBox"
+import Card from "../components/Card"
 
 // light imports
-import { mainLight, secLight } from '../components/lightInsances/lights.js'
+import { mainLight, secLight } from "../components/lightInsances/lights.js"
 
 /* render fn  */
 const RenderBody = () => {
@@ -22,48 +23,34 @@ const RenderBody = () => {
 }
 
 const RenderCard = () => {
-	const location = useLocation()
-	console.log(location.pathname)
-	// location.pathname == '/' ? (
-	// 	<section>
-	// 		<h1 aria-label="Martin Pedraza Porfolio"></h1>
-	// 		<Card
-	// 			cardTitle="Martin"
-	// 			subTitle="FullStack Web Developer"
-	// 			cardBody={RenderBody}
-	// 		/>
-	// 	</section>
-	// ) : (
-	// 	false
-	// )
-	if (location.pathname === '/') {
-		return (
-			<section>
-				<h1 aria-label="Martin Pedraza Porfolio"></h1>
-				<Card
-					cardTitle="Martin"
-					subTitle="FullStack Web Developer"
-					cardBody={RenderBody}
-				/>
-			</section>
-		)
-	} else {
-		return false
-	}
+
+	return (
+		<section>
+			<h1 aria-label="Martin Pedraza Porfolio"></h1>
+			<Card
+				cardTitle="Martin"
+				subTitle="FullStack Web Developer"
+				cardBody={RenderBody}
+			/>
+		</section>
+	)
 }
 
 const SmallScreen = () => {
 	const navigate = useNavigate()
 
-	window.addEventListener('resize', () => {
-		// viewportWidth = window.visualViewport.width
-		// console.log(window.visualViewport.width)
-		if (window.visualViewport.width >= 768) {
-			navigate('/about')
-		} else {
-			navigate('/')
-		}
-	})
+	useEffect(() => {
+		window.addEventListener("resize", () => {
+			// viewportWidth = window.visualViewport.width
+			// console.log(window.visualViewport.width)
+			if (window.visualViewport.width >= 768) {
+				navigate("/about")
+			} else {
+				navigate("/")
+			}
+		})
+	}, [])
+
 	return (
 		<div className="container">
 			<LightBox lightBoxCss={mainLight} />
