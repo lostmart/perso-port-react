@@ -1,21 +1,16 @@
-import { Outlet } from "react-router-dom"
-import { useLocation, useNavigate } from "react-router-dom"
+import { Outlet } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
-import { useState, useEffect } from "react"
-import Media from "react-media" // erase ??
+import { useState, useEffect } from 'react'
 
 // components
-import Footer from "../components/Footer"
-import NavBar from "../components/NavBar"
-import LightBox from "../components/LighBox"
-import Card from "../components/Card"
+import Footer from '../components/Footer'
+import NavBar from '../components/NavBar'
+import LightBox from '../components/LighBox'
+import Card from '../components/Card'
 
 // light imports
-import { mainLight, secLight } from "../components/lightInsances/lights.js"
-
-// screen sizes
-import SmallScreen from "./SmallScreen"
-import LargeScreen from "./LargeScreen"
+import { mainLight, secLight } from '../components/lightInsances/lights.js'
 
 /* render fn  */
 const RenderBody = () => {
@@ -38,13 +33,13 @@ const Root = () => {
 	checkRouteAndScreensize()
 
 	useEffect(() => {
-		window.addEventListener("resize", () => {
+		window.addEventListener('resize', () => {
 			// viewportWidth = window.visualViewport.width
 			// console.log(window.visualViewport.width)
 			if (window.visualViewport.width >= 768) {
-				navigate("/about")
+				navigate('/about')
 			} else {
-				navigate("/")
+				navigate('/')
 			}
 
 			/* evaluate page we're in  */
