@@ -1,9 +1,12 @@
-import React from 'react'
+import SocialCont from "./SocialCont"
 
 const Footer = () => {
 	return (
 		<footer>
-			<p>Created with pure love</p>
+			<p>
+				<a href="mailto:codeme.martin@gmail.com"> codeme.martin@gmail.com</a>
+			</p>
+			<SocialCont />
 		</footer>
 	)
 }
