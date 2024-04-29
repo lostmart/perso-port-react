@@ -1,16 +1,16 @@
-import { Outlet } from 'react-router-dom'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { Outlet } from "react-router-dom"
+// import { useLocation, useNavigate } from "react-router-dom"
 
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from "react"
 
 // components
-import Footer from '../components/Footer'
-import NavBar from '../components/NavBar'
-import LightBox from '../components/LighBox'
-import Card from '../components/Card'
+import Footer from "../components/Footer"
+import NavBar from "../components/NavBar"
+import LightBox from "../components/LighBox"
+import Card from "../components/Card"
 
 // light imports
-import { mainLight, secLight } from '../components/lightInsances/lights.js'
+import { mainLight, secLight } from "../components/lightInsances/lights.js"
 
 /* render fn  */
 const RenderBody = () => {
@@ -23,29 +23,29 @@ const RenderBody = () => {
 }
 
 const Root = () => {
-	const navigate = useNavigate()
-	let location = useLocation()
+	// const navigate = useNavigate()
+	// let location = useLocation()
 
-	const checkRouteAndScreensize = () => {
-		console.log(location.pathname)
-	}
+	// const checkRouteAndScreensize = () => {
+	// 	console.log(location.pathname)
+	// }
 
-	checkRouteAndScreensize()
+	// checkRouteAndScreensize()
 
-	useEffect(() => {
-		window.addEventListener('resize', () => {
-			// viewportWidth = window.visualViewport.width
-			// console.log(window.visualViewport.width)
-			if (window.visualViewport.width >= 768) {
-				navigate('/about')
-			} else {
-				navigate('/')
-			}
+	// useEffect(() => {
+	// 	window.addEventListener('resize', () => {
+	// 		// viewportWidth = window.visualViewport.width
+	// 		// console.log(window.visualViewport.width)
+	// 		if (window.visualViewport.width >= 768) {
+	// 			navigate('/about')*
+	// 		} else {
+	// 			navigate('/')
+	// 		}
 
-			/* evaluate page we're in  */
-			checkRouteAndScreensize()
-		})
-	}, [])
+	// 		/* evaluate page we're in  */
+	// 		checkRouteAndScreensize()
+	// 	})
+	// }, [])
 
 	return (
 		<div className="container">
