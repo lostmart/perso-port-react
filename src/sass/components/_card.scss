@@ -11,7 +11,7 @@
 	}
 	h2 {
 		color: $primary-clr;
-		font-family: 'Julius Sans One', sans-serif;
+		font-family: "Julius Sans One", sans-serif;
 		font-size: 34px;
 		font-weight: 400;
 	}
@@ -73,11 +73,13 @@
 		border-radius: 30px;
 		box-shadow: 1px -1px 2px -1px rgba(255, 255, 255, 0.6901960784),
 			-3px 2px 20px 0px rgb(0 0 0 / 58%), -2px 2px 3px 0px rgb(0 0 0 / 69%);
-		transform: translateY(-124px) rotateY(10deg);
-		position: absolute;
-		left: 2%;
+		// transform: translateY(-124px) rotateY(10deg);
 		background: rgb(33, 48, 67);
 		background: rgb(33, 48, 67);
-		background: linear-gradient(40deg, rgb(16 25 37 / 30%) 34%, rgb(132 132 143 / 18%) 118%);
+		background: linear-gradient(
+			40deg,
+			rgb(16 25 37 / 30%) 34%,
+			rgb(132 132 143 / 18%) 118%
+		);
 	}
 }
