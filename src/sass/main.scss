@@ -1,14 +1,16 @@
-@import './abstracts/variables';
-@import './base/reset';
-@import './abstracts/variables';
-@import './base/typography';
-@import './layout/navigation';
-@import './components/lightBox';
-@import './components/card';
-@import './layout/errorPage';
-@import './components/section_personal';
-@import './components/aboutSection';
-@import './components/footer';
+@import "./abstracts/variables";
+@import "./base/reset";
+@import "./abstracts/mixins";
+@import "./base/typography";
+@import "./layout/navigation";
+@import "./components/lightBox";
+@import "./components/card";
+@import "./layout/errorPage";
+@import "./components/section_personal";
+@import "./components/aboutSection";
+@import "./components/footer";
+
+@import "./pages/home";
 
 body {
 	background-color: $prim-bg;

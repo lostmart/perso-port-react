@@ -12,7 +12,7 @@ const RenderBody = () => {
 
 const Home = () => {
 	return (
-		<section>
+		<section className="home">
 			<Card
 				cardTitle="Martin"
 				subTitle="FullStack Web Developer"

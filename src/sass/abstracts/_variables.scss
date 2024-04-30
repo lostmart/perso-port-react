@@ -10,3 +10,11 @@ $base-margin: 0.7em;
 
 /*  border radious  */
 $base-border-radious: 8px;
+
+/*  breakpoints sizes     */
+
+$breakpoints: (
+	"small": "screen and (max-width: 600px)",
+	"medium": "screen and (min-width: 601px) and (max-width: 1024px)",
+	"large": "screen and (min-width: 1025px)",
+);

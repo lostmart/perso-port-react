@@ -1,0 +1,25 @@
+.home {
+	padding: $base-padding;
+
+	h2:not(h2:first-child) {
+		display: none;
+	}
+
+	@include respond-to("medium") {
+		display: flex;
+		padding: $base-padding * 2;
+
+		h2 span {
+			font-size: 1.2em;
+			color: #a3ff94;
+		}
+
+		.card {
+			width: 30px;
+		}
+	}
+
+	@include respond-to("large") {
+		padding: $base-padding * 2.5;
+	}
+}
