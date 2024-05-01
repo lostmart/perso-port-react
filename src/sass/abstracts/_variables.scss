@@ -19,3 +19,10 @@ $breakpoints: (
 	"large": "screen and (min-width: 992px)",
 	"x-large": "screen and (min-width: 1200px)",
 );
+
+$primary-font: "Julius Sans One", sans-serif;
+$secondary-font: "Kumbh Sans", sans-serif;
+
+$base-font-size: 1em;
+$prim-title-font-size: $base-font-size * 1.7;
+$sec-title-font-size: $base-font-size * 1.5;

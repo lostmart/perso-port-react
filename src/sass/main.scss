@@ -1,7 +1,7 @@
+@import "./abstracts/typography";
 @import "./abstracts/variables";
-@import "./base/reset";
+@import "./abstracts/reset";
 @import "./abstracts/mixins";
-@import "./base/typography";
 @import "./layout/navigation";
 @import "./components/lightBox";
 @import "./components/card";

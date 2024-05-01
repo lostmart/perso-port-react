@@ -6,6 +6,14 @@ const Technos = () => {
 			<h2>
 				<span>T</span>echnical <span>S</span>kills
 			</h2>
+			<ul>
+				<li>
+					<span>Languages:</span>
+					<span className="technosSection__item">
+						Sass, JavaScript, TypeScript, Python, Php
+					</span>
+				</li>
+			</ul>
 		</section>
 	)
 }

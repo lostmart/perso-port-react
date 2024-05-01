@@ -3,12 +3,25 @@
 	margin-top: $base-margin;
 	h2 {
 		font-size: 36px;
-		font-family: "Julius Sans One", sans-serif;
+		font-family: $primary-font;
+		font-weight: 400;
+		padding: $base-padding $base-padding * 0.5;
+	}
+
+	ul {
+		padding: $base-padding;
 	}
 
 	span {
 		color: $primary-clr;
 		font-size: 1.2em;
 		color: $primary-clr;
+	}
+
+	.technosSection__item {
+		color: white;
+		font-family: $secondary-font;
+		font-weight: 200;
+		margin-left: $base-margin;
 	}
 }
