@@ -14,7 +14,8 @@ $base-border-radious: 8px;
 /*  breakpoints sizes     */
 
 $breakpoints: (
-	"small": "screen and (max-width: 600px)",
-	"medium": "screen and (min-width: 601px) and (max-width: 1024px)",
-	"large": "screen and (min-width: 1025px)",
+	"small": "screen and (max-width: 576px)",
+	"medium": "screen and (min-width: 768px)",
+	"large": "screen and (min-width: 992px)",
+	"x-large": "screen and (min-width: 1200px)",
 );

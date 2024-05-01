@@ -11,7 +11,7 @@ import Root from "./layouts/default"
 
 // pages
 import ErrorPage from "./layouts/ErrorPage"
-import About from "./pages/About"
+import Technos from "./pages/Technos"
 import Home from "./pages/Home"
 
 import "./sass/main.scss"
@@ -20,7 +20,7 @@ const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<Root />}>
 			<Route index element={<Home />} />
-			<Route path="about" element={<About />} />
+			<Route path="technos" element={<Technos />} />
 			<Route path="*" element={<ErrorPage />} />
 		</Route>
 	)

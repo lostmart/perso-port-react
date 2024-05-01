@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom"
 import {
 	Home,
 	User,
@@ -9,21 +9,22 @@ import {
 	Archive,
 	GitHub,
 	Linkedin,
+	Cpu,
 	Play,
 	X,
-} from 'react-feather'
+} from "react-feather"
 
 // render fn
 
 const RenderLinks = () => {
 	const links = [
-		{ path: '/', text: 'Home', component: Home },
-		{ path: '/about', text: 'About', component: User },
-		{ path: '/cv', text: 'Resume', component: BookOpen },
-		{ path: '/skills', text: 'Skills', component: Sliders },
-		{ path: '/works', text: 'Works', component: Briefcase },
-		{ path: '/articles', text: 'Articles', component: Archive },
-		{ path: '/contact', text: 'Contact', component: Mail },
+		{ path: "/", text: "Home", component: Home },
+		{ path: "/technos", text: "Technologies", component: Cpu },
+		{ path: "/cv", text: "Resume", component: BookOpen },
+		{ path: "/skills", text: "Skills", component: Sliders },
+		{ path: "/works", text: "Works", component: Briefcase },
+		{ path: "/articles", text: "Articles", component: Archive },
+		{ path: "/contact", text: "Contact", component: Mail },
 	]
 	return (
 		<>
@@ -42,18 +43,18 @@ const RenderLinks = () => {
 const RenderSocials = () => {
 	const socialIcons = [
 		{
-			linkUrl: 'https://github.com/lostmart',
-			text: 'Github',
+			linkUrl: "https://github.com/lostmart",
+			text: "Github",
 			component: GitHub,
 		},
 		{
-			linkUrl: 'https://www.linkedin.com/in/martin-pedraza-dev/',
-			text: 'Linkedin',
+			linkUrl: "https://www.linkedin.com/in/martin-pedraza-dev/",
+			text: "Linkedin",
 			component: Linkedin,
 		},
 		{
-			linkUrl: 'https://www.youtube.com/channel/UCL48dHz-Ul6OYj3XkD7YiiQ',
-			text: 'Youtube',
+			linkUrl: "https://www.youtube.com/channel/UCL48dHz-Ul6OYj3XkD7YiiQ",
+			text: "Youtube",
 			component: Play,
 		},
 	]
