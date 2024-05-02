@@ -20,9 +20,9 @@ const RenderLinks = () => {
 	const links = [
 		{ path: "/", text: "Home", component: Home },
 		{ path: "/technos", text: "Technologies", component: Cpu },
+		{ path: "/experience", text: "Experience", component: Briefcase },
 		{ path: "/cv", text: "Resume", component: BookOpen },
 		{ path: "/skills", text: "Skills", component: Sliders },
-		{ path: "/works", text: "Works", component: Briefcase },
 		{ path: "/articles", text: "Articles", component: Archive },
 		{ path: "/contact", text: "Contact", component: Mail },
 	]
