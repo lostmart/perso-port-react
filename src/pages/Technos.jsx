@@ -3,7 +3,7 @@ import React from "react"
 const Technos = () => {
 	return (
 		<section className="technosSection">
-			<h2>
+			<h2 className="page_title">
 				<span>T</span>echnical <span>S</span>kills
 			</h2>
 			<ul>

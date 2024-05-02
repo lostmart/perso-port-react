@@ -21,7 +21,7 @@ const RenderLinks = () => {
 		{ path: "/", text: "Home", component: Home },
 		{ path: "/technos", text: "Technologies", component: Cpu },
 		{ path: "/experience", text: "Experience", component: Briefcase },
-		{ path: "/cv", text: "Resume", component: BookOpen },
+		{ path: "/titles", text: "Titles", component: BookOpen },
 		{ path: "/skills", text: "Skills", component: Sliders },
 		{ path: "/articles", text: "Articles", component: Archive },
 		{ path: "/contact", text: "Contact", component: Mail },

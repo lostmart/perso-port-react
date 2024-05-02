@@ -8,4 +8,8 @@
 		font-size: $base-font-size * 1.2;
 		color: $primary-clr;
 	}
+
+	span:first-child {
+		margin-left: $base-margin * 0.8;
+	}
 }

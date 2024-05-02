@@ -1,0 +1,29 @@
+.titlesSection {
+	padding: $base-padding;
+
+	.titlesSection_level {
+		color: $font-clr-alt !important;
+		font-family: $secondary-font;
+		margin-left: $base-margin;
+		font-size: $sm-font-size;
+	}
+
+	ul {
+		padding: $base-padding;
+	}
+
+	li {
+		padding-bottom: $base-padding;
+		display: flex;
+		align-items: center;
+	}
+	button {
+		border: none;
+		background-color: transparent;
+	}
+
+	span:not(.page_title span) {
+		color: $primary-clr;
+		font-style: italic;
+	}
+}

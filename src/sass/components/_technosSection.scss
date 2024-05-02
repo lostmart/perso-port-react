@@ -1,6 +1,5 @@
 .technosSection {
-	margin-left: $base-margin;
-	margin-top: $base-margin;
+	padding: $base-padding;
 	h2 {
 		font-size: 36px;
 		font-family: $primary-font;
@@ -16,13 +15,7 @@
 		padding-bottom: $base-padding;
 	}
 
-	span:first-child {
-		margin-left: $base-margin * 0.8;
-	}
-
 	span {
-		color: $primary-clr;
-		font-size: $base-font-size * 1.2;
 		color: $primary-clr;
 	}
 

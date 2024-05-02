@@ -14,6 +14,7 @@ import ErrorPage from "./layouts/ErrorPage"
 import Technos from "./pages/Technos"
 import Home from "./pages/Home"
 import Experience from "./pages/Experience"
+import Titles from "./pages/Titles"
 
 import "./sass/main.scss"
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
 			<Route index element={<Home />} />
 			<Route path="technos" element={<Technos />} />
 			<Route path="experience" element={<Experience />} />
+			<Route path="titles" element={<Titles />} />
 			<Route path="*" element={<ErrorPage />} />
 		</Route>
 	)
