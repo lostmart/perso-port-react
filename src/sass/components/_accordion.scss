@@ -1,0 +1,31 @@
+.accordion {
+	width: 100%;
+
+	& &__button {
+		width: 100%;
+		max-width: 680px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.7em;
+		cursor: pointer;
+		background-color: #b0b0b03b;
+		border-radius: 5px;
+	}
+
+	&__body {
+		position: relative;
+		overflow: hidden;
+		transform: translateY(-5px);
+		transition: all 0.2s ease-out;
+		z-index: -1;
+		padding: 0 16px 0 16px;
+		transform: translateY(-5px);
+		max-height: 0px;
+	}
+
+	&__content {
+		margin-top: $base-margin;
+	}
+}

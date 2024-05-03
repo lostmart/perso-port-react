@@ -4,12 +4,16 @@
 @import "./abstracts/mixins";
 @import "./layout/navigation";
 @import "./components/lightBox";
+
+// components
 @import "./components/card";
+@import "./components/accordion";
 @import "./layout/errorPage";
 @import "./components/section_personal";
 @import "./components/technosSection";
 @import "./components/footer";
 
+// pages
 @import "./pages/home";
 @import "./pages/experience";
 @import "./pages/titles";
