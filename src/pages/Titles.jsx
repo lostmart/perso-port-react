@@ -1,5 +1,6 @@
 import React from "react"
 import { ChevronUp } from "react-feather"
+import Accordion from "../components/atoms/Accordion"
 
 const Titles = () => {
 	return (
@@ -9,15 +10,7 @@ const Titles = () => {
 			</h2>
 			<ul>
 				<li>
-					<div>
-						<span>JavaScript React Developer</span>
-						<span className="titlesSection_level">
-							Diplôme de niveau 6 (bac +4)
-						</span>
-					</div>
-					<button>
-						<ChevronUp />
-					</button>
+					<Accordion />
 				</li>
 			</ul>
 		</section>
