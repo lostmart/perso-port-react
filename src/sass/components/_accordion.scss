@@ -14,11 +14,23 @@
 		border-radius: 5px;
 	}
 
+	& &__button-active {
+		background-color: $primary-clr;
+	}
+
+	& &__button-active span {
+		color: $prim-bg !important;
+	}
+
+	.titlesSection_level .accordion__year {
+		color: $primary-clr;
+	}
+
 	&__body {
 		position: relative;
 		overflow: hidden;
 		transform: translateY(-5px);
-		transition: all 0.2s ease-out;
+		transition: all 0.31s ease-out;
 		z-index: -1;
 		padding: 0 16px 0 16px;
 		transform: translateY(-5px);
@@ -27,5 +39,9 @@
 
 	&__content {
 		margin-top: $base-margin;
+	}
+
+	.accordion__items li {
+		font-family: $secondary-font;
 	}
 }

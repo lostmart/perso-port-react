@@ -9,9 +9,9 @@ const Titles = () => {
 				<span>T</span>itles
 			</h2>
 			<ul>
-				<li>
-					<Accordion />
-				</li>
+				<Accordion />
+				<Accordion />
+				<Accordion />
 			</ul>
 		</section>
 	)

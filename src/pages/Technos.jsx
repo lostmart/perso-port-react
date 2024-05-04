@@ -16,7 +16,8 @@ const Technos = () => {
 				<li>
 					<span>Frontend Technologies:</span>
 					<span className="technosSection__item">
-						HTML, CSS, Handlebars, React, Vue.js
+						HTML, CSS, JQuery, Handlebars, React, Vue.js, Bootstrap, Tailwind,
+						Materialize
 					</span>
 				</li>
 				<li>
@@ -35,6 +36,13 @@ const Technos = () => {
 					<span>Tools: </span>
 					<span className="technosSection__item">
 						Git, Jest, Mocha, Webpack, Babel, Vite, Figma, Photoshop
+					</span>
+				</li>
+				<li>
+					<span>Others:</span>
+					<span className="technosSection__item">
+						Vuex, TDD, NextJs, Nuxt, Responsive Web Design, Unit Testing, Agile
+						web developer, SEO, Wordpress, Video Editing, Animaion
 					</span>
 				</li>
 			</ul>
