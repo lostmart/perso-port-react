@@ -4,11 +4,11 @@ import { Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 
 const SwiperComp = ({ children }) => {
-	console.log(children)
+	// console.log(children)
 	return (
 		<Swiper
 			spaceBetween={50}
-			slidesPerView={3}
+			slidesPerView={4}
 			pagination={{ clickable: true }}
 			scrollbar={{ draggable: true }}
 			loop={true}
@@ -20,11 +20,7 @@ const SwiperComp = ({ children }) => {
 			modules={[Autoplay]}
 		>
 			{children.map((child) => {
-				return (
-					<SwiperSlide key={child}>
-						<img src={child} alt={child} />
-					</SwiperSlide>
-				)
+				return <SwiperSlide style={{fontSize:"2.5em"}} key={child}>{child}</SwiperSlide>
 			})}
 		</Swiper>
 	)

@@ -1,56 +1,86 @@
 import React from "react"
 
-import bootstrap from "../assets/imgs/bootstrap.png"
-import css from "../assets/imgs/css.png"
-import figma from "../assets/imgs/figma.png"
-import flask from "../assets/imgs/flask.png"
-import git from "../assets/imgs/git.png"
-import handlebars from "../assets/imgs/handlebars.png"
-import html from "../assets/imgs/html.png"
-import jquery from "../assets/imgs/jquery.png"
-import js from "../assets/imgs/js.png"
-import material from "../assets/imgs/material.png"
-import mongo from "../assets/imgs/mongo.png"
-import mysql from "../assets/imgs/mysql.png"
-import nodejs from "../assets/imgs/nodejs.png"
-import photoshop from "../assets/imgs/photoshop.png"
-import php from "../assets/imgs/php.png"
-import python from "../assets/imgs/python.png"
-import react from "../assets/imgs/react.png"
-import sass from "../assets/imgs/sass.png"
-import sqlLite from "../assets/imgs/sqlLite.png"
-import talwind from "../assets/imgs/talwind.png"
-import typescript from "../assets/imgs/typescript.png"
-import vue from "../assets/imgs/vue.png"
-import wordpress from "../assets/imgs/wordpress.png"
+import {
+	FaWordpress,
+	FaSass,
+	FaPython,
+	FaPhp,
+	FaHtml5,
+	FaCss3Alt,
+	FaReact,
+	FaVuejs,
+	FaBootstrap,
+	FaNodeJs,
+	FaGitSquare,
+	FaFigma,
+} from "react-icons/fa"
+
+import { RiTailwindCssFill } from "react-icons/ri"
+import {
+	SiHandlebarsdotjs,
+	SiExpress,
+	SiFlask,
+	SiMysql,
+	SiBabel,
+} from "react-icons/si"
+import {
+	SiJquery,
+	SiMongodb,
+	SiSqlite,
+	SiJest,
+	SiMocha,
+	SiWebpack,
+	SiNuxtdotjs,
+} from "react-icons/si"
+
+import { IoLogoJavascript } from "react-icons/io"
+import { BiLogoTypescript } from "react-icons/bi"
+import {
+	DiMaterializecss,
+	DiDjango,
+	DiPostgresql,
+	DiPhotoshop,
+} from "react-icons/di"
+import { RiNextjsLine } from "react-icons/ri"
+
+import { TbBrandVite } from "react-icons/tb"
 
 import SwiperComp from "../components/SwiperComp"
 
 const imagesArray = [
-	wordpress,
-	bootstrap,
-	css,
-	figma,
-	flask,
-	git,
-	handlebars,
-	html,
-	jquery,
-	js,
-	material,
-	mongo,
-	mysql,
-	nodejs,
-	photoshop,
-	php,
-	python,
-	react,
-	sass,
-	sqlLite,
-	talwind,
-	typescript,
-	vue,
-	wordpress,
+	FaWordpress,
+	FaSass,
+	IoLogoJavascript,
+	BiLogoTypescript,
+	FaPython,
+	FaPhp,
+	FaHtml5,
+	FaCss3Alt,
+	SiJquery,
+	SiHandlebarsdotjs,
+	FaReact,
+	FaVuejs,
+	FaBootstrap,
+	RiTailwindCssFill,
+	DiMaterializecss,
+	FaNodeJs,
+	SiExpress,
+	DiDjango,
+	SiFlask,
+	SiMysql,
+	DiPostgresql,
+	SiMongodb,
+	SiSqlite,
+	FaGitSquare,
+	SiJest,
+	SiMocha,
+	SiWebpack,
+	SiBabel,
+	TbBrandVite,
+	FaFigma,
+	DiPhotoshop,
+	RiNextjsLine,
+	SiNuxtdotjs,
 ]
 
 const Technos = () => {
