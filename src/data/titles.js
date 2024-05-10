@@ -6,7 +6,7 @@ const titleData = [
 		description:
 			"JavaScript React developers, also known as front-end developers, are in charge of creating dynamic websites using a programming language. They take care of the front-end part, i.e. the visual side of the site.",
 		titleUrl:
-			"https://martin-site.netlify.app/imgs/certificates/web-design-michigan.jpg",
+			"https://raw.githubusercontent.com/lostmart/perso-port-react/main/src/assets/imgs/titre-developpeur-logiciel.jpg",
 		titleOfficialSite:
 			"https://www.coursera.org/account/accomplishments/certificate/Z4G8NR6DYB8D",
 	},
@@ -16,7 +16,7 @@ const titleData = [
 		description:
 			"The capstone will develop a professional-quality web portfolio.  Students will demonstrate the ability to design and implement a responsive site for a minimum of three platforms.  Adherence to validation and accessibility standards will be required",
 		titleUrl:
-			"https://martin-site.netlify.app/imgs/certificates/language-teacher.jpg",
+			"https://martin-site.netlify.app/imgs/certificates/web-design-michigan.jpg",
 		titleOfficialSite:
 			"https://www.coursera.org/account/accomplishments/certificate/Z4G8NR6DYB8D",
 	},
