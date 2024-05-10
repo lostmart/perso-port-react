@@ -12,6 +12,11 @@
 		cursor: pointer;
 		background-color: #b0b0b03b;
 		border-radius: 5px;
+
+		svg {
+			stroke: $primary-clr;
+			transition: all 270ms ease-in-out;
+		}
 	}
 
 	& &__button-active {
@@ -19,8 +24,12 @@
 	}
 
 	& &__button-active span {
-		color: $prim-bg !important;
+		color: $second-clr !important;
 		font-weight: 800;
+	}
+
+	& &__button-active svg {
+		stroke: $second-clr;
 	}
 
 	.titlesSection_level .accordion__year {
@@ -33,7 +42,6 @@
 		overflow: hidden;
 		transform: translateY(-5px);
 		transition: all 0.31s ease-out;
-		z-index: -1;
 		padding: 0 16px 0 16px;
 		transform: translateY(-5px);
 		max-height: 0px;

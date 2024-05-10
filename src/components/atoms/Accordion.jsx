@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useRef, useState } from "react"
 import { ChevronUp } from "react-feather"
 
-const Accordion = ({ title, titleLevel, titleDate, description }) => {
+const Accordion = ({ title, titleLevel, titleDate, description, onClick }) => {
 	const bodyRef = useRef(null)
 	const arrowRef = useRef(null)
 
@@ -26,6 +26,7 @@ const Accordion = ({ title, titleLevel, titleDate, description }) => {
 			arrow.style.rotate = "180deg"
 		}
 	}
+
 	return (
 		<li>
 			<div className="accordion">
@@ -51,9 +52,9 @@ const Accordion = ({ title, titleLevel, titleDate, description }) => {
 						<span className="accordion__year">{titleDate}</span>
 					</h4>
 					<p className="accordion__content">{description}</p>
-					<a href="#" className="card__btn">
-						See this
-					</a>
+					<button onClick={onClick} className="card__btn">
+						Show me the title
+					</button>
 				</div>
 			</div>
 		</li>
@@ -66,6 +67,7 @@ Accordion.propTypes = {
 	titleDate: PropTypes.string,
 	description: PropTypes.string,
 	extraClass: PropTypes.string,
+	onClick: PropTypes.func,
 }
 
 export default Accordion

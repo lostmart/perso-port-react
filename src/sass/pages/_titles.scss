@@ -22,6 +22,11 @@
 		background-color: transparent;
 	}
 
+	.card__btn {
+		background-color: $primary-clr;
+		cursor: pointer;
+	}
+
 	span:not(.page_title span) {
 		color: $primary-clr;
 		font-style: italic;

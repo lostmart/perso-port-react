@@ -13,6 +13,7 @@
 @import "./components/technosSection";
 @import "./components/footer";
 @import "./components/swiperComp";
+@import "./components/modal";
 
 // pages
 @import "./pages/home";
@@ -22,6 +23,17 @@
 
 body {
 	background-color: $prim-bg;
+}
+
+main {
+	background: $semi-transparent;
+	background: linear-gradient(
+		180deg,
+		$semi-transparent -34%,
+		rgba(9, 13, 18, 1) 129%
+	);
+	position: relative;
+	z-index: 1;
 }
 
 .container {

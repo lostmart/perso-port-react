@@ -35,6 +35,19 @@
 		gap: 10px;
 		text-decoration: none;
 		cursor: pointer;
+		transition: background-color 150ms ease-in-out;
+	}
+
+	svg {
+		transition: all 150ms ease-in-out;
+	}
+
+	.active {
+		background-color:$semi-transparent;
+		padding: $base-padding * 1.5;
+		svg {
+			stroke: $primary-clr;
+		}
 	}
 	&__social {
 		display: none;

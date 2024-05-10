@@ -34,6 +34,7 @@ const Titles = () => {
 					titleDate={item.titleDate}
 					description={item.description}
 					key={item.title}
+					onClick={handleClick}
 				/>
 			)
 		})
