@@ -5,9 +5,8 @@
 	padding-top: 25px;
 	width: 100%;
 	margin: auto;
-	gap: 3%;
 	position: relative;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	z-index: 10;
 
 	&__closeBtn {
@@ -32,10 +31,11 @@
 	a {
 		display: flex;
 		align-items: center;
-		gap: 10px;
 		text-decoration: none;
 		cursor: pointer;
 		transition: background-color 150ms ease-in-out;
+		padding: $base-padding * 1.2;
+		font-size: .9em;
 	}
 
 	svg {
@@ -44,7 +44,6 @@
 
 	.active {
 		background-color:$semi-transparent;
-		padding: $base-padding * 1.5;
 		svg {
 			stroke: $primary-clr;
 		}

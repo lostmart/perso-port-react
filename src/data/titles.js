@@ -7,8 +7,6 @@ const titleData = [
 			"JavaScript React developers, also known as front-end developers, are in charge of creating dynamic websites using a programming language. They take care of the front-end part, i.e. the visual side of the site.",
 		titleUrl:
 			"https://raw.githubusercontent.com/lostmart/perso-port-react/main/src/assets/imgs/titre-developpeur-logiciel.jpg",
-		titleOfficialSite:
-			"https://www.coursera.org/account/accomplishments/certificate/Z4G8NR6DYB8D",
 	},
 	{
 		title: "Web Developer",

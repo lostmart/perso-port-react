@@ -10,7 +10,6 @@ const SwiperComp = ({ children }) => {
 			spaceBetween={50}
 			slidesPerView={4}
 			pagination={{ clickable: true }}
-			scrollbar={{ draggable: true }}
 			loop={true}
 			// onSwiper={(swiper) => console.log(swiper)}
 			autoplay={{

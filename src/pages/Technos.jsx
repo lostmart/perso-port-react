@@ -89,6 +89,7 @@ const Technos = () => {
 			<h2 className="page_title">
 				<span>T</span>echnical <span>S</span>kills
 			</h2>
+			<SwiperComp children={imagesArray} />
 			<ul>
 				<li>
 					<span>Languages:</span>
@@ -129,7 +130,6 @@ const Technos = () => {
 					</span>
 				</li>
 			</ul>
-			<SwiperComp children={imagesArray} />
 		</section>
 	)
 }

@@ -3,7 +3,14 @@ import PropTypes from "prop-types"
 import { useRef, useState } from "react"
 import { ChevronUp } from "react-feather"
 
-const Accordion = ({ title, titleLevel, titleDate, description, onClick }) => {
+const Accordion = ({
+	title,
+	titleLevel,
+	titleDate,
+	description,
+	onClick,
+	titleOfficialSite,
+}) => {
 	const bodyRef = useRef(null)
 	const arrowRef = useRef(null)
 
@@ -21,7 +28,7 @@ const Accordion = ({ title, titleLevel, titleDate, description, onClick }) => {
 		} else {
 			setActive(!active)
 			// panel.style.maxHeight = panel.scrollHeight + "px"
-			panel.style.maxHeight = "380px"
+			panel.style.maxHeight = "420px"
 			panel.style.padding = "18px 16px 12px 16px"
 			arrow.style.rotate = "180deg"
 		}
@@ -50,11 +57,27 @@ const Accordion = ({ title, titleLevel, titleDate, description, onClick }) => {
 					<h4 className="titlesSection_level">
 						{titleLevel ? titleLevel : ""}
 						<span className="accordion__year">{titleDate}</span>
+						<img
+							className="accordion_school"
+							src="/schools/openclassrooms.jfif"
+							alt={title}
+						/>
 					</h4>
 					<p className="accordion__content">{description}</p>
 					<button onClick={onClick} className="card__btn">
 						Show me the title
 					</button>
+					{titleOfficialSite && (
+						<div className="accordion-right">
+							<a
+								className="accordion__btn-sec"
+								target="_blank"
+								href={titleOfficialSite}
+							>
+								Official Site
+							</a>
+						</div>
+					)}
 				</div>
 			</div>
 		</li>

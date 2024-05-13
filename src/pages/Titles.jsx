@@ -65,6 +65,7 @@ const Titles = () => {
 					titleLevel={item.titleLevel}
 					titleDate={item.titleDate}
 					description={item.description}
+					titleOfficialSite={item.titleOfficialSite}
 					key={item.title}
 					onClick={() => handleClick(i)}
 				/>
@@ -77,13 +78,13 @@ const Titles = () => {
 				<span>T</span>itles
 			</h2>
 			<ul>{<RenderTitles />}</ul>
-			<button onClick={handleClick}>Show Modal</button>
 			<Modal showModal={showModal} onClick={handleClick}>
 				<RenderModalContent
 					title={modalContent.title}
 					titleUrl={modalContent.titleUrl}
 				/>
 			</Modal>
+			<h3>Other courses</h3>
 		</section>
 	)
 }

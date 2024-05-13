@@ -4,8 +4,21 @@
 	.titlesSection_level {
 		color: $font-clr-alt !important;
 		font-family: $secondary-font;
-		margin-left: $base-margin;
 		font-size: $sm-font-size;
+		padding-left: 3.3em;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		height: 42.5px;
+	}
+
+	.accordion_school {
+		width: 40px;
+		border-radius: 50%;
+		position: absolute;
+		left: -25px;
+		top: 0;
 	}
 
 	ul {

@@ -19,6 +19,13 @@
 		}
 	}
 
+	.accordion_school {
+		width: 45px;
+		border-radius: 50%;
+		margin-left: 1.7em;
+		mix-blend-mode: screen;
+	}
+
 	& &__button-active {
 		background-color: $primary-clr;
 	}
@@ -54,5 +61,17 @@
 
 	.accordion__items li {
 		font-family: $secondary-font;
+	}
+
+	.accordion-right {
+		display: flex;
+		width: 100%;
+		justify-content: end;
+	}
+
+	.accordion__btn-sec {
+		background-color: $second-clr;
+		padding: $base-padding;
+		border-radius: 5px;
 	}
 }
