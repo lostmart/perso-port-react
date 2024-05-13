@@ -1,9 +1,10 @@
 .accordion {
 	width: 100%;
+	max-width: 700px;
+	margin: auto;
 
 	& &__button {
 		width: 100%;
-		max-width: 680px;
 		margin: auto;
 		display: flex;
 		align-items: center;
@@ -17,6 +18,10 @@
 			stroke: $primary-clr;
 			transition: all 270ms ease-in-out;
 		}
+	}
+
+	.accordion__header {
+		font-size: $base-font-size;
 	}
 
 	.accordion_school {

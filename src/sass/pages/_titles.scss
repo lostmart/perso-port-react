@@ -44,4 +44,62 @@
 		color: $primary-clr;
 		font-style: italic;
 	}
+
+	h3 {
+		font-size: $sec-title-font-size;
+		margin: $base-margin;
+	}
+
+	.card {
+		max-width: 700px;
+		margin: auto;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		border-bottom: 1px solid $font-clr;
+
+		div {
+			display: flex;
+			align-items: center;
+			width: 100%;
+		}
+
+		button {
+			margin: 0.7em auto;
+			padding: 0.65em 2em;
+			background-color: $primary-clr;
+			color: $prim-bg;
+			width: 100%;
+			border-radius: 25px;
+			min-width: 286px;
+			font-size: 20px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	}
+
+	.titlesSection__courses {
+		h4 {
+			//margin-left: $base-margin * 4;
+			margin-left: 0.7em;
+			display: flex;
+			align-items: center;
+		}
+		span:first-child {
+			color: #ededed;
+			width: 100%;
+			font-family: $secondary-font;
+		}
+	}
+
+	.courses_imgs {
+		left: $base-padding;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		// position: absolute;
+		// top: 50%;
+		// transform: translateY(-50%);
+	}
 }

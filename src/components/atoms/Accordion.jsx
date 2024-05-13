@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useRef, useState } from "react"
 import { ChevronUp } from "react-feather"
+import { ImNewTab } from "react-icons/im"
 
 const Accordion = ({
 	title,
@@ -10,6 +11,7 @@ const Accordion = ({
 	description,
 	onClick,
 	titleOfficialSite,
+	schoolImg,
 }) => {
 	const bodyRef = useRef(null)
 	const arrowRef = useRef(null)
@@ -44,7 +46,7 @@ const Accordion = ({
 								? "accordion__button accordion__button-active"
 								: "accordion__button"
 						}
-						onClick={handleClick}
+						onClick={() => handleClick(null, null)}
 					>
 						<span>
 							<span>{title}</span>
@@ -59,7 +61,7 @@ const Accordion = ({
 						<span className="accordion__year">{titleDate}</span>
 						<img
 							className="accordion_school"
-							src="/schools/openclassrooms.jfif"
+							src={`/schools/${schoolImg}`}
 							alt={title}
 						/>
 					</h4>
@@ -74,7 +76,7 @@ const Accordion = ({
 								target="_blank"
 								href={titleOfficialSite}
 							>
-								Official Site
+								Official Site {<ImNewTab />}
 							</a>
 						</div>
 					)}

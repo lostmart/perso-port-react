@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Accordion from "../components/atoms/Accordion"
 import titleData from "../data/titles"
+import coursesData from "../data/courses"
 
 import Modal from "modal-package-martin-test/dist/Modal"
 
@@ -10,9 +11,9 @@ const RenderModalContent = ({ title, titleUrl }) => {
 
 	const skeletonStyle = {
 		width: "100%", // Adjust based on your layout needs
-		height: "200px", // Adjust the height as necessary
+		height: "280px", // Adjust the height as necessary
 		backgroundColor: "#ccc", // Light grey background for the skeleton
-		animation: "pulse 1.5s infinite ease-in-out",
+		animation: "pulse 1.2s infinite ease-in-out",
 	}
 
 	return (
@@ -35,7 +36,7 @@ const RenderModalContent = ({ title, titleUrl }) => {
 }
 
 const Titles = () => {
-	console.log(titleData[0])
+	// console.log(titleData[0])
 
 	const [showModal, setModal] = useState(false)
 
@@ -49,11 +50,17 @@ const Titles = () => {
 		}))
 	}
 
-	const handleClick = (index) => {
+	const handleClick = (index, info) => {
 		setModal(() => !showModal)
 
-		if (index !== undefined) {
+		if (info === "courses") {
+			return updateTitle(coursesData[index].title, coursesData[index].titleUrl)
+		}
+
+		if (typeof index === "number") {
 			updateTitle(titleData[index].title, titleData[index].titleUrl)
+		} else {
+			updateTitle("", "")
 		}
 	}
 
@@ -66,9 +73,34 @@ const Titles = () => {
 					titleDate={item.titleDate}
 					description={item.description}
 					titleOfficialSite={item.titleOfficialSite}
+					schoolImg={item.schoolImg}
 					key={item.title}
 					onClick={() => handleClick(i)}
 				/>
+			)
+		})
+	}
+
+	const RenderCourses = () => {
+		return coursesData.map((course, courseIndx) => {
+			return (
+				<article key={course.title} className="card">
+					<div>
+						<img
+							className="courses_imgs"
+							src={`/schools/${course.schoolImg}`}
+							alt="ok"
+						/>
+						<h4>
+							<span>{course.title}</span>
+							<span>{course.year}</span>
+						</h4>
+					</div>
+
+					<button onClick={() => handleClick(courseIndx, "courses")}>
+						Show Title
+					</button>
+				</article>
 			)
 		})
 	}
@@ -84,7 +116,10 @@ const Titles = () => {
 					titleUrl={modalContent.titleUrl}
 				/>
 			</Modal>
-			<h3>Other courses</h3>
+			<article className="titlesSection__courses">
+				<h3>Other courses</h3>
+				<RenderCourses />
+			</article>
 		</section>
 	)
 }
