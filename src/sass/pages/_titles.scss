@@ -1,5 +1,7 @@
 .titlesSection {
 	padding: $base-padding;
+	max-width: $screen-max-width;
+	margin: auto;
 
 	.titlesSection_level {
 		color: $font-clr-alt !important;
@@ -77,6 +79,11 @@
 			font-weight: bold;
 			cursor: pointer;
 		}
+
+		@include respond-to("medium") {
+			border-bottom: none;
+			margin-bottom: $base-margin * 1.5;
+		}
 	}
 
 	.titlesSection__courses {
@@ -85,11 +92,37 @@
 			margin-left: 0.7em;
 			display: flex;
 			align-items: center;
+			width: 100%;
 		}
 		span:first-child {
 			color: #ededed;
 			width: 100%;
 			font-family: $secondary-font;
+			min-width: 170px;
+			text-align: left;
+			font-weight: 200;
+			font-size: $sm-font-size;
+		}
+
+		.course_year {
+			max-width: 40px;
+			width: 100%;
+			font-size: $sm-font-size;
+		}
+
+		@include respond-to("medium") {
+			h4 {
+				padding-left: 1em;
+				padding-right: 1em;
+				width: 100%;
+			}
+			span:first-child {
+				font-size: $base-font-size;
+			}
+
+			.course_year {
+				font-size: $base-font-size;
+			}
 		}
 	}
 
@@ -101,5 +134,9 @@
 		// position: absolute;
 		// top: 50%;
 		// transform: translateY(-50%);
+		@include respond-to("medium") {
+			width: 60px;
+			height: 60px;
+		}
 	}
 }

@@ -1,5 +1,7 @@
 .home {
 	padding: $base-padding;
+	max-width: $screen-max-width;
+	margin: auto;
 
 	h2:not(h2:first-child) {
 		display: none;

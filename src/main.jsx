@@ -15,6 +15,8 @@ import Technos from "./pages/Technos"
 import Home from "./pages/Home"
 import Experience from "./pages/Experience"
 import Titles from "./pages/Titles"
+import Projects from "./pages/Projects"
+import Contact from "./pages/Contact"
 
 import "./sass/main.scss"
 
@@ -25,6 +27,8 @@ const router = createBrowserRouter(
 			<Route path="technos" element={<Technos />} />
 			<Route path="experience" element={<Experience />} />
 			<Route path="titles" element={<Titles />} />
+			<Route path="projects" element={<Projects />} />
+			<Route path="contact" element={<Contact />} />
 			<Route path="*" element={<ErrorPage />} />
 		</Route>
 	)

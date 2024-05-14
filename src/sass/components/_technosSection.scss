@@ -1,5 +1,8 @@
 .technosSection {
 	padding: $base-padding;
+	max-width: $screen-max-width;
+	margin: auto;
+
 	h2 {
 		font-size: 36px;
 		font-family: $primary-font;

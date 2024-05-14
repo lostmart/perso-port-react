@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react"
 import { useLocation } from "react-router-dom"
 import {
 	Home,
-	User,
-	Sliders,
 	BookOpen,
 	Mail,
 	Briefcase,
@@ -33,8 +31,7 @@ const RenderLinks = () => {
 		{ path: "/technos", text: "Technologies", component: Cpu },
 		{ path: "/experience", text: "Experience", component: Briefcase },
 		{ path: "/titles", text: "Titles", component: BookOpen },
-		{ path: "/skills", text: "Skills", component: Sliders },
-		{ path: "/articles", text: "Articles", component: Archive },
+		{ path: "/projects", text: "Projects", component: Archive },
 		{ path: "/contact", text: "Contact", component: Mail },
 	]
 	return (

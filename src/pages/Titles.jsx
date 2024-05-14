@@ -93,7 +93,7 @@ const Titles = () => {
 						/>
 						<h4>
 							<span>{course.title}</span>
-							<span>{course.year}</span>
+							<span className="course_year">{course.year}</span>
 						</h4>
 					</div>
 

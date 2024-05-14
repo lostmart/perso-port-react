@@ -8,6 +8,7 @@
 	position: relative;
 	justify-content: space-between;
 	z-index: 10;
+	overflow: hidden;
 
 	&__closeBtn {
 		position: absolute;
@@ -35,7 +36,7 @@
 		cursor: pointer;
 		transition: background-color 150ms ease-in-out;
 		padding: $base-padding * 1.2;
-		font-size: .9em;
+		font-size: 0.9em;
 	}
 
 	svg {
@@ -43,7 +44,7 @@
 	}
 
 	.active {
-		background-color:$semi-transparent;
+		background-color: $semi-transparent;
 		svg {
 			stroke: $primary-clr;
 		}
