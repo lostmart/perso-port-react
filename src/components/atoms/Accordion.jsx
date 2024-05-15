@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { useRef, useState } from "react"
 import { ChevronUp } from "react-feather"
 import { ImNewTab } from "react-icons/im"
+import { HiOutlineAcademicCap } from "react-icons/hi2"
 
 const Accordion = ({
 	title,
@@ -32,7 +33,7 @@ const Accordion = ({
 		} else {
 			setActive(!active)
 			// panel.style.maxHeight = panel.scrollHeight + "px"
-			panel.style.maxHeight = "1035px"
+			panel.style.maxHeight = "500vh"
 			panel.style.padding = "18px 16px 12px 16px"
 			arrow.style.rotate = "180deg"
 		}
@@ -42,7 +43,11 @@ const Accordion = ({
 		return (
 			<ul>
 				{areas.map((area) => (
-					<li key={area} dangerouslySetInnerHTML={{ __html: area }}></li>
+					<li
+						className="course_areas"
+						key={area}
+						dangerouslySetInnerHTML={{ __html: area }}
+					></li>
 				))}
 			</ul>
 		)
@@ -69,6 +74,7 @@ const Accordion = ({
 				</h3>
 				<div ref={bodyRef} className="accordion__body">
 					<h4 className="titlesSection_level">
+						{titleLevel ? <HiOutlineAcademicCap /> : ""}
 						{titleLevel ? titleLevel : ""}
 						<span className="accordion__year">{titleDate}</span>
 						<img
