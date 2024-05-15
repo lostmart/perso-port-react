@@ -75,7 +75,7 @@
 			width: 100%;
 			border-radius: 25px;
 			min-width: 286px;
-			font-size: 20px;
+			font-size: $base-font-size;
 			font-weight: bold;
 			cursor: pointer;
 		}
@@ -101,7 +101,7 @@
 			min-width: 170px;
 			text-align: left;
 			font-weight: 200;
-			font-size: $sm-font-size;
+			font-size: $base-font-size;
 		}
 
 		.course_year {
@@ -117,7 +117,7 @@
 				width: 100%;
 			}
 			span:first-child {
-				font-size: $base-font-size;
+				font-size: $sec-title-font-size;
 			}
 
 			.course_year {

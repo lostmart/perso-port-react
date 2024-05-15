@@ -5,7 +5,20 @@ const titleData = [
 		schoolImg: "openclassrooms.jfif",
 		titleDate: "2022 - 2023",
 		description:
-			"JavaScript React developers, also known as front-end developers, are in charge of creating dynamic websites using a programming language. They take care of the front-end part, i.e. the visual side of the site.",
+			'As a certified JavaScript React Application Developer, I have gained comprehensive skills and knowledge through the "Développeur d\'application JavaScript React" course by OpenClassrooms. This rigorous program provided in-depth training and practical experience in the following areas:',
+		areas: [
+			"<strong>Advanced JavaScript:</strong> Mastery of modern JavaScript (ES6+), including concepts like closures, promises, async/await, and modular programming.",
+			"<strong>React Framework:</strong> Proficiency in building dynamic and responsive user interfaces using React, leveraging hooks, state management, context API, and component lifecycle methods.",
+			"<strong>Front-End Development:</strong> Expertise in HTML5, CSS3, and responsive design principles, ensuring optimal user experiences across various devices and screen sizes.",
+			"<strong>API Integration:</strong> Ability to create and consume RESTful APIs, manage data fetching, and handle asynchronous operations efficiently.",
+			"<strong>Version Control:</strong> Skilled in using Git for version control, enabling effective collaboration and code management.",
+			"<strong>Project Management:</strong> Experience in agile methodologies, including task management, sprint planning, and collaborative development using tools like JIRA and Trello.",
+			"<strong>Testing and Debugging:</strong> Competence in writing unit and integration tests using testing libraries such as Jest and React Testing Library, ensuring robust and reliable applications.",
+			"<strong>Deployment and Maintenance: Knowledge of deploying React applications using CI/CD pipelines, and maintaining applications through updates and bug fixes.</strong>",
+			"<strong>Soft Skills:</strong> Enhanced problem-solving abilities, effective communication skills, and experience working in both individual and team settings.",
+		],
+		conclusion:
+			"Through hands-on projects and real-world scenarios, I have developed a strong foundation in JavaScript and React, equipping me to contribute effectively to modern web development projects.",
 		titleUrl:
 			"https://raw.githubusercontent.com/lostmart/perso-port-react/main/src/assets/imgs/titre-developpeur-logiciel.jpg",
 	},
@@ -14,7 +27,11 @@ const titleData = [
 		titleDate: "2016 - 2017",
 		schoolImg: "michigan.jfif",
 		description:
-			"The capstone will develop a professional-quality web portfolio.  Students will demonstrate the ability to design and implement a responsive site for a minimum of three platforms.  Adherence to validation and accessibility standards will be required",
+			'As a certified Web Design Project Specialist, I have successfully completed the "Web Design for Everybody Capstone" course on Coursera, which provided comprehensive training and hands-on experience in web design and development. This course has equipped me with the following skills and knowledge:',
+		areas: [
+			"<strong>HTML & CSS Proficiency:</strong> Advanced knowledge of HTML5 and CSS3, including semantic markup, responsive design, and CSS grid and flexbox layouts.",
+			"<strong>JavaScript Basics:</strong> Understanding of JavaScript fundamentals, enabling the creation of interactive and dynamic web pages.",
+		],
 		titleUrl:
 			"https://martin-site.netlify.app/imgs/certificates/web-design-michigan.jpg",
 		titleOfficialSite:

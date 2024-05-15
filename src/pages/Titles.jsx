@@ -75,6 +75,8 @@ const Titles = () => {
 					titleOfficialSite={item.titleOfficialSite}
 					schoolImg={item.schoolImg}
 					key={item.title}
+					areas={item.areas}
+					conclusion={item.conclusion}
 					onClick={() => handleClick(i)}
 				/>
 			)

@@ -12,6 +12,8 @@
 
 	ul {
 		padding: $base-padding;
+		max-width: 800px;
+		margin: auto;
 	}
 
 	li {
@@ -28,5 +30,20 @@
 		font-weight: 200;
 		margin-left: $base-margin;
 		font-size: $base-font-size;
+	}
+	@include respond-to("medium") {
+		span {
+			font-size: $sec-title-font-size * 1.4;
+		}
+
+		.technosSection__item {
+			font-size: $sec-title-font-size;
+		}
+		ul {
+			margin: $base-margin;
+		}
+		li {
+			margin: $base-margin;
+		}
 	}
 }

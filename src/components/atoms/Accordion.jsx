@@ -12,6 +12,8 @@ const Accordion = ({
 	onClick,
 	titleOfficialSite,
 	schoolImg,
+	areas,
+	conclusion,
 }) => {
 	const bodyRef = useRef(null)
 	const arrowRef = useRef(null)
@@ -30,10 +32,20 @@ const Accordion = ({
 		} else {
 			setActive(!active)
 			// panel.style.maxHeight = panel.scrollHeight + "px"
-			panel.style.maxHeight = "420px"
+			panel.style.maxHeight = "1035px"
 			panel.style.padding = "18px 16px 12px 16px"
 			arrow.style.rotate = "180deg"
 		}
+	}
+
+	const RenderAreas = () => {
+		return (
+			<ul>
+				{areas.map((area) => (
+					<li key={area} dangerouslySetInnerHTML={{ __html: area }}></li>
+				))}
+			</ul>
+		)
 	}
 
 	return (
@@ -66,6 +78,8 @@ const Accordion = ({
 						/>
 					</h4>
 					<p className="accordion__content">{description}</p>
+					{areas && <RenderAreas />}
+					<p>{conclusion}</p>
 					<button onClick={onClick} className="card__btn">
 						Show me the title
 					</button>
