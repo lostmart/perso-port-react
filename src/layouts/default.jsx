@@ -13,7 +13,7 @@ const Root = () => {
 		<div className="container">
 			<LightBox lightBoxCss={mainLight} />
 			<LightBox lightBoxCss={secLight} />
-			<header>
+			<header className="header">
 				<NavBar />
 			</header>
 			<main>

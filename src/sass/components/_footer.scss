@@ -12,9 +12,10 @@ footer {
 
 	@include respond-to("medium") {
 		display: block;
+		padding: $base-padding;
 	}
 
-	@include respond-to("large") {
-		padding: $base-padding * 2.5;
-	}
+	// @include respond-to("large") {
+	// 	padding: $base-padding * 2.5;
+	// }
 }

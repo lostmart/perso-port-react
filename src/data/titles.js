@@ -31,7 +31,17 @@ const titleData = [
 		areas: [
 			"<strong>HTML & CSS Proficiency:</strong> Advanced knowledge of HTML5 and CSS3, including semantic markup, responsive design, and CSS grid and flexbox layouts.",
 			"<strong>JavaScript Basics:</strong> Understanding of JavaScript fundamentals, enabling the creation of interactive and dynamic web pages.",
+			"<strong>Web Design Principles:</strong> In-depth knowledge of design principles such as color theory, typography, layout, and user experience (UX) best practices.",
+			"<strong>Responsive Design:</strong> Expertise in creating websites that are optimized for various devices and screen sizes, ensuring a seamless user experience across desktops, tablets, and mobile devices.",
+			"<strong>Project Planning & Management:</strong> Skills in planning, organizing, and managing web design projects from concept to completion, including requirement gathering, wireframing, prototyping, and user testing.",
+			"<strong>Tools & Technologies:</strong> Experience with industry-standard tools such as Adobe XD, Figma, or Sketch for wireframing and prototyping, as well as using version control systems like Git.",
+			"<strong>Cross-Browser Compatibility:</strong> Ensuring websites are functional and consistent across different browsers and platforms.",
+			"<strong>SEO Fundamentals:</strong> Understanding of basic search engine optimization techniques to improve website visibility and ranking.",
+			"<strong>Accessibility:</strong> Knowledge of web accessibility standards (WCAG) to create inclusive web designs that cater to users with disabilities.",
+			"<strong>Soft Skills:</strong> Enhanced problem-solving abilities, effective communication skills, and experience in both individual and collaborative project environments.",
 		],
+		conclusion:
+			"This capstone project allowed me to apply theoretical knowledge in practical scenarios, building a complete, functional website from scratch, and honing my ability to deliver high-quality, user-friendly web designs.",
 		titleUrl:
 			"https://martin-site.netlify.app/imgs/certificates/web-design-michigan.jpg",
 		titleOfficialSite:
