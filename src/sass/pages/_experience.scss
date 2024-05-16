@@ -2,4 +2,64 @@
 	padding: $base-padding;
 	max-width: $screen-max-width;
 	margin: auto;
+
+	span {
+		display: inline;
+		width: 100%;
+		font-family: $secondary-font;
+		font-weight: 200;
+	}
+
+	.card {
+		width: 100%;
+		max-width: 700px;
+		padding: $base-padding * 2;
+		margin-bottom: $base-margin * 2;
+
+		.card_title {
+			display: inline;
+			color: $font-clr-alt;
+			font-size: $sm-font-size;
+			margin-left: $base-margin * 0.5;
+		}
+
+		a {
+			color: $primary-clr;
+		}
+
+		ul {
+			margin: $base-margin;
+
+			span {
+				color: $font-clr-grey;
+			}
+		}
+
+		li {
+			margin-top: $base-margin;
+		}
+
+		.card_detail {
+			font-family: $primary-font;
+			font-weight: 700;
+			font-size: 1.1em;
+			margin-right: 0.5em;
+			color: $font-clr;
+		}
+
+		.card_date {
+			font-family: $secondary-font;
+			display: inline-block;
+			color: $font-clr-alt;
+			font-size: $sm-font-size;
+			padding-left: $base-padding;
+			padding-top: $base-margin * 0.5;
+			width: 100%;
+			text-align: left;
+		}
+
+		p {
+			margin-top: $base-margin;
+		}
+	}
 }
