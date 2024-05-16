@@ -30,6 +30,9 @@ const Card = (props) => {
 			<a href="mailto:codeme.martin@gmail.com" className="card__btn">
 				<Mail color="#090d12" /> Contact Me
 			</a>
+			<a href="#" className="card__btn card__btn-alt">
+				<Mail /> CV
+			</a>
 		</article>
 	)
 }
