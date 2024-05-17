@@ -18,6 +18,13 @@ const Home = () => {
 				subTitle="FullStack Web Developer"
 				cardBody={RenderBody}
 			/>
+			<article className="home__self_intro">
+				<p>
+					Hey there ! My name is Martin and I am a FullStack web developer with
+					a vast experience in teaching / mentoring technology and developing
+					web apps
+				</p>
+			</article>
 			<h2>
 				<span>H</span>ome
 			</h2>

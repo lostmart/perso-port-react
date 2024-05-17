@@ -87,6 +87,27 @@ const Technos = () => {
 	return (
 		<section className="technosSection">
 			<h2 className="page_title">
+				<span>A</span>bout
+			</h2>
+			<article className="techno__about">
+				<p>
+					I am a passionate and dedicated Full Stack Web Developer with over a
+					decade of experience in creating robust and dynamic web applications.
+					I have a strong foundation in both front-end and back-end development,
+					with expertise in a wide range of technologies and frameworks. My
+					journey in web development has been marked by a continuous pursuit of
+					knowledge and a commitment to delivering high-quality, scalable
+					solutions.
+				</p>
+				<p>
+					I thrive on solving complex problems, collaborating with diverse
+					teams, and mentoring the next generation of developers. My teaching
+					and mentoring roles have sharpened my ability to communicate technical
+					concepts clearly and effectively, while my freelance projects have
+					honed my skills in client management and project delivery.
+				</p>
+			</article>
+			<h2 className="page_title">
 				<span>T</span>echnical <span>S</span>kills
 			</h2>
 			<SwiperComp children={imagesArray} />

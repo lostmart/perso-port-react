@@ -7,9 +7,25 @@
 		display: none;
 	}
 
+	.home__self_intro {
+		padding-top: 0;
+		line-height: 1.9;
+		font-size: 0.9em !important;
+		width: 100%;
+		line-height: 1.9;
+		font-size: 0.9em !important;
+		text-align: center;
+	}
+
 	@include respond-to("medium") {
 		display: flex;
 		padding: $base-padding * 2;
+
+		.home__self_intro {
+			padding-right: 59px;
+			padding-top: 5em;
+			width: 50%;
+		}
 
 		h2 span {
 			font-size: 1.2em;
