@@ -26,12 +26,12 @@
 
 	.techno__about {
 		padding-top: 0;
-		font-size: 0.9em !important;
 		width: 100%;
-		line-height: 1.5;
-		/* padding-right: 59px; */
-		font-size: 0.9em !important;
+		line-height: 1.4;
 		text-align: center;
+		font-size: 1em !important;
+		max-width: 700px;
+		margin: auto;
 	}
 
 	.technosSection__item {
@@ -42,6 +42,10 @@
 		font-size: $base-font-size;
 	}
 	@include respond-to("medium") {
+		.techno__about {
+			font-size: 1.2em !important;
+			line-height: 1.6;
+		}
 		span {
 			font-size: $sec-title-font-size * 1.1;
 		}

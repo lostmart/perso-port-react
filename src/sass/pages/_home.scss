@@ -8,22 +8,22 @@
 	}
 
 	.home__self_intro {
-		padding-top: 0;
-		line-height: 1.9;
-		font-size: 0.9em !important;
 		width: 100%;
-		line-height: 1.9;
-		font-size: 0.9em !important;
+		line-height: 2.5;
+		font-size: 1.2em !important;
 		text-align: center;
+		height: auto;
+		display: flex;
+		align-items: center;
+		padding: $base-padding;
 	}
 
 	@include respond-to("medium") {
 		display: flex;
+		gap: $base-margin;
 		padding: $base-padding * 2;
 
 		.home__self_intro {
-			padding-right: 59px;
-			padding-top: 5em;
 			width: 50%;
 		}
 
@@ -33,7 +33,8 @@
 		}
 
 		.card {
-			margin: 5% auto;
+			max-width: 350px;
+			margin: 5% 0;
 		}
 	}
 
