@@ -30,6 +30,24 @@ const experienceData = [
 		conclusion:
 			"Through my role at OpenClassrooms.com, I have had the privilege of guiding and shaping the careers of aspiring web developers across various countries. My commitment to fostering a supportive and enriching learning environment has been instrumental in helping students achieve their professional goals.",
 	},
+	{
+		institute: ["Freelance", "France"],
+		title: "Full-stack Web Developer",
+		date: "September 2016 - Present",
+		link: "",
+		areas: [
+			"<span class='card_detail'>End-to-End Website Development:</span><span>Handle the entire website development process from conception to deployment; Utilize both LAMP (Linux, Apache, MySQL, PHP) and MERN (MongoDB, Express.js, React, Node.js) stacks to create dynamic and responsive web applications</span>",
+			"<span class='card_detail'>Front-End Development:</span><span>Develop intuitive and user-friendly front-end interfaces using HTML, CSS, JavaScript, and frameworks like React and Vue.js; Ensure seamless integration with back-end services through RESTful APIs</span>",
+			"<span class='card_detail'>Back-End Development:</span><span>Build robust and scalable back-end systems using Node.js, PHP, and Python; Design and implement databases with MySQL and MongoDB to manage and store data efficiently.</span>",
+			"<span class='card_detail'>Client Management:</span><span>Maintain open and effective communication with clients to manage expectations and ensure project alignment, Negotiate project scope, timelines, and budgets to meet client requirements while adhering to industry standards, Provide regular updates and deliverables to clients, incorporating feedback to refine and improve the final product</span>",
+			"<span class='card_detail'>Deadline Adherence:</span><span>Demonstrate strong time management skills by consistently delivering projects on time; Prioritize tasks effectively to meet tight deadlines without compromising on quality.</span>",
+			"<span class='card_detail'>Client Management:</span><span>Maintain open and effective communication with clients to manage expectations and ensure project alignment, Negotiate project scope, timelines, and budgets to meet client requirements while adhering to industry standards, Provide regular updates and deliverables to clients, incorporating feedback to refine and improve the final product</span>",
+			"<span class='card_detail'>Quality Assurance:</span><span>Conduct thorough testing and debugging to ensure high-quality, bug-free applications; Implement best practices for code maintenance, version control, and documentation; Utilize unit testing and continuous integration tools to maintain code quality and reliability.</span>",
+			"<span class='card_detail'>Continuous Learning and Adaptation:</span><span>Stay updated with the latest web development trends, technologies, and best practices; Adapt to new tools and frameworks quickly to meet the evolving needs of clients and the industry; Participate in professional development opportunities and contribute to open-source projects to enhance skills and knowledge.</span>",
+		],
+		conclusion:
+			"Working as a freelance, I have built a reputation for delivering high-quality web solutions that meet client needs and exceed expectations. My ability to negotiate effectively, respect deadlines, and manage client relationships has been key to my success in this role.",
+	},
 ]
 
 export default experienceData
