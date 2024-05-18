@@ -7,15 +7,42 @@
 		display: none;
 	}
 
-	.home__self_intro {
+	&__self_intro {
 		width: 100%;
-		line-height: 2.5;
-		font-size: 1.2em !important;
+		line-height: 1.5;
+		font-size: 1em !important;
 		text-align: center;
 		height: auto;
 		display: flex;
 		align-items: center;
-		padding: $base-padding;
+		padding: 0;
+		p {
+			margin: $base-margin 0;
+		}
+	}
+	&__self_intro-desktop {
+		display: none;
+	}
+
+	.card__body {
+		padding: $base-padding 0;
+	}
+
+	.card__social {
+		margin-top: $base-margin;
+		margin-bottom: $base-margin;
+	}
+
+	.contact_info:last-child {
+		font-family: $secondary-font;
+		font-weight: 200;
+	}
+
+	.contact_info {
+		margin-top: $base-margin;
+		text-align: center;
+		font-size: $sm-font-size;
+		color: $font-clr-grey;
 	}
 
 	@include respond-to("medium") {
@@ -23,8 +50,19 @@
 		gap: $base-margin;
 		padding: $base-padding * 2;
 
-		.home__self_intro {
+		&__self_intro {
 			width: 50%;
+			font-size: 1.2em !important;
+			padding: $base-padding;
+			line-height: 2.5;
+		}
+
+		&__self_intro-desktop {
+			display: flex;
+		}
+
+		&__self_intro-mobile {
+			display: none;
 		}
 
 		h2 span {
@@ -34,7 +72,7 @@
 
 		.card {
 			max-width: 350px;
-			margin: 5% 0;
+			margin: 0;
 		}
 	}
 

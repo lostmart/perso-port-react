@@ -12,8 +12,14 @@ import CardBody from "./atoms/CardBody"
 const RenderBody = () => {
 	return (
 		<>
-			<p>codeme.martin@gmail.com</p>
-			<p>Based in Yvelines, France</p>
+			<article className="home__self_intro home__self_intro-mobile">
+				<p>
+					Hey there! I'm Martin, a FullStack web developer with extensive
+					experience in teaching, mentoring, and developing web applications. I
+					love helping others navigate the tech world and creating dynamic,
+					user-friendly web solutions. Welcome to my portfolio!
+				</p>
+			</article>
 		</>
 	)
 }
@@ -26,13 +32,17 @@ const Card = (props) => {
 			<CardImg imgUrl={portImg} imgAlt={`${cardTitle} ${subTitle}`} />
 
 			<CardBody CardBody={RenderBody} />
-			<SocialCont />
-			<a href="mailto:codeme.martin@gmail.com" className="card__btn">
-				<Mail color="#090d12" /> Contact Me
-			</a>
 			<a href="#" className="card__btn card__btn-alt">
 				<Mail /> CV
 			</a>
+
+			<a href="mailto:codeme.martin@gmail.com" className="card__btn">
+				<Mail color="#090d12" /> Contact Me
+			</a>
+
+			<SocialCont />
+			<p className="contact_info">Based in Yvelines, France</p>
+			<p className="contact_info">codeme.martin@gmail.com</p>
 		</article>
 	)
 }

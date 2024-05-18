@@ -18,7 +18,7 @@ const Home = () => {
 				subTitle="FullStack Web Developer"
 				cardBody={RenderBody}
 			/>
-			<article className="home__self_intro">
+			<article className="home__self_intro home__self_intro-desktop">
 				<p>
 					Hey there! I'm Martin, a FullStack web developer with extensive
 					experience in teaching, mentoring, and developing web applications. I
