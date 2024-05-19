@@ -3,7 +3,7 @@ const experienceData = [
 		institute: ["ENSEA", "France"],
 		title: "Full-stack web development instructor",
 		date: "September 2023 - Present",
-		link: "",
+		link: "https://www.ensea.fr/fr",
 		areas: [
 			"<span class='card_detail'>Project Creation and Demonstration:</span><span>Design and implement comprehensive projects to showcase the advantages and practical applications of working with REST APIs, demonstrating real-world scenarios and solutions.</span>",
 			"<span class='card_detail'>Promotion of Self-Learning:</span><span>Encourage and guide students in adopting self-learning techniques and best practices, fostering independent problem-solving skills and continuous personal development.</span>",
@@ -19,7 +19,7 @@ const experienceData = [
 		institute: ["OpenClassrooms.com", "France, UK, USA"],
 		title: "Full-stack web development instructor",
 		date: "September 2021 - Present",
-		link: "",
+		link: "https://openclassrooms.com/",
 		areas: [
 			"<span class='card_detail'>Encourage Best Practices</span><span>Advocate for and instill the adoption of industry-standard best practices among students and junior developers; Provide comprehensive reviews and constructive feedback on code quality, design patterns, and overall project structure</span>",
 			"<span class='card_detail'>Facilitate and Promote Self-Learning</span><span>Empower students to develop self-learning techniques and strategies for continuous improvement; Guide learners through personalized learning paths, helping them set and achieve their individual goals</span>",
@@ -34,7 +34,7 @@ const experienceData = [
 		institute: ["Freelance", "France"],
 		title: "Full-stack Web Developer",
 		date: "September 2016 - Present",
-		link: "",
+		link: "https://www.linkedin.com/in/martin-pedraza-dev/",
 		areas: [
 			"<span class='card_detail'>End-to-End Website Development:</span><span>Handle the entire website development process from conception to deployment; Utilize both LAMP (Linux, Apache, MySQL, PHP) and MERN (MongoDB, Express.js, React, Node.js) stacks to create dynamic and responsive web applications</span>",
 			"<span class='card_detail'>Front-End Development:</span><span>Develop intuitive and user-friendly front-end interfaces using HTML, CSS, JavaScript, and frameworks like React and Vue.js; Ensure seamless integration with back-end services through RESTful APIs</span>",
@@ -49,10 +49,10 @@ const experienceData = [
 			"Working as a freelance, I have built a reputation for delivering high-quality web solutions that meet client needs and exceed expectations. My ability to negotiate effectively, respect deadlines, and manage client relationships has been key to my success in this role.",
 	},
 	{
-		institute: ["Freelance", "France"],
-		title: "Full-stack Web Developer",
+		institute: ["MagicMakers", "France"],
+		title: "IT Tutor",
 		date: "September 2016 - Present",
-		link: "",
+		link: "https://www.magicmakers.fr/",
 		areas: [
 			"<span>Instructed children and teenagers in web technologies, robotics, basic web development, and game development.</span>",
 			"<span>Utilized a variety of educational tools including Scratch, Construct, Unity, Minecraft Education, and Python Django.</span>",
@@ -61,6 +61,31 @@ const experienceData = [
 		],
 		conclusion:
 			"Working as an IT tutor helped me develop strong teaching and communication skills, while fostering a passion for technology and problem-solving in young learners",
+	},
+	{
+		institute: ["PARIS ATS", "France"],
+		title: "Web Administrator",
+		date: "Jan  2013 - 2019",
+		link: "https://www.parisatshuttle.com/",
+		areas: [
+			"<span class='card_detail'>Website Maintenance & Technical Support:</span><span>Managed and maintained multiple websites for an airport shuttle company, ensuring optimal performance and user experience.</span>",
+			"<span class='card_detail'>SEO Optimization:</span><span>Implemented SEO strategies to improve search engine rankings and increase organic traffic across various company websites.</span>",
+			"<span class='card_detail'>Reservation & Email Management:</span><span>Oversaw the online reservation system, ensuring seamless booking experiences for customers, and managed email communications.</span>",
+			"<span class='card_detail'>Salesforce Integration & Email Campaigns:</span><span>Utilized Salesforce to manage customer relationships and executed targeted email campaigns to enhance customer engagement and retention.</span>",
+		],
+		conclusion:
+			"This position enhanced my understanding of the marketing aspects of website management, including administrative tasks and content creation. Developed skills in crafting engaging content, executing effective marketing strategies, and ensuring smooth administrative operations.",
+	},
+	{
+		institute: ["Bilingual School of Paris", "France"],
+		title: "English / IT instructor",
+		date: "Jul 2010 - 2013",
+		link: "http://petiteecolebilingue.free.fr/site/index_en.php",
+		areas: [
+			"<span>Introduce the students in the use of design and production tools</span>",
+			"<span>Basic script writing</span>",
+			"<span>English teaching as a foreign language</span>",
+		],
 	},
 ]
 
