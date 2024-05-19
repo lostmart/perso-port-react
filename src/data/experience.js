@@ -48,6 +48,20 @@ const experienceData = [
 		conclusion:
 			"Working as a freelance, I have built a reputation for delivering high-quality web solutions that meet client needs and exceed expectations. My ability to negotiate effectively, respect deadlines, and manage client relationships has been key to my success in this role.",
 	},
+	{
+		institute: ["Freelance", "France"],
+		title: "Full-stack Web Developer",
+		date: "September 2016 - Present",
+		link: "",
+		areas: [
+			"<span>Instructed children and teenagers in web technologies, robotics, basic web development, and game development.</span>",
+			"<span>Utilized a variety of educational tools including Scratch, Construct, Unity, Minecraft Education, and Python Django.</span>",
+			"<span>Introduced students to the concepts of algorithms and logical thinking through online tools.</span>",
+			"<span>Fostered a passion for technology and problem-solving in young learners, equipping them with essential skills for future educational and career opportunities.</span>",
+		],
+		conclusion:
+			"Working as an IT tutor helped me develop strong teaching and communication skills, while fostering a passion for technology and problem-solving in young learners",
+	},
 ]
 
 export default experienceData
