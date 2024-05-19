@@ -47,6 +47,8 @@
 
 	@include respond-to("medium") {
 		display: flex;
+		height: 90dvh;
+		align-items: center;
 		gap: $base-margin;
 		padding: $base-padding * 2;
 

@@ -10,6 +10,7 @@
 	z-index: 1000;
 	overflow: hidden;
 	pointer-events: all;
+	max-width: 700px;
 
 	&__closeBtn {
 		position: absolute;
@@ -32,12 +33,15 @@
 	}
 	a {
 		display: flex;
+		justify-content: center;
 		align-items: center;
 		text-decoration: none;
 		cursor: pointer;
 		transition: background-color 150ms ease-in-out;
 		padding: $base-padding * 1.2;
 		font-size: 0.9em;
+		width: 100%;
+		max-width: 80px;
 	}
 
 	svg {
