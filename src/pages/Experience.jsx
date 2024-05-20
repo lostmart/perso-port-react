@@ -8,7 +8,7 @@ const Experience = () => {
 				<article key={exp.title} className="card">
 					<div>
 						<h4>
-							<a target="_blank" href="https://www.ensea.fr/fr">
+							<a target="_blank" href={exp.link}>
 								{exp.institute[0]}
 							</a>
 							, {exp.institute[1]} —
