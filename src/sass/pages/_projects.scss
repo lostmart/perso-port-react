@@ -1,0 +1,31 @@
+.projects {
+	h3 {
+		font-size: $sec-title-font-size;
+		margin-bottom: $base-margin;
+		margin-top: $base-margin;
+		color: $primary-clr;
+	}
+	.card {
+		max-width: 700px;
+		margin: auto;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: $base-margin * 2;
+	}
+
+	.card__technologies {
+		display: flex;
+		justify-content: space-between;
+		padding: $base-padding;
+		flex-wrap: wrap;
+
+		span {
+			text-align: center;
+			background-color: $primary-clr;
+			width: fit-content;
+			min-width: unset;
+		}
+	}
+}
