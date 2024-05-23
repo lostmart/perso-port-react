@@ -1,4 +1,10 @@
 .projects {
+	h3 {
+		font-size: $sec-title-font-size;
+		margin-bottom: $base-margin;
+		margin-top: $base-margin;
+		color: $primary-clr;
+	}
 	.card {
 		max-width: 700px;
 		margin: auto;
