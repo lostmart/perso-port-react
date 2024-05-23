@@ -15,7 +15,11 @@ const Projects = () => {
 						<p>{project.description}</p>
 						<div className="card__technologies">
 							{project.tags.map((tag) => {
-								return <span key={tag}> {tag} </span>
+								return (
+									<span className="card__btn" key={tag}>
+										{tag}
+									</span>
+								)
 							})}
 						</div>
 					</div>
