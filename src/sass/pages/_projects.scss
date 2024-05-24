@@ -6,7 +6,7 @@
 		color: $primary-clr;
 	}
 	.card {
-		max-width: 700px;
+		max-width: $inner-screen-width;
 		margin: auto;
 		position: relative;
 		display: flex;
@@ -26,6 +26,18 @@
 			background-color: $primary-clr;
 			width: fit-content;
 			min-width: unset;
+			padding: 0.6em 0.7em;
+			font-size: 12px;
+			min-width: 52px;
+		}
+	}
+
+	@include respond-to("medium") {
+		.card__technologies {
+			span {
+				padding: $base-padding 2em;
+				font-size: $base-font-size;
+			}
 		}
 	}
 }

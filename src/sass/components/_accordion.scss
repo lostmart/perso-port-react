@@ -1,6 +1,6 @@
 .accordion {
 	width: 100%;
-	max-width: 700px;
+	max-width: $inner-screen-width;
 	margin: auto;
 
 	& &__button {

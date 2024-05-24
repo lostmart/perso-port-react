@@ -10,7 +10,7 @@
 	z-index: 1000;
 	overflow: hidden;
 	pointer-events: all;
-	max-width: 700px;
+	max-width: $inner-screen-width;
 
 	&__closeBtn {
 		position: absolute;

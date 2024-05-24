@@ -1,16 +1,16 @@
 import React from "react"
 import projectsData from "../data/projects"
 
+import SwiperCube from "../components/SwiperCube"
+
 const Projects = () => {
 	const ProjectsRender = () => {
 		return projectsData.map((project) => {
 			return (
 				<article key={project.projectName} className="card">
 					<h3>{project.projectName}</h3>
-					<img
-						src="https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-						alt=""
-					/>
+					<SwiperCube />
+
 					<div className="card__body">
 						<p>{project.description}</p>
 						<div className="card__technologies">
@@ -34,6 +34,7 @@ const Projects = () => {
 			</h2>
 			<div>
 				<ProjectsRender />
+				<SwiperCube />
 			</div>
 		</section>
 	)

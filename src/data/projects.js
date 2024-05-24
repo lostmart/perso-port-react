@@ -2,7 +2,7 @@ const projectsData = [
 	{
 		projectName: "REST API with Node.js",
 		githubLink: "https://github.com/lostmart/rest-api-Node-js",
-		tags: ["rest API", "backend", "nodeJs", "javascript"],
+		tags: ["rest API", "backend", "nodeJs", "javascript", "mongoDB"],
 		description:
 			"This project contains a Python application that implements a REST API using Flask and Flask-RESTful. It allows you to perform various CRUD (Create, Read, Update, Delete) operations on resources using HTTP requests. The application also uses the requests library to interact with external APIs.",
 		deploy: "https://main--zesty-moonbeam-928dd0.netlify.app/",
