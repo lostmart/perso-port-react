@@ -32,6 +32,29 @@
 		}
 	}
 
+	.swiper-slide-active {
+		figcaption {
+			transform: translateY(10px);
+		}
+	}
+
+	figure {
+		position: relative;
+		overflow-y: hidden;
+
+		figcaption {
+			position: absolute;
+			bottom: 1em;
+			left: 1em;
+			padding: 1em;
+			background-color: rgb(219 219 219 / 8%);
+			backdrop-filter: blur(4px);
+			width: calc(100% - 2em);
+			transition: transform 450ms ease-in-out;
+			transform: translateY(200px);
+		}
+	}
+
 	@include respond-to("medium") {
 		.card__technologies {
 			span {

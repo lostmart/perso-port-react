@@ -9,7 +9,7 @@ const Projects = () => {
 			return (
 				<article key={project.projectName} className="card">
 					<h3>{project.projectName}</h3>
-					<SwiperCube />
+					<SwiperCube details={project.details} />
 
 					<div className="card__body">
 						<p>{project.description}</p>
@@ -34,7 +34,6 @@ const Projects = () => {
 			</h2>
 			<div>
 				<ProjectsRender />
-				<SwiperCube />
 			</div>
 		</section>
 	)
