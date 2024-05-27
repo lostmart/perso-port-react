@@ -92,4 +92,10 @@
 		padding: $base-padding;
 		border-radius: 5px;
 	}
+
+	@include respond-to("medium") {
+		& &__button {
+			padding: 1.65em 1.6em;
+		}
+	}
 }
