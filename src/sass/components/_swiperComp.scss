@@ -1,6 +1,67 @@
 .swiper {
 	margin-bottom: $base-padding;
-	.swiper-slide {
-		opacity: 0.7;
+	// .swiper-slide {
+	// 	opacity: 0.7;
+	// }
+
+	.btn-container {
+		position: absolute;
+		top: 20px;
+		left: 1em;
+		background-color: transparent;
+		border: none;
+		padding: 0.3em 0.5em;
+		color: $prim-bg;
+		font-weight: bold;
+		transform-origin: 27px 96px;
+		border-radius: 2px;
 	}
+}
+
+@keyframes headShake {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+
+	6.5% {
+		-webkit-transform: rotate(-9deg);
+		transform: rotate(-9deg);
+	}
+
+	18.5% {
+		-webkit-transform: rotate(7deg);
+		transform: rotate(7deg);
+	}
+
+	31.5% {
+		-webkit-transform: rotate(-5deg);
+		transform: rotate(-5deg);
+		background-color: $primary-clr;
+	}
+
+	43.5% {
+		-webkit-transform: rotate(3deg);
+		transform: rotate(3deg);
+	}
+
+	50% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+}
+
+.animate__headShake {
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-name: headShake;
+	animation-name: headShake;
+}
+
+.animate__animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
 }
