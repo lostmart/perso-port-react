@@ -5,21 +5,34 @@ import { MdOutlineSwipeLeft } from "react-icons/md"
 import "swiper/css"
 import "swiper/css/effect-cube"
 
-import { Autoplay, EffectCube } from "swiper/modules"
-import { LogIn } from "react-feather"
-import { useState } from "react"
+import { EffectCube } from "swiper/modules"
+import { useEffect, useState, useRef } from "react"
 
 export default function SwiperCube({ details } = props) {
+	const swiperRef = useRef(null)
+
 	const [showHelp, setShowHelp] = useState(true)
 
-	const handleDrag = () => {
-		setShowHelp(() => {
-			//return false
-		})
+	const [isInitialLoad, setIsInitialLoad] = useState(true)
+
+	useEffect(() => {
+		if (isInitialLoad && swiperRef.current) {
+			const swiper = swiperRef.current.swiper
+			swiper.on("loopFix", () => {
+				setIsInitialLoad(false)
+			})
+		}
+	}, [isInitialLoad])
+
+	const handleSlideChange = () => {
+		if (!isInitialLoad) {
+			setShowHelp(false)
+		}
 	}
 	return (
 		<>
 			<Swiper
+				ref={swiperRef}
 				effect={"cube"}
 				grabCursor={true}
 				loop={true}
@@ -33,8 +46,8 @@ export default function SwiperCube({ details } = props) {
 					shadowOffset: 20,
 					shadowScale: 0.94,
 				}}
-				// onSlideChange={handleDrag}
-				modules={[EffectCube, Autoplay]}
+				modules={[EffectCube]}
+				onSlideChange={handleSlideChange}
 				className="mySwiper"
 			>
 				{details.map((detail, indx) => {
@@ -50,26 +63,11 @@ export default function SwiperCube({ details } = props) {
 								)}
 
 								<img src={`./assests/${detail.imgName}`} alt={detail.legend} />
-								<figcaption>{detail.legend}</figcaption>
+								<figcaption> {detail.legend}</figcaption>
 							</figure>
 						</SwiperSlide>
 					)
 				})}
-				{/* <SwiperSlide>
-					<figure>
-						<img src="./assests/nodejs-01.jpg" alt="123" />
-						<figcaption>this is something i want to say</figcaption>
-					</figure>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src="./assests/nodejs-02.jpg" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src="./assests/nodejs-03.jpg" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src="./assests/nodejs-04.jpg" />
-				</SwiperSlide> */}
 			</Swiper>
 		</>
 	)

@@ -2,6 +2,7 @@ import React from "react"
 import projectsData from "../data/projects"
 
 import SwiperCube from "../components/SwiperCube"
+import { Link } from "react-router-dom"
 
 const Projects = () => {
 	const ProjectsRender = () => {
@@ -13,6 +14,10 @@ const Projects = () => {
 
 					<div className="card__body">
 						<p>{project.description}</p>
+						<div className="card__link">
+							<Link to="/">Read more</Link>
+						</div>
+
 						<div className="card__technologies">
 							{project.tags.map((tag) => {
 								return (

@@ -4,9 +4,13 @@ const projectsData = [
 		githubLink: "https://github.com/lostmart/rest-api-Node-js",
 		tags: ["rest API", "backend", "nodeJs", "javascript", "mongoDB"],
 		description:
-			"This project contains a Python application that implements a REST API using Flask and Flask-RESTful. It allows you to perform various CRUD (Create, Read, Update, Delete) operations on resources using HTTP requests. The application also uses the requests library to interact with external APIs.",
+			"This project includes a Node.js application that implements a REST API using Express.js. It allows you to perform various CRUD (Create, Read, Update, Delete) operations on resources via HTTP requests. The application also uses the Axios library to interact with external APIs.",
 		deploy: "https://main--zesty-moonbeam-928dd0.netlify.app/",
 		details: [
+			{
+				imgName: "nodejs-00.jpg",
+				legend: "Restfull API with Node Js and Express",
+			},
 			{
 				imgName: "nodejs-01.jpg",
 				legend:
