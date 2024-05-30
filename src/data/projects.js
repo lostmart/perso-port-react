@@ -1,5 +1,34 @@
 const projectsData = [
 	{
+		projectName: "University site",
+		githubLink: "https://github.com/lostmart/university-front-react",
+		tags: ["web app", "frontend", "react", "javascript", "vite"],
+		description:
+			"This project contains the frontend code for a university management system built using React. The application provides features for managing students, courses, and other university-related data.",
+		deploy: "https://melodic-mermaid-fce48d.netlify.app/",
+		details: [
+			{
+				imgName: "university-react.jpg",
+				legend:
+					"Mongoose schema in order to define de structure document of each collection in Mongoose",
+			},
+			{
+				imgName: "university-react-01.jpg",
+				legend:
+					"User creation based off the request boady with a hashed password using bycript",
+			},
+			{
+				imgName: "university-react-02.jpg",
+				legend: "Atomic Design Pattern",
+			},
+			{
+				imgName: "nodejs-04.jpg",
+				legend:
+					"Then the user can login using heir credentials and the API will send a token back (JWT)",
+			},
+		],
+	},
+	{
 		projectName: "REST API with Node.js",
 		githubLink: "https://github.com/lostmart/rest-api-Node-js",
 		tags: ["rest API", "backend", "nodeJs", "javascript", "mongoDB"],
@@ -36,7 +65,7 @@ const projectsData = [
 	{
 		projectName: "REST API with Flask-RESTful",
 		githubLink: "https://github.com/lostmart/restfulAPI-python",
-		tags: ["rest API", "backend", "python", "flask", "Swagger UI"],
+		tags: ["rest API", "backend", "python", "flask", "Swagger UI", "sqlite3"],
 		description:
 			"This project contains a Python application that implements a REST API using Flask and Flask-RESTful. It allows you to perform various CRUD (Create, Read, Update, Delete) operations on resources using HTTP requests. The application also uses the requests library to interact with external APIs.",
 		deploy: "https://main--zesty-moonbeam-928dd0.netlify.app/",
@@ -46,19 +75,24 @@ const projectsData = [
 				legend: "Restfull API with Python and Flask",
 			},
 			{
-				imgName: "nodejs-02.jpg",
+				imgName: "rest-flask-01.jpg",
 				legend:
-					"User creation based off the request boady with a hashed password using bycript",
+					"This defines a class called NewUser and includes an __init__ method to initialize objects of this class",
 			},
 			{
-				imgName: "nodejs-03.jpg",
+				imgName: "rest-flask-02.jpg",
 				legend:
-					"When tested in Postman, the API sends a 201 status code, if everything went well",
+					"The reqparse module from flask_restful is used to parse and validate incoming request data in a Flask RESTful API",
 			},
 			{
-				imgName: "nodejs-04.jpg",
+				imgName: "rest-flask-03.jpg",
 				legend:
-					"Then the user can login using heir credentials and the API will send a token back (JWT)",
+					"This connects to a SQLite database, creatating a cursor object, and uses that cursor to execute a SQL command to create a new table called products. ",
+			},
+			{
+				imgName: "rest-flask-04.jpg",
+				legend:
+					"This code snippet defines a User class inheriting from Resource. It's to handle HTTP requests. The post method of this class handles the creation of a new user (sign-up process)",
 			},
 		],
 	},
@@ -69,36 +103,6 @@ const projectsData = [
 		description:
 			"This project is the conversion of an old site that used JQuery jQuery and recreated using React 18.2.0. It alse features a personalized NPM pack for a modal called modal-package-martin-test",
 		deploy: "https://main--zesty-moonbeam-928dd0.netlify.app/",
-		details: [
-			{
-				imgName: "nodejs-01.jpg",
-				legend:
-					"Mongoose schema in order to define de structure document of each collection in Mongoose",
-			},
-			{
-				imgName: "nodejs-02.jpg",
-				legend:
-					"User creation based off the request boady with a hashed password using bycript",
-			},
-			{
-				imgName: "nodejs-03.jpg",
-				legend:
-					"When tested in Postman, the API sends a 201 status code, if everything went well",
-			},
-			{
-				imgName: "nodejs-04.jpg",
-				legend:
-					"Then the user can login using heir credentials and the API will send a token back (JWT)",
-			},
-		],
-	},
-	{
-		projectName: "University site",
-		githubLink: "https://github.com/lostmart/university-front-react",
-		tags: ["web app", "frontend", "react", "javascript", "vite"],
-		description:
-			"This project contains the frontend code for a university management system built using React. The application provides features for managing students, courses, and other university-related data.",
-		deploy: "https://melodic-mermaid-fce48d.netlify.app/",
 		details: [
 			{
 				imgName: "nodejs-01.jpg",

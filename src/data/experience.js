@@ -17,7 +17,7 @@ const experienceData = [
 	},
 	{
 		institute: ["OpenClassrooms.com", "France, UK, USA"],
-		title: "Full-stack web development instructor",
+		title: "Web development instructor",
 		date: "September 2021 - Present",
 		link: "https://openclassrooms.com/",
 		areas: [
