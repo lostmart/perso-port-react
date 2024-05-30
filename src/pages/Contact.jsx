@@ -10,15 +10,14 @@ const Contact = () => {
 		borderRadius: "50%",
 	}
 	return (
-		<motion.section
-			initial={{ x: -100, opacity: 0, filter: "blur(10px)" }}
-			animate={{ x: 0, opacity: 1, filter: "blur(0px)" }}
-			className="contact"
-		>
+		<section className="contact">
 			<h2 className="page_title">
 				<span>C</span>ontact
 			</h2>
-			<div>
+			<motion.div
+				initial={{ x: -100, opacity: 0, filter: "blur(10px)" }}
+				animate={{ x: 0, opacity: 1, filter: "blur(0px)" }}
+			>
 				<img src={portImg} alt="" style={imageStyle} />
 				<a href="#" className="card__btn card__btn-alt">
 					<Mail /> CV
@@ -26,8 +25,8 @@ const Contact = () => {
 				<a href="mailto:codeme.martin@gmail.com" className="card__btn">
 					<Mail color="#090d12" /> Contact Me
 				</a>
-			</div>
-		</motion.section>
+			</motion.div>
+		</section>
 	)
 }
 
