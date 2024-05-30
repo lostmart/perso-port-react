@@ -42,9 +42,8 @@ const projectsData = [
 		deploy: "https://main--zesty-moonbeam-928dd0.netlify.app/",
 		details: [
 			{
-				imgName: "nodejs-01.jpg",
-				legend:
-					"Mongoose schema in order to define de structure document of each collection in Mongoose",
+				imgName: "rest-flask-00.jpg",
+				legend: "Restfull API with Python and Flask",
 			},
 			{
 				imgName: "nodejs-02.jpg",

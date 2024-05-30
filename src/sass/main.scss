@@ -22,6 +22,7 @@
 @import "./pages/titles";
 @import "./components/pageTitle";
 @import "./pages/projects";
+@import "./pages/contact";
 
 body {
 	background-color: $prim-bg;
@@ -37,6 +38,7 @@ main {
 	position: relative;
 	z-index: 1;
 	min-height: 87vh;
+	overflow-x: hidden;
 }
 
 .container {

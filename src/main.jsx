@@ -16,6 +16,7 @@ import Home from "./pages/Home"
 import Experience from "./pages/Experience"
 import Titles from "./pages/Titles"
 import Projects from "./pages/Projects"
+import ProjectSingle from "./pages/ProjectSingle"
 import Contact from "./pages/Contact"
 
 import "./sass/main.scss"
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
 			<Route path="titles" element={<Titles />} />
 			<Route path="projects" element={<Projects />} />
 			<Route path="contact" element={<Contact />} />
+			<Route path="contact/:id" element={<ProjectSingle />} />
 			<Route path="*" element={<ErrorPage />} />
 		</Route>
 	)
