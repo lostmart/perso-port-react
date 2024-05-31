@@ -71,7 +71,11 @@ const Card = (props) => {
 				<CardBody CardBody={RenderBody} />
 			</motion.div>
 			<motion.div variants={item}>
-				<a href="#" className="card__btn card__btn-alt">
+				<a
+					href="web-developer-Martin-Pedraza.pdf"
+					download
+					className="card__btn card__btn-alt"
+				>
 					<Mail /> CV
 				</a>
 			</motion.div>
