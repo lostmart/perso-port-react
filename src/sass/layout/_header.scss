@@ -2,7 +2,7 @@
 	width: 100%;
 	height: fit-content;
 	position: static;
-	max-width: 882px;
+	max-width: $screen-max-width;
 	z-index: 10;
 	pointer-events: none;
 

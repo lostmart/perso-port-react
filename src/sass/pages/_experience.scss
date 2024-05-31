@@ -12,7 +12,7 @@
 
 	.card {
 		width: 100%;
-		max-width: 700px;
+		max-width: $inner-screen-width;
 		padding: $base-padding * 2;
 		margin-bottom: $base-margin * 2;
 

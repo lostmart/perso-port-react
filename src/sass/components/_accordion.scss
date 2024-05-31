@@ -1,6 +1,6 @@
 .accordion {
 	width: 100%;
-	max-width: 700px;
+	max-width: $inner-screen-width;
 	margin: auto;
 
 	& &__button {
@@ -91,5 +91,11 @@
 		background-color: $second-clr;
 		padding: $base-padding;
 		border-radius: 5px;
+	}
+
+	@include respond-to("medium") {
+		& &__button {
+			padding: 1.65em 1.6em;
+		}
 	}
 }

@@ -1,18 +1,46 @@
 .projects {
 	h3 {
-		font-size: $sec-title-font-size;
+		font-size: 1.6em;
 		margin-bottom: $base-margin;
 		margin-top: $base-margin;
 		color: $primary-clr;
 	}
 	.card {
-		max-width: 700px;
+		max-width: $inner-screen-width;
 		margin: auto;
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		margin-bottom: $base-margin * 2;
+
+		.card__link {
+			display: flex;
+			width: 100%;
+			justify-content: flex-end;
+		}
+
+		a {
+			font-family: $secondary-font;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0.7em auto;
+			padding: 0.65em 1.6em;
+			cursor: pointer;
+			border-radius: 25px;
+			height: 3em;
+			min-width: 210px;
+			box-shadow: -1px -1px 2px -1px rgba(255, 255, 255, 0.6901960784),
+				-3px 2px 20px 0px rgba(0, 0, 0, 0.58),
+				-2px 2px 3px 0px rgba(0, 0, 0, 0.69);
+			background: rgb(33, 48, 67);
+			background: linear-gradient(
+				348deg,
+				rgba(16, 25, 37, 0.3) 29%,
+				rgba(132, 132, 143, 0.18) 100%
+			);
+		}
 	}
 
 	.card__technologies {
@@ -26,6 +54,41 @@
 			background-color: $primary-clr;
 			width: fit-content;
 			min-width: unset;
+			padding: 0.6em 0.7em;
+			font-size: 12px;
+			min-width: 52px;
+		}
+	}
+
+	.swiper-slide-active {
+		figcaption {
+			transform: translateY(10px);
+		}
+	}
+
+	figure {
+		position: relative;
+		overflow-y: hidden;
+
+		figcaption {
+			position: absolute;
+			bottom: 1em;
+			left: 1em;
+			padding: 1em;
+			background-color: rgb(219 219 219 / 8%);
+			backdrop-filter: blur(4px);
+			width: calc(100% - 2em);
+			transition: transform 450ms ease-in-out;
+			transform: translateY(200px);
+		}
+	}
+
+	@include respond-to("medium") {
+		.card__technologies {
+			span {
+				padding: $base-padding 2em;
+				font-size: $base-font-size;
+			}
 		}
 	}
 }

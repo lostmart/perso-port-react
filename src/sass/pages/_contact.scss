@@ -1,0 +1,10 @@
+.contact {
+	padding: $base-padding * 2;
+	div {
+		min-height: 55dvh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
