@@ -29,6 +29,45 @@ const projectsData = [
 		],
 	},
 	{
+		projectName: "Teachers Group Site",
+		githubLink: "https://github.com/lostmart/university-front-react",
+		tags: ["web app", "frontend", "vue", "javascript", "vite", "wordpress"],
+		description:
+			"This web app is created using Vue 3 and Vite. It's multi-language support site for teachers who belong to the ISL Network. The project aims to make the application accessible to users from different linguistic backgrounds by providing a seamless language-switching experience and a newletter powered by Wordpres' API",
+		deploy: "https://islnetwork.org/",
+		details: [
+			{
+				imgName: "islnetwok-mutli-00.jpg",
+				legend: "Simple site using Bootstrap 5.3",
+			},
+			{
+				imgName: "islnetwok-mutli-01.jpg",
+				legend:
+					"This site detects your broswsr's language in order to switch language and save it in the store of the app",
+			},
+			{
+				imgName: "islnetwok-mutli-02.jpg",
+				legend:
+					"When tested in Postman, the API sends a 201 status code, if everything went well",
+			},
+			{
+				imgName: "islnetwok-mutli-03.jpg",
+				legend:
+					"Then the user can login using heir credentials and the API will send a token back (JWT)",
+			},
+			{
+				imgName: "islnetwok-mutli-04.jpg",
+				legend:
+					"The site feeds from a wordpress backoffice that allows admins to write blogs and newsletters",
+			},
+			{
+				imgName: "islnetwok-mutli-05.jpg",
+				legend:
+					"The site will show the data for the blog ready and in accordance to the looks of the site",
+			},
+		],
+	},
+	{
 		projectName: "REST API with Node.js",
 		githubLink: "https://github.com/lostmart/rest-api-Node-js",
 		tags: ["rest API", "backend", "nodeJs", "javascript", "mongoDB"],
@@ -96,66 +135,36 @@ const projectsData = [
 			},
 		],
 	},
-	{
-		projectName: "jQuery to React",
-		githubLink: "https://github.com/lostmart/jQueryToReact",
-		tags: ["web app", "frontend", "react", "javascript"],
-		description:
-			"This project is the conversion of an old site that used JQuery jQuery and recreated using React 18.2.0. It alse features a personalized NPM pack for a modal called modal-package-martin-test",
-		deploy: "https://main--zesty-moonbeam-928dd0.netlify.app/",
-		details: [
-			{
-				imgName: "nodejs-01.jpg",
-				legend:
-					"Mongoose schema in order to define de structure document of each collection in Mongoose",
-			},
-			{
-				imgName: "nodejs-02.jpg",
-				legend:
-					"User creation based off the request boady with a hashed password using bycript",
-			},
-			{
-				imgName: "nodejs-03.jpg",
-				legend:
-					"When tested in Postman, the API sends a 201 status code, if everything went well",
-			},
-			{
-				imgName: "nodejs-04.jpg",
-				legend:
-					"Then the user can login using heir credentials and the API will send a token back (JWT)",
-			},
-		],
-	},
-	{
-		projectName: "Teachers Group Site",
-		githubLink: "https://github.com/lostmart/university-front-react",
-		tags: ["web app", "frontend", "vue", "javascript", "vite", "wordpress"],
-		description:
-			"This web app is created using Vue 3 and Vite. It's multi-language support site for teachers who belong to the ISL Network. The project aims to make the application accessible to users from different linguistic backgrounds by providing a seamless language-switching experience and a newletter powered by Wordpres' API",
-		deploy: "https://islnetwork.org/",
-		details: [
-			{
-				imgName: "nodejs-01.jpg",
-				legend:
-					"Mongoose schema in order to define de structure document of each collection in Mongoose",
-			},
-			{
-				imgName: "nodejs-02.jpg",
-				legend:
-					"User creation based off the request boady with a hashed password using bycript",
-			},
-			{
-				imgName: "nodejs-03.jpg",
-				legend:
-					"When tested in Postman, the API sends a 201 status code, if everything went well",
-			},
-			{
-				imgName: "nodejs-04.jpg",
-				legend:
-					"Then the user can login using heir credentials and the API will send a token back (JWT)",
-			},
-		],
-	},
+	// {
+	// 	projectName: "jQuery to React",
+	// 	githubLink: "https://github.com/lostmart/jQueryToReact",
+	// 	tags: ["web app", "frontend", "react", "javascript"],
+	// 	description:
+	// 		"This project is the conversion of an old site that used JQuery jQuery and recreated using React 18.2.0. It alse features a personalized NPM pack for a modal called modal-package-martin-test",
+	// 	deploy: "https://main--zesty-moonbeam-928dd0.netlify.app/",
+	// 	details: [
+	// 		{
+	// 			imgName: "nodejs-01.jpg",
+	// 			legend:
+	// 				"Mongoose schema in order to define de structure document of each collection in Mongoose",
+	// 		},
+	// 		{
+	// 			imgName: "nodejs-02.jpg",
+	// 			legend:
+	// 				"User creation based off the request boady with a hashed password using bycript",
+	// 		},
+	// 		{
+	// 			imgName: "nodejs-03.jpg",
+	// 			legend:
+	// 				"When tested in Postman, the API sends a 201 status code, if everything went well",
+	// 		},
+	// 		{
+	// 			imgName: "nodejs-04.jpg",
+	// 			legend:
+	// 				"Then the user can login using heir credentials and the API will send a token back (JWT)",
+	// 		},
+	// 	],
+	// },
 ]
 
 export default projectsData
