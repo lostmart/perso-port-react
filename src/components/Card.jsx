@@ -3,6 +3,7 @@ import portImg from "../assets/martin_pedraza_avatar.jpg"
 import { Mail } from "react-feather"
 import SocialCont from "./SocialCont"
 import { motion } from "framer-motion"
+import { FaAddressCard } from "react-icons/fa"
 
 /*  atom components  */
 import CardTitle from "./atoms/CardTitle"
@@ -71,8 +72,12 @@ const Card = (props) => {
 				<CardBody CardBody={RenderBody} />
 			</motion.div>
 			<motion.div variants={item}>
-				<a href="#" className="card__btn card__btn-alt">
-					<Mail /> CV
+				<a
+					href="web-developer-Martin-Pedraza.pdf"
+					target="_blank"
+					className="card__btn card__btn-alt"
+				>
+					<FaAddressCard /> CV
 				</a>
 			</motion.div>
 
