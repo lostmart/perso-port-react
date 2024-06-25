@@ -8,6 +8,7 @@ const ProjectSingle = () => {
 			</h2>
 			<div>
 				<h2>some stuff</h2>
+				<p>never underestimate a ninja</p>
 			</div>
 		</section>
 	)
