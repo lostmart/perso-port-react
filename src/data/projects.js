@@ -1,5 +1,6 @@
 const projectsData = [
 	{
+		id: 1,
 		projectName: "University site",
 		githubLink: "https://github.com/lostmart/university-front-react",
 		tags: ["web app", "frontend", "react", "javascript", "vite"],
@@ -29,6 +30,7 @@ const projectsData = [
 		],
 	},
 	{
+		id: 2,
 		projectName: "Teachers Group Site",
 		githubLink: "https://github.com/lostmart/university-front-react",
 		tags: ["web app", "frontend", "vue", "javascript", "vite", "wordpress"],
@@ -68,6 +70,7 @@ const projectsData = [
 		],
 	},
 	{
+		id: 3,
 		projectName: "REST API with Node.js",
 		githubLink: "https://github.com/lostmart/rest-api-Node-js",
 		tags: ["rest API", "backend", "nodeJs", "javascript", "mongoDB"],
@@ -102,6 +105,7 @@ const projectsData = [
 		],
 	},
 	{
+		id: 4,
 		projectName: "REST API with Flask-RESTful",
 		githubLink: "https://github.com/lostmart/restfulAPI-python",
 		tags: ["rest API", "backend", "python", "flask", "Swagger UI", "sqlite3"],
@@ -135,36 +139,6 @@ const projectsData = [
 			},
 		],
 	},
-	// {
-	// 	projectName: "jQuery to React",
-	// 	githubLink: "https://github.com/lostmart/jQueryToReact",
-	// 	tags: ["web app", "frontend", "react", "javascript"],
-	// 	description:
-	// 		"This project is the conversion of an old site that used JQuery jQuery and recreated using React 18.2.0. It alse features a personalized NPM pack for a modal called modal-package-martin-test",
-	// 	deploy: "https://main--zesty-moonbeam-928dd0.netlify.app/",
-	// 	details: [
-	// 		{
-	// 			imgName: "nodejs-01.jpg",
-	// 			legend:
-	// 				"Mongoose schema in order to define de structure document of each collection in Mongoose",
-	// 		},
-	// 		{
-	// 			imgName: "nodejs-02.jpg",
-	// 			legend:
-	// 				"User creation based off the request boady with a hashed password using bycript",
-	// 		},
-	// 		{
-	// 			imgName: "nodejs-03.jpg",
-	// 			legend:
-	// 				"When tested in Postman, the API sends a 201 status code, if everything went well",
-	// 		},
-	// 		{
-	// 			imgName: "nodejs-04.jpg",
-	// 			legend:
-	// 				"Then the user can login using heir credentials and the API will send a token back (JWT)",
-	// 		},
-	// 	],
-	// },
 ]
 
 export default projectsData

@@ -1,0 +1,58 @@
+.singlePage {
+	padding: $base-padding;
+	max-width: $screen-max-width;
+	margin: auto;
+	.page_title span {
+		font-size: 0.8em;
+		margin: 0;
+	}
+
+	.header-img {
+		position: fixed;
+		top: 77px;
+		left: 0;
+		z-index: -1;
+		opacity: 0.25;
+		filter: blur(10px);
+		min-width: 500px;
+		object-position: center;
+	}
+	.card {
+		h3 {
+			margin-bottom: 0.8em;
+			font-size: 1.5em;
+		}
+
+		opacity: 0.2;
+		max-width: 620px;
+		margin-left: auto;
+		padding: 4em 2.5em 3em 2.5em;
+		margin-bottom: 3em;
+		margin-top: 17%;
+		&:first-child {
+			opacity: 1;
+		}
+		p {
+			font-family: $secondary-font;
+			font-weight: 200;
+			font-size: 1.2em;
+			line-height: 2em;
+		}
+
+		.btn_containers {
+			display: flex;
+			margin-top: 2em;
+
+			.card__btn {
+				min-width: unset;
+				width: 139px;
+				padding: 0.8em;
+				font-size: 1em;
+			}
+
+			.icon {
+				fill: $prim-bg;
+			}
+		}
+	}
+}

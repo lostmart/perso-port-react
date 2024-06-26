@@ -1,5 +1,3 @@
-import React from "react"
-
 import {
 	FaWordpress,
 	FaSass,
@@ -110,7 +108,8 @@ const Technos = () => {
 			<h2 className="page_title">
 				<span>T</span>echnical <span>S</span>kills
 			</h2>
-			<SwiperComp children={imagesArray} />
+			<SwiperComp>{imagesArray}</SwiperComp>
+
 			<ul>
 				<li>
 					<span>Languages:</span>

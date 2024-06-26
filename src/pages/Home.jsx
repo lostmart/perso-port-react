@@ -25,7 +25,7 @@ const Home = () => {
 				className="home__self_intro home__self_intro-desktop"
 			>
 				<p>
-					Hey there! I'm Martin, a FullStack web developer with extensive
+					Hey there! I&apos;m Martin, a FullStack web developer with extensive
 					experience in teaching, mentoring, and developing web applications. I
 					love helping others navigate the tech world and creating dynamic,
 					user-friendly web solutions. Welcome to my portfolio!

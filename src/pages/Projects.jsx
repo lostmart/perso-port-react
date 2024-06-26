@@ -1,4 +1,3 @@
-import React from "react"
 import projectsData from "../data/projects"
 
 import SwiperCube from "../components/SwiperCube"
@@ -15,7 +14,7 @@ const Projects = () => {
 					<div className="card__body">
 						<p>{project.description}</p>
 						<div className="card__link">
-							<Link to="/contact/id">Read more</Link>
+							<Link to={`/contact/${project.id}`}>Read more</Link>
 						</div>
 
 						<div className="card__technologies">

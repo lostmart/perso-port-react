@@ -1,4 +1,3 @@
-import React from "react"
 import experienceData from "../data/experience"
 
 const Experience = () => {
@@ -8,7 +7,7 @@ const Experience = () => {
 				<article key={exp.title} className="card">
 					<div>
 						<h4>
-							<a target="_blank" href={exp.link}>
+							<a target="_blank" rel="noreferrer" href={exp.link}>
 								{exp.institute[0]}
 							</a>
 							, {exp.institute[1]} —
