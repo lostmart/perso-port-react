@@ -80,6 +80,20 @@
 		margin-top: variables.$base-margin;
 	}
 
+	.course_areas .course_category {
+		font-family: variables.$primary-font;
+		font-weight: 700;
+		font-size: 1.1em;
+		margin-right: 0.5em;
+		color: variables.$primary-clr;
+	}
+
+	.course_areas .course_description {
+		font-family: variables.$secondary-font;
+		font-weight: 200;
+		color: variables.$font-clr;
+	}
+
 	.accordion__items li {
 		font-family: variables.$secondary-font;
 	}

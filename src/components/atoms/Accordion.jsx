@@ -42,12 +42,11 @@ const Accordion = ({
 	const RenderAreas = () => {
 		return (
 			<ul>
-				{areas.map((area) => (
-					<li
-						className="course_areas"
-						key={area}
-						dangerouslySetInnerHTML={{ __html: area }}
-					></li>
+				{areas.map((area, i) => (
+					<li className="course_areas" key={i}>
+						<span className="course_category">{area.category}</span>
+						<span className="course_description">{area.description}</span>
+					</li>
 				))}
 			</ul>
 		)

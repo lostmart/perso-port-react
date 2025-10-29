@@ -1,47 +1,118 @@
 const titleData = [
 	{
-		title: "JavaScript React Developer",
+		title: "JavaScript React Application Developer",
 		titleLevel: "Diplôme de niveau 6 (bac +4)",
+		certificationTitle: "Développeur Concepteur Logiciel",
+		titleOfficialSite:
+			"https://openclassrooms.com/fr/paths/2288-developpeur-dapplication-react",
+		date: "2022 - 2023",
 		schoolImg: "openclassrooms.jfif",
 		titleDate: "2022 - 2023",
 		description:
-			'As a certified JavaScript React Application Developer, I have gained comprehensive skills and knowledge through the "Développeur d\'application JavaScript React" course by OpenClassrooms. This rigorous program provided in-depth training and practical experience in the following areas:',
+			'As a certified React Application Developer (Bac +3/4, Level 6), I completed the comprehensive "Développeur d\'application React" program by OpenClassrooms, earning the professional certification "Développeur Concepteur Logiciel" (Software Developer Designer). This intensive program provided advanced training in modern web application development with the following key competencies:',
 		areas: [
-			"<strong>Advanced JavaScript:</strong> Mastery of modern JavaScript (ES6+), including concepts like closures, promises, async/await, and modular programming.",
-			"<strong>React Framework:</strong> Proficiency in building dynamic and responsive user interfaces using React, leveraging hooks, state management, context API, and component lifecycle methods.",
-			"<strong>Front-End Development:</strong> Expertise in HTML5, CSS3, and responsive design principles, ensuring optimal user experiences across various devices and screen sizes.",
-			"<strong>API Integration:</strong> Ability to create and consume RESTful APIs, manage data fetching, and handle asynchronous operations efficiently.",
-			"<strong>Version Control:</strong> Skilled in using Git for version control, enabling effective collaboration and code management.",
-			"<strong>Project Management:</strong> Experience in agile methodologies, including task management, sprint planning, and collaborative development using tools like JIRA and Trello.",
-			"<strong>Testing and Debugging:</strong> Competence in writing unit and integration tests using testing libraries such as Jest and React Testing Library, ensuring robust and reliable applications.",
-			"<strong>Deployment and Maintenance: Knowledge of deploying React applications using CI/CD pipelines, and maintaining applications through updates and bug fixes.</strong>",
-			"<strong>Soft Skills:</strong> Enhanced problem-solving abilities, effective communication skills, and experience working in both individual and team settings.",
+			{
+				category: "React Ecosystem Mastery",
+				description:
+					"Developed advanced proficiency in React, including hooks, component architecture, state management solutions (Context API, Redux), and performance optimization techniques for building scalable, production-ready applications.",
+			},
+			{
+				category: "Next.js and Modern Frameworks",
+				description:
+					"Implemented server-side rendering (SSR), static site generation (SSG), API routes, and modern routing patterns using Next.js to create performant, SEO-optimized web applications.",
+			},
+			{
+				category: "TypeScript Development",
+				description:
+					"Applied strong typing, interface design, and type-safe development practices to enhance code quality, maintainability, and developer experience across complex applications.",
+			},
+			{
+				category: "Component Architecture and Design Patterns",
+				description:
+					"Designed and implemented scalable, reusable component systems following industry best practices, SOLID principles, and modern design patterns for maintainable codebases.",
+			},
+			{
+				category: "API Integration and Data Management",
+				description:
+					"Developed expertise in RESTful API consumption, GraphQL implementation, and efficient data fetching strategies, ensuring seamless client-server communication and optimal data flow.",
+			},
+			{
+				category: "Testing and Quality Assurance",
+				description:
+					"Implemented comprehensive testing strategies using Jest, React Testing Library, and end-to-end testing tools to ensure robust, reliable, and bug-free applications.",
+			},
+			{
+				category: "Modern Development Practices",
+				description:
+					"Mastered CI/CD pipelines, Git workflows, code reviews, agile methodologies, and deployment strategies to deliver professional-grade applications following industry standards.",
+			},
+			{
+				category: "Generative AI Integration",
+				description:
+					"Gained experience integrating generative AI tools and AI-powered features into modern web applications, leveraging emerging technologies to enhance user experiences.",
+			},
 		],
 		conclusion:
-			"Through hands-on projects and real-world scenarios, I have developed a strong foundation in JavaScript and React, equipping me to contribute effectively to modern web development projects.",
+			"This professional certification as a Software Developer Designer (Développeur Concepteur Logiciel) provided comprehensive training in modern React development, equipping me with advanced skills in Next.js, TypeScript, and AI integration. The program emphasized real-world project experience and industry best practices, preparing me to conceive, develop, and deploy enterprise-level web applications.",
 		titleUrl:
 			"https://raw.githubusercontent.com/lostmart/perso-port-react/main/src/assets/imgs/titre-developpeur-logiciel.jpg",
 	},
 	{
-		title: "Web Developer",
+		title: "Web Design for Everybody Specialization",
 		titleDate: "2016 - 2017",
 		schoolImg: "michigan.jfif",
 		description:
 			'As a certified Web Design Project Specialist, I have successfully completed the "Web Design for Everybody Capstone" course on Coursera, which provided comprehensive training and hands-on experience in web design and development. This course has equipped me with the following skills and knowledge:',
+		link: "https://www.coursera.org/account/accomplishments/certificate/Z4G8NR6DYB8D",
 		areas: [
-			"<strong>HTML & CSS Proficiency:</strong> Advanced knowledge of HTML5 and CSS3, including semantic markup, responsive design, and CSS grid and flexbox layouts.",
-			"<strong>JavaScript Basics:</strong> Understanding of JavaScript fundamentals, enabling the creation of interactive and dynamic web pages.",
-			"<strong>Web Design Principles:</strong> In-depth knowledge of design principles such as color theory, typography, layout, and user experience (UX) best practices.",
-			"<strong>Responsive Design:</strong> Expertise in creating websites that are optimized for various devices and screen sizes, ensuring a seamless user experience across desktops, tablets, and mobile devices.",
-			"<strong>Project Planning & Management:</strong> Skills in planning, organizing, and managing web design projects from concept to completion, including requirement gathering, wireframing, prototyping, and user testing.",
-			"<strong>Tools & Technologies:</strong> Experience with industry-standard tools such as Adobe XD, Figma, or Sketch for wireframing and prototyping, as well as using version control systems like Git.",
-			"<strong>Cross-Browser Compatibility:</strong> Ensuring websites are functional and consistent across different browsers and platforms.",
-			"<strong>SEO Fundamentals:</strong> Understanding of basic search engine optimization techniques to improve website visibility and ranking.",
-			"<strong>Accessibility:</strong> Knowledge of web accessibility standards (WCAG) to create inclusive web designs that cater to users with disabilities.",
-			"<strong>Soft Skills:</strong> Enhanced problem-solving abilities, effective communication skills, and experience in both individual and collaborative project environments.",
+			{
+				category: "HTML5 and CSS3 Mastery",
+				description:
+					"Developed advanced proficiency in HTML5 semantic markup and CSS3, including modern layout techniques such as CSS Grid and Flexbox, enabling the creation of well-structured, maintainable web pages.",
+			},
+			{
+				category: "Responsive Web Design",
+				description:
+					"Mastered responsive design principles and mobile-first development strategies to create websites that provide optimal viewing experiences across desktops, tablets, and mobile devices.",
+			},
+			{
+				category: "JavaScript Fundamentals",
+				description:
+					"Acquired foundational JavaScript knowledge to add interactivity and dynamic functionality to web pages, enhancing user engagement and creating more sophisticated user interfaces.",
+			},
+			{
+				category: "Web Design Principles and UX",
+				description:
+					"Applied design theory including color theory, typography, visual hierarchy, and user experience best practices to create aesthetically pleasing and intuitive web interfaces.",
+			},
+			{
+				category: "Web Accessibility Standards",
+				description:
+					"Implemented Web Content Accessibility Guidelines (WCAG) to ensure inclusive web designs that accommodate users with disabilities, improving overall usability and reach.",
+			},
+			{
+				category: "Cross-Browser Compatibility",
+				description:
+					"Ensured consistent functionality and visual presentation across different browsers and platforms through thorough testing and implementation of compatibility best practices.",
+			},
+			{
+				category: "SEO Fundamentals",
+				description:
+					"Applied basic search engine optimization techniques including semantic HTML, meta tags, and content structure to improve website visibility and search engine rankings.",
+			},
+			{
+				category: "Design Tools and Workflow",
+				description:
+					"Utilized industry-standard design and prototyping tools such as Adobe XD, Figma, or Sketch for wireframing and visual design, combined with version control using Git for collaborative development.",
+			},
+			{
+				category: "Complete Project Lifecycle Management",
+				description:
+					"Managed web design projects from concept to deployment, including requirements gathering, wireframing, prototyping, user testing, and iterative refinement based on feedback.",
+			},
 		],
 		conclusion:
-			"This capstone project allowed me to apply theoretical knowledge in practical scenarios, building a complete, functional website from scratch, and honing my ability to deliver high-quality, user-friendly web designs.",
+			"This comprehensive specialization culminated in a capstone project where I designed and developed a complete, functional website from scratch. The program provided hands-on experience applying web design theory to real-world scenarios, strengthening my ability to deliver high-quality, user-centered web solutions that balance aesthetics, functionality, and accessibility.",
 		titleUrl:
 			"https://martin-site.netlify.app/imgs/certificates/web-design-michigan.jpg",
 		titleOfficialSite:
