@@ -17,10 +17,12 @@ const Experience = () => {
 						<ul>
 							{exp.areas.map((area) => {
 								return (
-									<li
-										key={area}
-										dangerouslySetInnerHTML={{ __html: area }}
-									></li>
+									<li key={area}>
+										<span className="responsibility__category">
+											{area.category}
+										</span>
+										<span>{area.description}</span>
+									</li>
 								)
 							})}
 						</ul>
