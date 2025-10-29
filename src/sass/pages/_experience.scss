@@ -1,3 +1,4 @@
+@use "../abstracts/mixins";
 @use "../abstracts/variables";
 
 .experience {
@@ -15,8 +16,18 @@
 	.card {
 		width: 100%;
 		max-width: variables.$inner-screen-width;
-		padding: variables.$base-padding * 2;
+		padding: variables.$base-padding;
 		margin-bottom: variables.$base-margin * 2;
+
+		@include mixins.respond-to("medium") {
+			padding: variables.$base-padding * 2;
+			margin-left: auto;
+		}
+
+		@include mixins.respond-to("large") {
+			margin-left: 2.5em;
+			max-width: clamp(815px, 86%, 919px);
+		}
 
 		.card_title {
 			display: inline;
