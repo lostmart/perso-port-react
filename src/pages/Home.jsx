@@ -25,10 +25,12 @@ const Home = () => {
 				className="home__self_intro home__self_intro-desktop"
 			>
 				<p>
-					Hey there! I&apos;m Martin, a FullStack web developer with extensive
-					experience in teaching, mentoring, and developing web applications. I
-					love helping others navigate the tech world and creating dynamic,
-					user-friendly web solutions. Welcome to my portfolio!
+					Hey there! I'm Martin, a FullStack developer specializing in Java,
+					Spring Boot, and Angular. With a Bac +5 certification as an Expert in
+					Software Development, I bring both technical depth and teaching
+					experience to the table—whether I'm building robust web applications
+					or mentoring the next generation of developers. Welcome to my
+					portfolio!
 				</p>
 			</motion.article>
 			<h2>

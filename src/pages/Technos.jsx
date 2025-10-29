@@ -89,49 +89,58 @@ const Technos = () => {
 			</h2>
 			<article className="techno__about">
 				<p>
-					I am a passionate and dedicated Full Stack Web Developer with over a
-					decade of experience in creating robust and dynamic web applications.
-					I have a strong foundation in both front-end and back-end development,
-					with expertise in a wide range of technologies and frameworks. My
-					journey in web development has been marked by a continuous pursuit of
-					knowledge and a commitment to delivering high-quality, scalable
-					solutions.
+					I'm a Full Stack Developer who believes the best code is written when
+					you understand both the machine and the human behind the screen. With
+					a Master's degree in Software Development (Bac +5, specializing in
+					Java and Angular) and a decade of hands-on experience, I've built my
+					career at the intersection of creating powerful web applications and
+					empowering others to do the same.
 				</p>
 				<p>
-					I thrive on solving complex problems, collaborating with diverse
-					teams, and mentoring the next generation of developers. My teaching
-					and mentoring roles have sharpened my ability to communicate technical
-					concepts clearly and effectively, while my freelance projects have
-					honed my skills in client management and project delivery.
+					Beyond writing code, I'm deeply invested in shaping the next
+					generation of developers. As an instructor and mentor, I've guided
+					countless students through their web development journey, and I'm
+					proud to serve on certification juries for Bac +3 web development
+					programs in France—experiencing both sides of the education table
+					keeps me grounded and constantly learning.
+				</p>
+				<p>
+					My approach to development is shaped by my dual passions: the logical
+					precision of programming and the creative expression of music. Whether
+					I'm architecting a Spring Boot backend, crafting responsive React
+					interfaces, or explaining complex concepts to students, I bring the
+					same energy—solving problems, collaborating with diverse teams, and
+					building solutions that are not just functional, but elegant.
 				</p>
 			</article>
 			<h2 className="page_title">
-				<span>T</span>echnical <span>S</span>kills
+				<span>T</span>echnical <span>E</span>xpertise
 			</h2>
 			<SwiperComp>{imagesArray}</SwiperComp>
 
 			<ul>
 				<li>
-					<span>Languages:</span>
+					<span>Languages & Core Technologies:</span>
 					<span className="technosSection__item">
-						Sass, JavaScript, TypeScript, Python, Php
+						JavaScript/TypeScript, Java, Python, PHP
 					</span>
 				</li>
 				<li>
-					<span>Frontend Technologies:</span>
+					<span>Frontend Development:</span>
 					<span className="technosSection__item">
-						HTML, CSS, JQuery, Handlebars, React, Vue.js, Bootstrap, Tailwind,
-						Materialize
+						React, Angular, Vue.js, Next.js, Nuxt.js | HTML5, CSS3, Tailwind,
+						Bootstrap, Material UI | jQuery, Handlebars
 					</span>
 				</li>
 				<li>
-					<span>Backend Technologies:</span>
+					<span>Backend Development:</span>
 					<span className="technosSection__item">
-						Node.js, Express, Django, Flask
+						Node.js, Express, Spring Boot, Django, Flask, Laravel | RESTful
+						APIs, GraphQL
 					</span>
 				</li>
 				<li>
-					<span>Databases: </span>
+					<span>Data & Databases: </span>
 					<span className="technosSection__item">
 						MySQL, PostgreSQL, MongoDB, SQLite
 					</span>
@@ -143,10 +152,17 @@ const Technos = () => {
 					</span>
 				</li>
 				<li>
-					<span>Others:</span>
+					<span>Development Practices & Tools:</span>
 					<span className="technosSection__item">
-						Vuex, TDD, NextJs, Nuxt, Responsive Web Design, Unit Testing, Agile
-						web developer, SEO, Wordpress, Video Editing, Animaion
+						Git, Agile/Scrum, TDD/BDD, Unit Testing (Jest, Mocha) | Webpack,
+						Vite, Babel | Responsive Design, SEO Optimization
+					</span>
+				</li>
+				<li>
+					<span>Additional Skills;</span>
+					<span className="technosSection__item">
+						WordPress, Figma, Photoshop, Video Editing, Animation, teaching and
+						mentoring
 					</span>
 				</li>
 			</ul>
