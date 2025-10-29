@@ -115,3 +115,34 @@ Atoms (Basic building blocks):
 - `ErrorPage.jsx` - Error page
 
 ## 🎯 Key Features Explained
+
+### Animations
+
+Uses Framer Motion for smooth, performant animations including:
+
+- Parallax scrolling
+- Scroll-triggered animations
+- Page transitions
+- Interactive hover effects
+- Stagger animations for lists
+
+### Responsive Design
+
+- Mobile-first approach
+- Breakpoint-based layouts with Sass mixins
+- Flexible grid system
+- Touch-optimized interactions
+
+### Performance Optimization
+
+- Code splitting with React Router
+- Lazy loading of images
+- Intersection Observer for scroll animations
+- Vite for fast builds and HMR
+
+### 👨‍💻 Author
+
+- Martin Pedraza
+- [LinkedIn](https://www.linkedin.com/in/martin-pedraza-dev)
+- [GitHub](https://github.com/lostmart)
+- [Portfolio](https://personal-site-react.netlify.app)
