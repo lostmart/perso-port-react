@@ -1,6 +1,9 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .home {
-	padding: $base-padding;
-	max-width: $screen-max-width;
+	padding: variables.$base-padding;
+	max-width: variables.$screen-max-width;
 	margin: auto;
 
 	h2:not(h2:first-child) {
@@ -17,7 +20,7 @@
 		align-items: center;
 		padding: 0;
 		p {
-			margin: $base-margin 0;
+			margin: variables.$base-margin 0;
 		}
 	}
 	&__self_intro-desktop {
@@ -25,37 +28,37 @@
 	}
 
 	.card__body {
-		padding: $base-padding 0;
+		padding: variables.$base-padding 0;
 	}
 
 	.card__social {
-		margin-top: $base-margin;
-		margin-bottom: $base-margin;
+		margin-top: variables.$base-margin;
+		margin-bottom: variables.$base-margin;
 	}
 
 	.contact_info:last-child {
-		font-family: $secondary-font;
+		font-family: variables.$secondary-font;
 		font-weight: 200;
 	}
 
 	.contact_info {
-		margin-top: $base-margin;
+		margin-top: variables.$base-margin;
 		text-align: center;
-		font-size: $sm-font-size;
-		color: $font-clr-grey;
+		font-size: variables.$sm-font-size;
+		color: variables.$font-clr-grey;
 	}
 
-	@include respond-to("medium") {
+	@include mixins.respond-to("medium") {
 		display: flex;
 		height: 90dvh;
 		align-items: center;
-		gap: $base-margin;
-		padding: $base-padding * 2;
+		gap: variables.$base-margin;
+		padding: variables.$base-padding * 2;
 
 		&__self_intro {
 			width: 50%;
 			font-size: 1.2em !important;
-			padding: $base-padding;
+			padding: variables.$base-padding;
 			line-height: 2.5;
 		}
 
@@ -78,7 +81,7 @@
 		}
 	}
 
-	@include respond-to("large") {
-		padding: $base-padding * 2.5;
+	@include mixins.respond-to("large") {
+		padding: variables.$base-padding * 2.5;
 	}
 }

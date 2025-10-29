@@ -1,27 +1,30 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .technosSection {
-	padding: $base-padding;
-	max-width: $screen-max-width;
+	padding: variables.$base-padding;
+	max-width: variables.$screen-max-width;
 	margin: auto;
 
 	h2 {
 		font-size: 36px;
-		font-family: $primary-font;
+		font-family: variables.$primary-font;
 		font-weight: 400;
-		padding: $base-padding $base-padding * 0.5;
+		padding: variables.$base-padding variables.$base-padding * 0.5;
 	}
 
 	ul {
-		padding: $base-padding;
-		max-width: $inner-screen-width;
+		padding: variables.$base-padding;
+		max-width: variables.$inner-screen-width;
 		margin: auto;
 	}
 
 	li {
-		padding-bottom: $base-padding;
+		padding-bottom: variables.$base-padding;
 	}
 
 	span {
-		color: $primary-clr;
+		color: variables.$primary-clr;
 	}
 
 	.techno__about {
@@ -30,31 +33,31 @@
 		line-height: 1.4;
 		text-align: center;
 		font-size: 1em !important;
-		max-width: $inner-screen-width;
+		max-width: variables.$inner-screen-width;
 		margin: auto;
 	}
 
 	.technosSection__item {
 		color: white;
-		font-family: $secondary-font;
+		font-family: variables.$secondary-font;
 		font-weight: 200;
-		margin-left: $base-margin;
-		font-size: $base-font-size;
+		margin-left: variables.$base-margin;
+		font-size: variables.$base-font-size;
 	}
-	@include respond-to("medium") {
+	@include mixins.respond-to("medium") {
 		.techno__about {
 			font-size: 1.2em !important;
 			line-height: 1.6;
 		}
 		span {
-			font-size: $sec-title-font-size * 1.1;
+			font-size: variables.$sec-title-font-size * 1.1;
 		}
 
 		.technosSection__item {
-			font-size: $base-font-size * 1.3;
+			font-size: variables.$base-font-size * 1.3;
 		}
 		li {
-			margin: $base-margin;
+			margin: variables.$base-margin;
 		}
 	}
 }

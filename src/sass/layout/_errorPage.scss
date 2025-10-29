@@ -1,5 +1,7 @@
+@use "../abstracts/variables";
+
 .errorPage {
-	background-color: $prim-bg;
+	background-color: variables.$prim-bg;
 	color: white;
 	min-height: 86vh;
 	display: flex;

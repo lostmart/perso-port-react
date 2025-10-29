@@ -1,3 +1,6 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 footer {
 	display: none;
 	text-align: center;
@@ -10,9 +13,9 @@ footer {
 		margin-bottom: 1em;
 	}
 
-	@include respond-to("medium") {
+	@include mixins.respond-to("medium") {
 		display: block;
-		padding: $base-padding;
+		padding: variables.$base-padding;
 	}
 
 	// @include respond-to("large") {

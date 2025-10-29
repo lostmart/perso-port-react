@@ -1,5 +1,7 @@
+@use "../abstracts/variables";
+
 .contact {
-	padding: $base-padding * 2;
+	padding: variables.$base-padding * 2;
 	div {
 		min-height: 55dvh;
 		display: flex;

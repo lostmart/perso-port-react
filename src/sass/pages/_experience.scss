@@ -1,65 +1,67 @@
+@use "../abstracts/variables";
+
 .experience {
-	padding: $base-padding;
-	max-width: $screen-max-width;
+	padding: variables.$base-padding;
+	max-width: variables.$screen-max-width;
 	margin: auto;
 
 	span {
 		display: inline;
 		width: 100%;
-		font-family: $secondary-font;
+		font-family: variables.$secondary-font;
 		font-weight: 200;
 	}
 
 	.card {
 		width: 100%;
-		max-width: $inner-screen-width;
-		padding: $base-padding * 2;
-		margin-bottom: $base-margin * 2;
+		max-width: variables.$inner-screen-width;
+		padding: variables.$base-padding * 2;
+		margin-bottom: variables.$base-margin * 2;
 
 		.card_title {
 			display: inline;
-			color: $font-clr-alt;
-			font-size: $sm-font-size;
-			margin-left: $base-margin * 0.5;
+			color: variables.$font-clr-alt;
+			font-size: variables.$sm-font-size;
+			margin-left: variables.$base-margin * 0.5;
 		}
 
 		a {
-			color: $primary-clr;
+			color: variables.$primary-clr;
 		}
 
 		ul {
-			margin: $base-margin;
+			margin: variables.$base-margin;
 
 			span {
-				color: $font-clr-grey;
+				color: variables.$font-clr-grey;
 			}
 		}
 
 		li {
-			margin-top: $base-margin;
+			margin-top: variables.$base-margin;
 		}
 
 		.card_detail {
-			font-family: $primary-font;
+			font-family: variables.$primary-font;
 			font-weight: 700;
 			font-size: 1.1em;
 			margin-right: 0.5em;
-			color: $font-clr;
+			color: variables.$font-clr;
 		}
 
 		.card_date {
-			font-family: $secondary-font;
+			font-family: variables.$secondary-font;
 			display: inline-block;
-			color: $font-clr-alt;
-			font-size: $sm-font-size;
-			padding-left: $base-padding;
-			padding-top: $base-margin * 0.5;
+			color: variables.$font-clr-alt;
+			font-size: variables.$sm-font-size;
+			padding-left: variables.$base-padding;
+			padding-top: variables.$base-margin * 0.5;
 			width: 100%;
 			text-align: left;
 		}
 
 		p {
-			margin-top: $base-margin;
+			margin-top: variables.$base-margin;
 		}
 	}
 }

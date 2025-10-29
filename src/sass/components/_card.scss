@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .card {
 	max-width: 350px;
 	margin: auto;
@@ -12,8 +14,8 @@
 		align-items: center;
 	}
 	h2 {
-		color: $primary-clr;
-		font-family: $primary-font;
+		color: variables.$primary-clr;
+		font-family: variables.$primary-font;
 		font-size: 34px;
 		font-weight: 400;
 	}
@@ -52,11 +54,11 @@
 	}
 
 	&__btn {
-		margin: $base-margin auto;
+		margin: variables.$base-margin auto;
 		padding: 0.65em 2em;
 		border: none;
-		background-color: $primary-clr;
-		color: $prim-bg;
+		background-color: variables.$primary-clr;
+		color: variables.$prim-bg;
 		display: block;
 		border-radius: 25px;
 		min-width: 286px;

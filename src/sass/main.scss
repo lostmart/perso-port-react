@@ -1,39 +1,39 @@
-@import "./abstracts/typography";
-@import "./abstracts/variables";
-@import "./abstracts/reset";
-@import "./abstracts/mixins";
-@import "./layout/navigation";
-@import "./layout/header";
-@import "./components/lightBox";
+@use "abstracts/typography";
+@use "abstracts/variables";
+@use "abstracts/reset";
+@use "abstracts/mixins";
+@use "layout/navigation";
+@use "layout/header";
+@use "components/lightBox";
 
 // components
-@import "./components/card";
-@import "./components/accordion";
-@import "./layout/errorPage";
-@import "./components/section_personal";
-@import "./components/technosSection";
-@import "./components/footer";
-@import "./components/swiperComp";
-@import "./components/modal";
+@use "components/card";
+@use "components/accordion";
+@use "layout/errorPage";
+@use "components/section_personal";
+@use "components/technosSection";
+@use "components/footer";
+@use "components/swiperComp";
+@use "components/modal";
 
 // pages
-@import "./pages/home";
-@import "./pages/experience";
-@import "./pages/titles";
-@import "./components/pageTitle";
-@import "./pages/projects";
-@import "./pages/contact";
-@import "./pages/singleProject";
+@use "pages/home";
+@use "pages/experience";
+@use "pages/titles";
+@use "components/pageTitle";
+@use "pages/projects";
+@use "pages/contact";
+@use "pages/singleProject";
 
 body {
-	background-color: $prim-bg;
+	background-color: variables.$prim-bg;
 }
 
 main {
-	background: $semi-transparent;
+	background: variables.$semi-transparent;
 	background: linear-gradient(
 		180deg,
-		$semi-transparent -34%,
+		variables.$semi-transparent -34%,
 		rgba(9, 13, 18, 1) 129%
 	);
 	position: relative;

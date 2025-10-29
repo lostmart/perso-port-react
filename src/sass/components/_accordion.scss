@@ -1,6 +1,9 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .accordion {
 	width: 100%;
-	max-width: $inner-screen-width;
+	max-width: variables.$inner-screen-width;
 	margin: auto;
 
 	& &__button {
@@ -28,13 +31,13 @@
 		);
 
 		svg {
-			stroke: $primary-clr;
+			stroke: variables.$primary-clr;
 			transition: all 270ms ease-in-out;
 		}
 	}
 
 	.accordion__header {
-		font-size: $base-font-size;
+		font-size: variables.$base-font-size;
 	}
 
 	.accordion_school {
@@ -45,21 +48,21 @@
 	}
 
 	& &__button-active {
-		background-color: $primary-clr;
+		background-color: variables.$primary-clr;
 	}
 
 	& &__button-active span {
-		color: $second-clr !important;
+		color: variables.$second-clr !important;
 		font-weight: 800;
 	}
 
 	& &__button-active svg {
-		stroke: $second-clr;
+		stroke: variables.$second-clr;
 	}
 
 	.titlesSection_level .accordion__year {
-		color: $primary-clr;
-		margin-left: $base-margin;
+		color: variables.$primary-clr;
+		margin-left: variables.$base-margin;
 	}
 
 	&__body {
@@ -74,11 +77,11 @@
 	}
 
 	&__content {
-		margin-top: $base-margin;
+		margin-top: variables.$base-margin;
 	}
 
 	.accordion__items li {
-		font-family: $secondary-font;
+		font-family: variables.$secondary-font;
 	}
 
 	.accordion-right {
@@ -88,12 +91,12 @@
 	}
 
 	.accordion__btn-sec {
-		background-color: $second-clr;
-		padding: $base-padding;
+		background-color: variables.$second-clr;
+		padding: variables.$base-padding;
 		border-radius: 5px;
 	}
 
-	@include respond-to("medium") {
+	@include mixins.respond-to("medium") {
 		& &__button {
 			padding: 1.65em 1.6em;
 		}

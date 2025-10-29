@@ -1,3 +1,6 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .navBar {
 	display: flex;
 	/* flex-direction: column; */
@@ -10,7 +13,7 @@
 	z-index: 1000;
 	overflow: hidden;
 	pointer-events: all;
-	max-width: $inner-screen-width;
+	max-width: variables.$inner-screen-width;
 
 	&__closeBtn {
 		position: absolute;
@@ -25,7 +28,7 @@
 		justify-content: space-evenly;
 	}
 	h3 {
-		color: $font-clr-alt;
+		color: variables.$font-clr-alt;
 		display: none;
 	}
 	span {
@@ -38,7 +41,7 @@
 		text-decoration: none;
 		cursor: pointer;
 		transition: background-color 150ms ease-in-out;
-		padding: $base-padding * 1.2;
+		padding: variables.$base-padding * 1.2;
 		font-size: 0.9em;
 		width: 100%;
 		max-width: 80px;
@@ -49,16 +52,16 @@
 	}
 
 	.active {
-		background-color: $semi-transparent;
+		background-color: variables.$semi-transparent;
 		svg {
-			stroke: $primary-clr;
+			stroke: variables.$primary-clr;
 		}
 	}
 	&__social {
 		display: none;
 	}
 
-	@include respond-to("medium") {
+	@include mixins.respond-to("medium") {
 		flex-direction: column;
 		position: fixed;
 		right: 1em;

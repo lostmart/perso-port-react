@@ -36,7 +36,7 @@ const projectsData = [
 		tags: ["web app", "frontend", "vue", "javascript", "vite", "wordpress"],
 		description:
 			"This web app is created using Vue 3 and Vite. It's multi-language support site for teachers who belong to the ISL Network. The project aims to make the application accessible to users from different linguistic backgrounds by providing a seamless language-switching experience and a newletter powered by Wordpres' API",
-		deploy: "https://islnetwork.org/",
+		deploy: "https://islmultilang.netlify.app/blog",
 		details: [
 			{
 				imgName: "islnetwok-mutli-00.jpg",

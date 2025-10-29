@@ -1,6 +1,8 @@
+@use "../abstracts/variables";
+
 .singlePage {
-	padding: $base-padding;
-	max-width: $screen-max-width;
+	padding: variables.$base-padding;
+	max-width: variables.$screen-max-width;
 	margin: auto;
 	.page_title span {
 		font-size: 0.8em;
@@ -33,7 +35,7 @@
 			opacity: 1;
 		}
 		p {
-			font-family: $secondary-font;
+			font-family: variables.$secondary-font;
 			font-weight: 200;
 			font-size: 1.2em;
 			line-height: 2em;
@@ -51,7 +53,7 @@
 			}
 
 			.icon {
-				fill: $prim-bg;
+				fill: variables.$prim-bg;
 			}
 		}
 	}

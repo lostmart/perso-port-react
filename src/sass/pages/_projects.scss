@@ -1,18 +1,21 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .projects {
 	h3 {
 		font-size: 1.6em;
-		margin-bottom: $base-margin;
-		margin-top: $base-margin;
-		color: $primary-clr;
+		margin-bottom: variables.$base-margin;
+		margin-top: variables.$base-margin;
+		color: variables.$primary-clr;
 	}
 	.card {
-		max-width: $inner-screen-width;
+		max-width: variables.$inner-screen-width;
 		margin: auto;
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		margin-bottom: $base-margin * 2;
+		margin-bottom: variables.$base-margin * 2;
 
 		.card__link {
 			display: flex;
@@ -21,7 +24,7 @@
 		}
 
 		a {
-			font-family: $secondary-font;
+			font-family: variables.$secondary-font;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -46,12 +49,12 @@
 	.card__technologies {
 		display: flex;
 		justify-content: space-between;
-		padding: $base-padding;
+		padding: variables.$base-padding;
 		flex-wrap: wrap;
 
 		span {
 			text-align: center;
-			background-color: $primary-clr;
+			background-color: variables.$primary-clr;
 			width: fit-content;
 			min-width: unset;
 			padding: 0.6em 0.7em;
@@ -83,11 +86,11 @@
 		}
 	}
 
-	@include respond-to("medium") {
+	@include mixins.respond-to("medium") {
 		.card__technologies {
 			span {
-				padding: $base-padding 2em;
-				font-size: $base-font-size;
+				padding: variables.$base-padding 2em;
+				font-size: variables.$base-font-size;
 			}
 		}
 	}

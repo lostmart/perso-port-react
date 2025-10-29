@@ -1,12 +1,15 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .titlesSection {
-	padding: $base-padding;
-	max-width: $screen-max-width;
+	padding: variables.$base-padding;
+	max-width: variables.$screen-max-width;
 	margin: auto;
 
 	.titlesSection_level {
-		color: $font-clr-alt !important;
-		font-family: $secondary-font;
-		font-size: $sm-font-size;
+		color: variables.$font-clr-alt !important;
+		font-family: variables.$secondary-font;
+		font-size: variables.$sm-font-size;
 		padding-left: 5.2em;
 		position: relative;
 		display: flex;
@@ -31,11 +34,11 @@
 	}
 
 	ul {
-		padding: $base-padding;
+		padding: variables.$base-padding;
 	}
 
 	li {
-		padding-bottom: $base-padding;
+		padding-bottom: variables.$base-padding;
 		display: flex;
 		align-items: center;
 	}
@@ -51,28 +54,28 @@
 	}
 
 	.card__btn {
-		background-color: $primary-clr;
+		background-color: variables.$primary-clr;
 		cursor: pointer;
 	}
 
 	span:not(.page_title span) {
-		color: $primary-clr;
+		color: variables.$primary-clr;
 		font-style: italic;
 	}
 
 	h3 {
-		font-size: $sec-title-font-size;
-		margin: $base-margin;
+		font-size: variables.$sec-title-font-size;
+		margin: variables.$base-margin;
 	}
 
 	.card {
-		max-width: $inner-screen-width;
+		max-width: variables.$inner-screen-width;
 		margin: auto;
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		border-bottom: 1px solid $font-clr;
+		border-bottom: 1px solid variables.$font-clr;
 
 		div {
 			display: flex;
@@ -83,19 +86,19 @@
 		button {
 			margin: 0.7em auto;
 			padding: 0.65em 2em;
-			background-color: $primary-clr;
-			color: $prim-bg;
+			background-color: variables.$primary-clr;
+			color: variables.$prim-bg;
 			width: 100%;
 			border-radius: 25px;
 			min-width: 286px;
-			font-size: $base-font-size;
+			font-size: variables.$base-font-size;
 			font-weight: bold;
 			cursor: pointer;
 		}
 
-		@include respond-to("medium") {
+		@include mixins.respond-to("medium") {
 			border-bottom: none;
-			margin-bottom: $base-margin * 1.5;
+			margin-bottom: variables.$base-margin * 1.5;
 		}
 	}
 
@@ -110,44 +113,44 @@
 		span:first-child {
 			color: #ededed;
 			width: 100%;
-			font-family: $secondary-font;
+			font-family: variables.$secondary-font;
 			min-width: 170px;
 			text-align: left;
 			font-weight: 200;
-			font-size: $base-font-size;
+			font-size: variables.$base-font-size;
 		}
 
 		.course_year {
 			max-width: 40px;
 			width: 100%;
-			font-size: $sm-font-size;
+			font-size: variables.$sm-font-size;
 		}
 
-		@include respond-to("medium") {
+		@include mixins.respond-to("medium") {
 			h4 {
 				padding-left: 1em;
 				padding-right: 1em;
 				width: 100%;
 			}
 			span:first-child {
-				font-size: $sec-title-font-size;
+				font-size: variables.$sec-title-font-size;
 			}
 
 			.course_year {
-				font-size: $base-font-size;
+				font-size: variables.$base-font-size;
 			}
 		}
 	}
 
 	.courses_imgs {
-		left: $base-padding;
+		left: variables.$base-padding;
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
 		// position: absolute;
 		// top: 50%;
 		// transform: translateY(-50%);
-		@include respond-to("medium") {
+		@include mixins.respond-to("medium") {
 			width: 60px;
 			height: 60px;
 		}

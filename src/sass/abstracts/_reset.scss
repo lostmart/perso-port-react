@@ -1,12 +1,14 @@
+@use "variables";
+
 *,
 *::before,
 *::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: $primary-font;
+	font-family: variables.$primary-font;
 	color: white;
-	font-size: $base-font-size;
+	font-size: variables.$base-font-size;
 	font-weight: 400;
 }
 
