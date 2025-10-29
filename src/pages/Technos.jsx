@@ -11,6 +11,8 @@ import {
 	FaNodeJs,
 	FaGitSquare,
 	FaFigma,
+	FaJava,
+	FaJs,
 } from "react-icons/fa"
 
 import { RiTailwindCssFill } from "react-icons/ri"
@@ -52,6 +54,8 @@ const imagesArray = [
 	BiLogoTypescript,
 	FaPython,
 	FaPhp,
+	FaJava,
+	FaJs,
 	FaHtml5,
 	FaCss3Alt,
 	SiJquery,

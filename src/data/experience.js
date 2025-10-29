@@ -6,32 +6,32 @@ const experienceData = [
 		link: "https://www.epita.fr/",
 		areas: [
 			{
-				category: "Project Creation and Demonstration:",
+				category: "Project Creation and Demonstration",
 				description:
 					"Design and implement comprehensive projects to showcase the advantages and practical applications of working with REST APIs, demonstrating real-world scenarios and solutions.",
 			},
 			{
-				category: "Promotion of Self-Learning:",
+				category: "Promotion of Self-Learning",
 				description:
 					"Encourage and guide students in adopting self-learning techniques and best practices, fostering independent problem-solving skills and continuous personal development.",
 			},
 			{
-				category: "API Development:",
+				category: "API Development",
 				description:
 					"Develop robust and scalable APIs using Python and Node.js, ensuring efficient data handling and seamless integration with various client applications.",
 			},
 			{
-				category: "Front-End and CLI Development:",
+				category: "Front-End and CLI Development",
 				description:
 					"Create intuitive front-end applications and command-line interfaces (CLI) that consume and interact with both internal and third-party API endpoints, enhancing user experience and functionality.",
 			},
 			{
-				category: "External API Integration:",
+				category: "External API Integration",
 				description:
 					"Manage and utilize resources from external APIs, integrating their functionalities into projects to extend capabilities and provide richer features.",
 			},
 			{
-				category: "Mentorship and Support:",
+				category: "Mentorship and Support",
 				description:
 					"Provide mentorship and support to students, offering guidance on project development, debugging, and best coding practices.",
 			},
@@ -66,7 +66,7 @@ const experienceData = [
 					"Guide students in building robust server-side applications with Node.js and Express, implementing RESTful endpoints, authentication mechanisms, data validation, and database integration to create complete full-stack solutions.",
 			},
 			{
-				category: "TypeScript & Angular Framework",
+				category: "TypeScript and Angular Framework",
 				description:
 					"Instruct students in enterprise-level application development using TypeScript and Angular, emphasizing type safety, dependency injection, reactive programming with RxJS, and component-based architecture for scalable web applications.",
 			},
@@ -86,32 +86,32 @@ const experienceData = [
 		link: "https://openclassrooms.com/",
 		areas: [
 			{
-				category: "Project Creation and Demonstration:",
+				category: "Project Creation and Demonstration",
 				description:
 					"Design and implement comprehensive projects to showcase the advantages and practical applications of working with REST APIs, demonstrating real-world scenarios and solutions.",
 			},
 			{
-				category: "Promotion of Self-Learning:",
+				category: "Promotion of Self-Learning",
 				description:
 					"Encourage and guide students in adopting self-learning techniques and best practices, fostering independent problem-solving skills and continuous personal development.",
 			},
 			{
-				category: "API Development:",
+				category: "API Development",
 				description:
 					"Develop robust and scalable APIs using Python and Node.js, ensuring efficient data handling and seamless integration with various client applications.",
 			},
 			{
-				category: "Front-End and CLI Development:",
+				category: "Front-End and CLI Development",
 				description:
 					"Create intuitive front-end applications and command-line interfaces (CLI) that consume and interact with both internal and third-party API endpoints, enhancing user experience and functionality.",
 			},
 			{
-				category: "External API Integration:",
+				category: "External API Integration",
 				description:
 					"Manage and utilize resources from external APIs, integrating their functionalities into projects to extend capabilities and provide richer features.",
 			},
 			{
-				category: "Mentorship and Support:",
+				category: "Mentorship and Support",
 				description:
 					"Provide mentorship and support to students, offering guidance on project development, debugging, and best coding practices.",
 			},
@@ -151,7 +151,7 @@ const experienceData = [
 					"Applied advanced optimization techniques including code splitting, lazy loading, caching strategies, and database query optimization to ensure fast load times, smooth interactions, and efficient resource utilization across all deployed applications.",
 			},
 			{
-				category: "Client Collaboration & Project Management",
+				category: "Client Collaboration and Project Management",
 				description:
 					"Managed full project lifecycle from requirements gathering and technical planning to deployment and maintenance, maintaining clear communication with clients, delivering on time and within budget, and providing post-launch support and documentation.",
 			},
@@ -167,22 +167,22 @@ const experienceData = [
 		link: "https://www.magicmakers.fr/",
 		areas: [
 			{
-				category: "Teaching Web and Game Development:",
+				category: "Teaching Web and Game Development",
 				description:
 					"Instructed children and teenagers in web technologies, robotics, basic web development, and game development.",
 			},
 			{
-				category: "Use of Educational Tools:",
+				category: "Use of Educational Tools",
 				description:
 					"Utilized a variety of educational tools including Scratch, Construct, Unity, Minecraft Education, and Python Django.",
 			},
 			{
-				category: "Algorithm and Logic Introduction:",
+				category: "Algorithm and Logic Introduction",
 				description:
 					"Introduced students to the concepts of algorithms and logical thinking through online tools.",
 			},
 			{
-				category: "Fostering Technological Passion:",
+				category: "Fostering Technological Passion",
 				description:
 					"Fostered a passion for technology and problem-solving in young learners, equipping them with essential skills for future educational and career opportunities.",
 			},
@@ -193,26 +193,26 @@ const experienceData = [
 	{
 		institute: ["PARIS ATS", "France"],
 		title: "Web Administrator",
-		date: "Jan  2013 - 2019",
+		date: "Jan 2013 - 2019",
 		link: "https://www.parisatshuttle.com/",
 		areas: [
 			{
-				category: "Website Maintenance & Technical Support:",
+				category: "Website Maintenance and Technical Support",
 				description:
 					"Managed and maintained multiple websites for an airport shuttle company, ensuring optimal performance and user experience.",
 			},
 			{
-				category: "SEO Optimization:",
+				category: "SEO Optimization",
 				description:
 					"Implemented SEO strategies to improve search engine rankings and increase organic traffic across various company websites.",
 			},
 			{
-				category: "Reservation & Email Management:",
+				category: "Reservation and Email Management",
 				description:
 					"Oversaw the online reservation system, ensuring seamless booking experiences for customers, and managed email communications.",
 			},
 			{
-				category: "Salesforce Integration & Email Campaigns:",
+				category: "Salesforce Integration and Email Campaigns",
 				description:
 					"Utilized Salesforce to manage customer relationships and executed targeted email campaigns to enhance customer engagement and retention.",
 			},
@@ -227,17 +227,19 @@ const experienceData = [
 		link: "http://petiteecolebilingue.free.fr/site/index_en.php",
 		areas: [
 			{
-				category: "Introduction to Design and Production Tools:",
+				category: "Introduction to Design and Production Tools",
 				description:
-					"Introduce the students in the use of design and production tools.",
+					"Introduced students to the use of design and production tools.",
 			},
 			{
-				category: "Basic Script Writing:",
-				description: "Basic script writing.",
+				category: "Basic Script Writing",
+				description:
+					"Taught fundamental scripting concepts and basic programming logic to young students.",
 			},
 			{
-				category: "English as a Foreign Language:",
-				description: "English teaching as a foreign language.",
+				category: "English as a Foreign Language",
+				description:
+					"Taught English as a foreign language to international students from diverse backgrounds.",
 			},
 		],
 		conclusion:
