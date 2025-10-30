@@ -1,6 +1,75 @@
 const titleData = [
 	{
-		title: "JavaScript React Application Developer",
+		title: "Full-Stack Developer - Java and Angular (bac+5)",
+		titleLevel: "Diplôme de niveau 7 (bac +5)",
+		certificationTitle: "Expert en développement logiciel",
+		titleOfficialSite:
+			"https://openclassrooms.com/fr/paths/2460-developpeur-full-stack-java-et-angular",
+		date: "2024 - Present",
+		duration: "6 months full-time (402 supervised hours)",
+		schoolImg: "openclassrooms.jfif",
+		titleDate: "2023 - 2024",
+		description:
+			'As a certified Full-Stack Developer specializing in Java and Angular (Bac +5, Level 7), I completed the comprehensive "Développeur Full-Stack - Java et Angular" program by OpenClassrooms, earning the professional certification "Expert en développement logiciel" (Software Development Expert). This advanced program provided expert-level training in enterprise application development with the following key competencies:',
+		areas: [
+			{
+				category: "Java Enterprise Development",
+				description:
+					"Mastered Java programming and enterprise-level application development, including object-oriented design, advanced Java features, multithreading, and performance optimization for building robust, scalable backend systems.",
+			},
+			{
+				category: "Spring Boot Framework",
+				description:
+					"Developed expertise in Spring Boot ecosystem, including Spring MVC, Spring Data JPA, Spring Security, and dependency injection, enabling rapid development of production-ready microservices and enterprise applications.",
+			},
+			{
+				category: "Angular Framework Mastery",
+				description:
+					"Gained advanced proficiency in Angular for building dynamic, responsive single-page applications, including component architecture, reactive forms, RxJS, state management, and Angular CLI for efficient development workflows.",
+			},
+			{
+				category: "Full-Stack Architecture Design",
+				description:
+					"Designed and implemented complete application architectures connecting Angular frontends with Spring Boot backends, ensuring optimal communication patterns, security implementations, and scalable system designs.",
+			},
+			{
+				category: "RESTful API Development",
+				description:
+					"Created comprehensive RESTful APIs following industry best practices, implementing proper HTTP methods, status codes, authentication mechanisms, and API documentation using tools like Swagger/OpenAPI.",
+			},
+			{
+				category: "Database Design and Management",
+				description:
+					"Developed expertise in relational database design, SQL optimization, ORM mapping with JPA/Hibernate, transaction management, and database migration strategies for enterprise-level data persistence.",
+			},
+			{
+				category: "Application Security",
+				description:
+					"Implemented robust security measures including authentication and authorization with Spring Security, JWT tokens, OAuth2, password encryption, and protection against common vulnerabilities (OWASP Top 10).",
+			},
+			{
+				category: "Testing and Quality Assurance",
+				description:
+					"Established comprehensive testing strategies using JUnit, Mockito for backend testing, and Jasmine/Karma for Angular testing, ensuring high code coverage and reliable, maintainable applications.",
+			},
+			{
+				category: "DevOps and Deployment",
+				description:
+					"Mastered containerization with Docker, CI/CD pipeline implementation, automated testing and deployment, and cloud deployment strategies for delivering applications to production environments.",
+			},
+			{
+				category: "Agile Project Management",
+				description:
+					"Applied agile methodologies throughout the development lifecycle, including sprint planning, user story creation, code reviews, and collaborative development practices in professional team environments.",
+			},
+		],
+		conclusion:
+			"This expert-level certification (Bac +5) provided comprehensive training through 10 professional projects based on real business cases, combining hands-on experience with personalized mentorship from industry experts. The program equipped me with advanced full-stack capabilities in Java and Angular, preparing me to design, develop, and maintain high-performance enterprise applications following modern software engineering principles and industry best practices.",
+		titleUrl:
+			"https://raw.githubusercontent.com/lostmart/perso-port-react/main/src/assets/imgs/titre-developpeur-logiciel.jpg",
+	},
+	{
+		title: "JavaScript React Application Developer (Bac +4)",
 		titleLevel: "Diplôme de niveau 6 (bac +4)",
 		certificationTitle: "Développeur Concepteur Logiciel",
 		titleOfficialSite:
@@ -119,7 +188,7 @@ const titleData = [
 			"https://www.coursera.org/account/accomplishments/certificate/Z4G8NR6DYB8D",
 	},
 	{
-		title: "Language Teacher",
+		title: "Language Teacher (Bac +2)",
 		titleLevel: "Diplôme de niveau 4 (bac +2)",
 		schoolImg: "anep.jfif",
 		titleDate: "1999 - 2003",
