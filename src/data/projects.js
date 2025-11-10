@@ -1,6 +1,48 @@
 const projectsData = [
 	{
 		id: 1,
+		projectName: "Authentication Microservice",
+		githubLink: "https://github.com/lostmart/auth-microservice",
+		tags: [
+			"microservice",
+			"backend",
+			"nodeJs",
+			"TypeScript",
+			"postgresql",
+			"jwt",
+			"docker",
+			"CI/CD",
+			"testing",
+			"prisma",
+		],
+		description:
+			"A robust authentication microservice built with Node.js that provides secure user registration, login, JWT token management, and password reset functionality. Features include email verification, role-based access control, and Docker containerization for easy deployment.",
+		deploy: "https://github.com/lostmart/auth-microservice#readme",
+		details: [
+			{
+				imgName: "01/01-microservice.png",
+				legend: "Authentication microservice architecture and endpoints",
+			},
+			{
+				imgName: "01/02-jwt-authentication.png",
+				legend: "JWT token generation and verification system",
+			},
+			{
+				imgName: "01/03-email-flow.png",
+				legend: "Role-based access control implementation",
+			},
+			{
+				imgName: "01/04-docker-file.png",
+				legend: "Docker containerization for easy deployment",
+			},
+			{
+				imgName: "01/05-psotgresql-prisma.png",
+				legend: "Posgresql schema in order and Prisma ORM",
+			},
+		],
+	},
+	{
+		id: 2,
 		projectName: "University site",
 		githubLink: "https://github.com/lostmart/university-front-react",
 		tags: ["web app", "frontend", "react", "javascript", "vite"],
@@ -30,7 +72,7 @@ const projectsData = [
 		],
 	},
 	{
-		id: 2,
+		id: 3,
 		projectName: "Teachers Group Site",
 		githubLink: "https://github.com/lostmart/university-front-react",
 		tags: ["web app", "frontend", "vue", "javascript", "vite", "wordpress"],
@@ -70,7 +112,7 @@ const projectsData = [
 		],
 	},
 	{
-		id: 3,
+		id: 4,
 		projectName: "REST API with Node.js",
 		githubLink: "https://github.com/lostmart/rest-api-Node-js",
 		tags: ["rest API", "backend", "nodeJs", "javascript", "mongoDB"],
@@ -105,7 +147,7 @@ const projectsData = [
 		],
 	},
 	{
-		id: 4,
+		id: 5,
 		projectName: "REST API with Flask-RESTful",
 		githubLink: "https://github.com/lostmart/restfulAPI-python",
 		tags: ["rest API", "backend", "python", "flask", "Swagger UI", "sqlite3"],
