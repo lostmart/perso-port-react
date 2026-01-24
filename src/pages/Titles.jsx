@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Accordion from "../components/atoms/Accordion"
-import titleData from "../data/titles"
-import coursesData from "../data/courses"
+import titleData from "../data/en/titles"
+import coursesData from "../data/en/courses"
 
 import Modal from "modal-package-martin-test/dist/Modal"
 

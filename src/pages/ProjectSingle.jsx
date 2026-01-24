@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom"
-import projectsData from "../data/projects"
+import projectsData from "../data/en/projects"
 import { FaGithub } from "react-icons/fa"
 import { AiOutlineDeploymentUnit } from "react-icons/ai"
 import AnimatedSection from "../components/AnimatedSection"
@@ -28,24 +28,6 @@ const ProjectSingle = () => {
 			)
 		})
 	}
-
-	// const text = projectsData[index].projectName
-	// const words = text.split(" ")
-
-	// // Map through each word and wrap the first letter with a span
-	// const highlightedText = words.map((word, index) => {
-	// 	// Check if the word is not empty
-	// 	if (word.length > 0) {
-	// 		return (
-	// 			<h2 key={index}>
-	// 				<span className="highlight">{word[0]}</span>
-	// 				{word.slice(1)}
-	// 				{index < words.length - 1 && " "}
-	// 			</h2>
-	// 		)
-	// 	}
-	// 	return ""
-	// })
 
 	return (
 		<section className="singlePage">

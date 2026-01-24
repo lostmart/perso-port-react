@@ -8,6 +8,7 @@ import {
 } from "react-router-dom"
 
 import Root from "./layouts/default"
+import { LanguageProvider } from "./contexts/LanguageContext"
 
 // pages
 import ErrorPage from "./layouts/ErrorPage"
@@ -32,12 +33,14 @@ const router = createBrowserRouter(
 			<Route path="contact" element={<Contact />} />
 			<Route path="contact/:id" element={<ProjectSingle />} />
 			<Route path="*" element={<ErrorPage />} />
-		</Route>
-	)
+		</Route>,
+	),
 )
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
-	</React.StrictMode>
+		<LanguageProvider>
+			<RouterProvider router={router} />
+		</LanguageProvider>
+	</React.StrictMode>,
 )

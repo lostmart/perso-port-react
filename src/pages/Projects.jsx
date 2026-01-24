@@ -1,4 +1,4 @@
-import projectsData from "../data/projects"
+import projectsData from "../data/en/projects"
 
 import SwiperCube from "../components/SwiperCube"
 import { Link } from "react-router-dom"

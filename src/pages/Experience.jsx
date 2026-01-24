@@ -1,4 +1,4 @@
-import experienceData from "../data/experience"
+import experienceData from "../data/en/experience"
 
 const Experience = () => {
 	const ExperienceDataRender = () => {
