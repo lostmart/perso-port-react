@@ -5,13 +5,18 @@ import SocialCont from "./SocialCont"
 import { motion } from "framer-motion"
 import { FaAddressCard } from "react-icons/fa"
 
+
+import { useTranslation } from "../hooks/useTranslation"
+
 /*  atom components  */
 import CardTitle from "./atoms/CardTitle"
 import CardImg from "./atoms/CardImg"
 import CardBody from "./atoms/CardBody"
 
 /* render fn  */
-const RenderBody = () => {
+const RenderBody = ({ textBody }) => {
+
+	const { t } = useTranslation()
 	const item = {
 		hidden: { y: 20, opacity: 0 },
 		visible: { y: 0, opacity: 1 },
@@ -22,17 +27,12 @@ const RenderBody = () => {
 			className="home__self_intro home__self_intro-mobile"
 			variants={item}
 		>
-			<p>
-				Hey there! I'm Martin, a FullStack web developer with extensive
-				experience in teaching, mentoring, and developing web applications. I
-				love helping others navigate the tech world and creating dynamic,
-				user-friendly web solutions. Welcome to my portfolio!
-			</p>
+			<p>{t("home.intro")}</p>
 		</motion.div>
 	)
 }
 
-const Card = (props) => {
+const Card = ({ cardTitle, subTitle }) => {
 	const container = {
 		hidden: { opacity: 1, scale: 0 },
 		visible: {
@@ -50,8 +50,6 @@ const Card = (props) => {
 		hidden: { y: 20, opacity: 0 },
 		visible: { y: 0, opacity: 1 },
 	}
-
-	const { cardTitle, subTitle } = props
 	return (
 		<motion.article
 			initial="hidden"

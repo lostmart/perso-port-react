@@ -14,7 +14,6 @@ import {
 	FaJava,
 	FaJs,
 } from "react-icons/fa"
-
 import { RiTailwindCssFill } from "react-icons/ri"
 import {
 	SiHandlebarsdotjs,
@@ -32,7 +31,6 @@ import {
 	SiWebpack,
 	SiNuxtdotjs,
 } from "react-icons/si"
-
 import { IoLogoJavascript } from "react-icons/io"
 import { BiLogoTypescript } from "react-icons/bi"
 import {
@@ -42,10 +40,11 @@ import {
 	DiPhotoshop,
 } from "react-icons/di"
 import { RiNextjsLine } from "react-icons/ri"
-
 import { TbBrandVite } from "react-icons/tb"
 
 import SwiperComp from "../components/SwiperComp"
+import { useLanguage } from "../contexts/LanguageContext"
+import { useState, useEffect } from "react"
 
 const imagesArray = [
 	FaWordpress,
@@ -86,89 +85,65 @@ const imagesArray = [
 ]
 
 const Technos = () => {
+	const { currentLanguage } = useLanguage()
+	const [technosData, setTechnosData] = useState(null)
+
+	useEffect(() => {
+		const loadTechnosData = async () => {
+			try {
+				let dataModule
+				if (currentLanguage === "en") {
+					dataModule = await import("../data/en/technos.js")
+				} else if (currentLanguage === "fr") {
+					dataModule = await import("../data/fr/technos-fr.js")
+				} else if (currentLanguage === "es") {
+					dataModule = await import("../data/sp/technos-es.js")
+				}
+				setTechnosData(dataModule.default)
+			} catch (error) {
+				console.error(
+					`Failed to load technos data for language: ${currentLanguage}`,
+					error,
+				)
+			}
+		}
+
+		loadTechnosData()
+	}, [currentLanguage])
+
+	if (!technosData) {
+		return <div>Loading...</div>
+	}
+
 	return (
 		<section className="technosSection">
 			<h2 className="page_title">
-				<span>A</span>bout
+				<span>{technosData.pageTitle.firstLetter}</span>
+				{technosData.pageTitle.rest}
 			</h2>
+
 			<article className="techno__about">
-				<p>
-					I'm a Full Stack Developer who believes the best code is written when
-					you understand both the machine and the human behind the screen. With
-					a Master's degree in Software Development (Bac +5, specializing in
-					Java and Angular) and a decade of hands-on experience, I've built my
-					career at the intersection of creating powerful web applications and
-					empowering others to do the same.
-				</p>
-				<p>
-					Beyond writing code, I'm deeply invested in shaping the next
-					generation of developers. As an instructor and mentor, I've guided
-					countless students through their web development journey, and I'm
-					proud to serve on certification juries for Bac +3 web development
-					programs in France—experiencing both sides of the education table
-					keeps me grounded and constantly learning.
-				</p>
-				<p>
-					My approach to development is shaped by my dual passions: the logical
-					precision of programming and the creative expression of music. Whether
-					I'm architecting a Spring Boot backend, crafting responsive React
-					interfaces, or explaining complex concepts to students, I bring the
-					same energy—solving problems, collaborating with diverse teams, and
-					building solutions that are not just functional, but elegant.
-				</p>
+				{technosData.aboutSections.map((section, index) => (
+					<p key={index}>{section.text}</p>
+				))}
 			</article>
+
 			<h2 className="page_title">
-				<span>T</span>echnical <span>E</span>xpertise
+				<span>{technosData.expertiseTitle.firstLetter}</span>
+				{technosData.expertiseTitle.word1}{" "}
+				<span>{technosData.expertiseTitle.secondLetter}</span>
+				{technosData.expertiseTitle.word2}
 			</h2>
+
 			<SwiperComp>{imagesArray}</SwiperComp>
 
 			<ul>
-				<li>
-					<span>Languages & Core Technologies:</span>
-					<span className="technosSection__item">
-						JavaScript/TypeScript, Java, Python, PHP
-					</span>
-				</li>
-				<li>
-					<span>Frontend Development:</span>
-					<span className="technosSection__item">
-						React, Angular, Vue.js, Next.js, Nuxt.js | HTML5, CSS3, Tailwind,
-						Bootstrap, Material UI | jQuery, Handlebars
-					</span>
-				</li>
-				<li>
-					<span>Backend Development:</span>
-					<span className="technosSection__item">
-						Node.js, Express, Spring Boot, Django, Flask, Laravel | RESTful
-						APIs, GraphQL
-					</span>
-				</li>
-				<li>
-					<span>Data & Databases: </span>
-					<span className="technosSection__item">
-						MySQL, PostgreSQL, MongoDB, SQLite
-					</span>
-				</li>
-				<li>
-					<span>Tools: </span>
-					<span className="technosSection__item">
-						Git, Jest, Mocha, Webpack, Babel, Vite, Figma, Photoshop
-					</span>
-				</li>
-				<li>
-					<span>Development Practices & Tools:</span>
-					<span className="technosSection__item">
-						Git, Agile/Scrum, TDD/BDD, Unit Testing (Jest, Mocha) | Webpack,
-						Vite, Babel | Responsive Design, SEO Optimization
-					</span>
-				</li>
-				<li>
-					<span>Additional Skills;</span>
-					<span className="technosSection__item">
-						WordPress, Figma, Photoshop, Video Editing, Animation, teaching and
-						mentoring
-					</span>
-				</li>
+				{technosData.skillsList.map((skill, index) => (
+					<li key={index}>
+						<span>{skill.category}</span>
+						<span className="technosSection__item">{skill.items}</span>
+					</li>
+				))}
 			</ul>
 		</section>
 	)
