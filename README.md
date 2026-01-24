@@ -36,7 +36,7 @@ A modern, responsive personal portfolio website built with React, showcasing my 
 
 ## 📁 Project Structure
 
-```bash
+```text
 perso-port-react/
 ├── src/
 │   ├── assets/
@@ -49,17 +49,37 @@ perso-port-react/
 │   │   │   ├── CardBody.jsx
 │   │   │   ├── CardImg.jsx
 │   │   │   └── CardTitle.jsx
-│   │   └── lightInstances/   # Light-related components
-│   │       ├── lights.js
-│   │       ├── AnimatedSection.jsx
-│   │       ├── Card.jsx
-│   │       ├── Footer.jsx
-│   │       ├── LightBox.jsx
-│   │       ├── NavBar.jsx
-│   │       ├── SocialCont.jsx
-│   │       ├── SwiperComp.jsx
-│   │       └── SwiperCube.jsx
-│   ├── data/                 # Data files and content
+│   │   ├── lightInstances/   # Light-related components
+│   │   │   ├── lights.js
+│   │   │   ├── AnimatedSection.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── LightBox.jsx
+│   │   │   ├── NavBar.jsx
+│   │   │   ├── SocialCont.jsx
+│   │   │   ├── SwiperComp.jsx
+│   │   │   └── SwiperCube.jsx
+│   │   └── LanguageSwitcher.jsx  # Language selector component
+│   ├── contexts/             # React Context providers
+│   │   └── LanguageContext.jsx   # i18n context & provider
+│   ├── data/                 # Multilingual data files
+│   │   ├── en/              # English content
+│   │   │   ├── courses.js
+│   │   │   ├── experience.js
+│   │   │   ├── projects.js
+│   │   │   └── titles.js
+│   │   ├── fr/              # French content
+│   │   │   ├── courses.js
+│   │   │   ├── experience.js
+│   │   │   ├── projects.js
+│   │   │   └── titles.js
+│   │   └── sp/              # Spanish content
+│   │       ├── courses.js
+│   │       ├── experience.js
+│   │       ├── projects.js
+│   │       └── titles.js
+│   ├── hooks/               # Custom React hooks
+│   │   └── useTranslation.js    # Translation hook
 │   ├── layouts/              # Layout components
 │   │   ├── default.jsx
 │   │   └── ErrorPage.jsx
@@ -74,11 +94,16 @@ perso-port-react/
 │   ├── sass/                # Styling
 │   │   ├── abstracts/      # Variables, mixins
 │   │   ├── components/     # Component styles
+│   │   │   └── LanguageSwitcher.scss
 │   │   ├── layout/         # Layout styles
 │   │   ├── pages/          # Page-specific styles
 │   │   └── main.scss       # Main stylesheet
+│   ├── translations/        # UI translation files
+│   │   ├── en.json         # English UI strings
+│   │   ├── fr.json         # French UI strings
+│   │   └── es.json         # Spanish UI strings
 │   ├── main.jsx            # Application entry point
-│   └── eslintrc.cjs        # ESLint configuration
+│   └── .eslintrc.cjs       # ESLint configuration
 ├── .gitignore
 ├── index.html
 ├── package.json
