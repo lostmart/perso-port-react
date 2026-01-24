@@ -10,7 +10,9 @@
 	right: 0;
 	padding: $base-padding;
 	justify-content: center;
-	width: 100%;
+	width: fit-content;
+	background: #1a1e273d;
+	backdrop-filter: blur(2px);
 
 	@include mixins.respond-to("medium") {
 		right: 1em;
