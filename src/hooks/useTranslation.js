@@ -9,15 +9,26 @@ import { useState, useEffect } from "react"
 export const useTranslation = () => {
 	const { currentLanguage } = useLanguage()
 	const [translations, setTranslations] = useState({})
+	const [isLoading, setIsLoading] = useState(true)
 
 	useEffect(() => {
 		// Dynamically import the translation file for the current language
 		const loadTranslations = async () => {
+			setIsLoading(true)
 			try {
-				const translationModule = await import(
-					`../translations/${currentLanguage}.json`
-				)
+				// Use Vite's glob import for better handling
+				let translationModule
+
+				if (currentLanguage === "en") {
+					translationModule = await import("../translations/en.json")
+				} else if (currentLanguage === "fr") {
+					translationModule = await import("../translations/fr.json")
+				} else if (currentLanguage === "es") {
+					translationModule = await import("../translations/es.json")
+				}
+
 				setTranslations(translationModule.default || translationModule)
+				setIsLoading(false)
 			} catch (error) {
 				console.error(
 					`Failed to load translations for language: ${currentLanguage}`,
@@ -25,6 +36,7 @@ export const useTranslation = () => {
 				)
 				// Fallback to empty object if translation file doesn't exist
 				setTranslations({})
+				setIsLoading(false)
 			}
 		}
 
@@ -38,6 +50,10 @@ export const useTranslation = () => {
 	 * @returns {string} Translated text or the key itself if not found
 	 */
 	const t = (key, params = {}) => {
+		if (isLoading) {
+			return key // Return key while loading to avoid flashing
+		}
+
 		// Support nested keys with dot notation (e.g., "nav.home")
 		const keys = key.split(".")
 		let value = translations
@@ -68,6 +84,7 @@ export const useTranslation = () => {
 	return {
 		t,
 		currentLanguage,
+		isLoading,
 	}
 }
 

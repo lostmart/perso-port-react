@@ -1,22 +1,25 @@
 import Card from "../components/Card"
 import { motion } from "framer-motion"
-
-/* render fn  */
-const RenderBody = () => {
-	return (
-		<>
-			<p>codeme.martin@gmail.com</p>
-			<p>Based in Yvelines, France</p>
-		</>
-	)
-}
+import { useTranslation } from "../hooks/useTranslation"
 
 const Home = () => {
+	const { t } = useTranslation()
+
+	/* render fn with translations */
+	const RenderBody = () => {
+		return (
+			<>
+				<p>{t("home.email")}</p>
+				<p>{t("home.location")}</p>
+			</>
+		)
+	}
+
 	return (
 		<section className="home">
 			<Card
-				cardTitle="Martin"
-				subTitle="FullStack Web Developer"
+				cardTitle={t("home.name")}
+				subTitle={t("home.role")}
 				cardBody={RenderBody}
 			/>
 			<motion.article
@@ -24,17 +27,11 @@ const Home = () => {
 				animate={{ x: 0, opacity: 1, filter: "blur(0px)" }}
 				className="home__self_intro home__self_intro-desktop"
 			>
-				<p>
-					Hey there! I'm Martin, a FullStack developer specializing in Java,
-					Spring Boot, and Angular. With a Bac +5 certification as an Expert in
-					Software Development, I bring both technical depth and teaching
-					experience to the table—whether I'm building robust web applications
-					or mentoring the next generation of developers. Welcome to my
-					portfolio!
-				</p>
+				<p>{t("home.intro")}</p>
 			</motion.article>
 			<h2>
-				<span>H</span>ome
+				<span>{t("home.titleFirstLetter")}</span>
+				{t("home.titleRest")}
 			</h2>
 		</section>
 	)

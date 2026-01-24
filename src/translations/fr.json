@@ -1,4 +1,13 @@
 {
+	"home": {
+		"name": "Martin",
+		"email": "codeme.martin@gmail.com",
+		"location": "Basé dans les Yvelines, France",
+		"role": "Développeur Web FullStack",
+		"intro": "Salut ! Je suis Martin, développeur FullStack spécialisé en Java, Spring Boot et Angular. Avec une certification Bac +5 en tant qu'Expert en Développement Logiciel, j'apporte à la fois une expertise technique et une expérience d'enseignement—que ce soit en construisant des applications web robustes ou en formant la prochaine génération de développeurs. Bienvenue sur mon portfolio !",
+		"titleFirstLetter": "A",
+		"titleRest": "ccueil"
+	},
 	"nav": {
 		"home": "Accueil",
 		"experience": "Expérience",
