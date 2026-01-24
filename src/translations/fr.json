@@ -1,0 +1,67 @@
+{
+	"nav": {
+		"home": "Accueil",
+		"experience": "Expérience",
+		"projects": "Projets",
+		"skills": "Compétences",
+		"titles": "Formation & Certifications",
+		"contact": "Contact"
+	},
+	"hero": {
+		"greeting": "Bonjour, je suis",
+		"role": "Développeur Full-Stack & Formateur",
+		"description": "Passionné par la création d'applications web modernes et l'enseignement de la prochaine génération de développeurs",
+		"cta": "Voir Mes Projets",
+		"downloadCV": "Télécharger CV"
+	},
+	"experience": {
+		"title": "Expérience Professionnelle",
+		"current": "Actuellement",
+		"responsibilities": "Responsabilités Principales",
+		"technologies": "Technologies Utilisées"
+	},
+	"projects": {
+		"title": "Projets Phares",
+		"viewProject": "Voir le Projet",
+		"viewCode": "Voir le Code",
+		"liveDemo": "Démo en Direct",
+		"techStack": "Stack Technique"
+	},
+	"skills": {
+		"title": "Compétences Techniques",
+		"languages": "Langages & Frameworks",
+		"databases": "Bases de Données",
+		"tools": "Outils & Méthodes",
+		"frontend": "Front-end",
+		"backend": "API & Back-end",
+		"devops": "DevOps & Infrastructure"
+	},
+	"titles": {
+		"title": "Formation & Certifications",
+		"degree": "Diplôme",
+		"certification": "Certification",
+		"year": "Année",
+		"institution": "Institution"
+	},
+	"contact": {
+		"title": "Me Contacter",
+		"name": "Nom",
+		"email": "Email",
+		"message": "Message",
+		"send": "Envoyer",
+		"sending": "Envoi en cours...",
+		"success": "Message envoyé avec succès !",
+		"error": "Échec de l'envoi. Veuillez réessayer."
+	},
+	"footer": {
+		"rights": "Tous droits réservés",
+		"social": "Connectez-vous avec moi"
+	},
+	"common": {
+		"loading": "Chargement...",
+		"error": "Une erreur s'est produite",
+		"readMore": "Lire Plus",
+		"backToTop": "Retour en Haut",
+		"close": "Fermer"
+	}
+}

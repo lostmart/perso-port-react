@@ -1,0 +1,67 @@
+{
+	"nav": {
+		"home": "Home",
+		"experience": "Experience",
+		"projects": "Projects",
+		"skills": "Skills",
+		"titles": "Education & Certifications",
+		"contact": "Contact"
+	},
+	"hero": {
+		"greeting": "Hi, I'm",
+		"role": "Full-Stack Web Developer & Instructor",
+		"description": "Passionate about creating modern web applications and teaching the next generation of developers",
+		"cta": "View My Work",
+		"downloadCV": "Download CV"
+	},
+	"experience": {
+		"title": "Professional Experience",
+		"current": "Current",
+		"responsibilities": "Key Responsibilities",
+		"technologies": "Technologies Used"
+	},
+	"projects": {
+		"title": "Featured Projects",
+		"viewProject": "View Project",
+		"viewCode": "View Code",
+		"liveDemo": "Live Demo",
+		"techStack": "Tech Stack"
+	},
+	"skills": {
+		"title": "Technical Skills",
+		"languages": "Languages & Frameworks",
+		"databases": "Databases",
+		"tools": "Tools & Methods",
+		"frontend": "Front-end",
+		"backend": "API & Back-end",
+		"devops": "DevOps & Infrastructure"
+	},
+	"titles": {
+		"title": "Education & Certifications",
+		"degree": "Degree",
+		"certification": "Certification",
+		"year": "Year",
+		"institution": "Institution"
+	},
+	"contact": {
+		"title": "Get In Touch",
+		"name": "Name",
+		"email": "Email",
+		"message": "Message",
+		"send": "Send Message",
+		"sending": "Sending...",
+		"success": "Message sent successfully!",
+		"error": "Failed to send message. Please try again."
+	},
+	"footer": {
+		"rights": "All rights reserved",
+		"social": "Connect with me"
+	},
+	"common": {
+		"loading": "Loading...",
+		"error": "An error occurred",
+		"readMore": "Read More",
+		"backToTop": "Back to Top",
+		"close": "Close"
+	}
+}
