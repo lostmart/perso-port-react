@@ -66,7 +66,7 @@ const titleData = [
 		conclusion:
 			"This expert-level certification (Bac +5) provided comprehensive training through 10 professional projects based on real business cases, combining hands-on experience with personalized mentorship from industry experts. The program equipped me with advanced full-stack capabilities in Java and Angular, preparing me to design, develop, and maintain high-performance enterprise applications following modern software engineering principles and industry best practices.",
 		titleUrl:
-			"https://raw.githubusercontent.com/lostmart/perso-port-react/main/src/assets/imgs/titre-developpeur-logiciel.jpg",
+			"https://raw.githubusercontent.com/lostmart/perso-port-react/refs/heads/main/src/assets/imgs/expert-logiciel.png",
 	},
 	{
 		title: "JavaScript React Application Developer (Bac +4)",
