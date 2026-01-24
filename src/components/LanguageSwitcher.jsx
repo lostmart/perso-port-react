@@ -1,5 +1,4 @@
 import { useLanguage } from "../contexts/LanguageContext"
-import "./LanguageSwitcher.scss"
 
 /**
  * Language Switcher Component

@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom"
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
 import LightBox from "../components/LighBox"
+import LanguageSwitcher from "../components/LanguageSwitcher"
 
 // light imports
 import { mainLight, secLight } from "../components/lightInsances/lights.js"
@@ -15,6 +16,7 @@ const Root = () => {
 			<LightBox lightBoxCss={secLight} />
 			<header className="header">
 				<NavBar />
+				<LanguageSwitcher />
 			</header>
 			<main>
 				<h1 aria-label="Martin Pedraza Porfolio"></h1>

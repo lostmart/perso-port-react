@@ -1,0 +1,78 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.language-switcher {
+	display: flex;
+	gap: $base-padding * 0.7; // 0.49em ≈ 0.5rem
+	align-items: center;
+	position: absolute;
+	z-index: 1050;
+	right: 1em;
+	padding: $base-padding;
+
+	.language-btn {
+		display: flex;
+		align-items: center;
+		gap: $base-padding * 0.7;
+		padding: $base-padding ($base-padding * 1.4);
+		background: transparent;
+		border: 2px solid rgba(255, 255, 255, 0.2);
+		border-radius: $base-border-radious;
+		color: $font-clr;
+		cursor: pointer;
+		font-size: $base-font-size * 0.9;
+		font-weight: 500;
+		font-family: $secondary-font;
+		transition: all 0.3s ease;
+
+		&:hover {
+			border-color: rgba(255, 255, 255, 0.5);
+			background: $semi-transparent;
+			transform: translateY(-2px);
+		}
+
+		&.active {
+			border-color: $primary-clr;
+			background: rgba(163, 255, 148, 0.1); // $primary-clr with opacity
+			color: $primary-clr;
+		}
+
+		.flag {
+			font-size: $base-font-size * 1.2;
+			line-height: 1;
+		}
+
+		.name {
+			font-size: $sm-font-size;
+			font-weight: 500;
+		}
+	}
+
+	// Compact variant - just language codes
+	&--compact {
+		gap: $base-padding * 0.35;
+
+		.language-btn {
+			padding: ($base-padding * 0.57) ($base-padding * 1.14);
+			font-size: $base-font-size * 0.8;
+			font-weight: 600;
+			letter-spacing: 0.5px;
+		}
+	}
+
+	// Flags variant - just flag emojis
+	&--flags {
+		gap: $base-padding * 0.7;
+
+		.language-btn {
+			padding: $base-padding;
+			aspect-ratio: 1;
+			border-radius: 50%;
+
+			.flag {
+				font-size: $base-font-size * 1.5;
+			}
+		}
+	}
+}
+
