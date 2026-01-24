@@ -1,14 +1,22 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as *;
 
 .language-switcher {
 	display: flex;
-	gap: $base-padding * 0.7; // 0.49em ≈ 0.5rem
+	gap: $base-padding * 0.5;
 	align-items: center;
 	position: absolute;
 	z-index: 1050;
-	right: 1em;
+	right: 0;
 	padding: $base-padding;
+	justify-content: center;
+	width: 100%;
+
+	@include mixins.respond-to("medium") {
+		right: 1em;
+		gap: $base-padding * 0.7;
+		justify-content: flex-end;
+	}
 
 	.language-btn {
 		display: flex;
@@ -75,4 +83,3 @@
 		}
 	}
 }
-
