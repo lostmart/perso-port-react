@@ -1,9 +1,9 @@
 const experienceData = {
 	pageTitle: {
-		firstLetter: "P",
-		rest: "rofessional",
-		firstLetter2: "E",
-		rest2: "xperience",
+		firstLetter: "E",
+		rest: "xperiencia",
+		firstLetter2: "P",
+		rest2: "rofesional",
 	},
 	positions: [
 		{

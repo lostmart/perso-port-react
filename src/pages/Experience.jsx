@@ -84,6 +84,8 @@ const Experience = () => {
 			<h2 className="page_title">
 				<span>{experienceData.pageTitle.firstLetter}</span>
 				{experienceData.pageTitle.rest}
+				<span>{" " + experienceData.pageTitle.firstLetter2}</span>
+				{experienceData.pageTitle.rest2}
 			</h2>
 			<div>
 				<ExperienceDataRender />

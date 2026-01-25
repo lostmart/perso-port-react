@@ -14,10 +14,10 @@ const Root = () => {
 		<div className="container">
 			<LightBox lightBoxCss={mainLight} />
 			<LightBox lightBoxCss={secLight} />
-			<header className="header">
-				<NavBar />
-				<LanguageSwitcher />
-			</header>
+
+			<NavBar />
+			<LanguageSwitcher />
+
 			<main>
 				<h1 aria-label="Martin Pedraza Porfolio"></h1>
 				<Outlet />
