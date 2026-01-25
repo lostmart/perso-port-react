@@ -1,6 +1,6 @@
 const projectsData = [
 	{
-		id: 6,
+		id: 1,
 		projectName: "YouTube Video Script Creator",
 		githubLink: "https://github.com/lostmart/transcript-API",
 		tags: [
@@ -63,7 +63,42 @@ const projectsData = [
 		],
 	},
 	{
-		id: 1,
+		id: 2,
+		projectName: "REST API with Node.js",
+		githubLink: "https://github.com/lostmart/rest-api-Node-js",
+		tags: ["rest API", "backend", "nodeJs", "javascript", "mongoDB"],
+		description:
+			"This project includes a Node.js application that implements a REST API using Express.js. It allows you to perform various CRUD (Create, Read, Update, Delete) operations on resources via HTTP requests. The application also uses the Axios library to interact with external APIs.",
+		deploy: "https://main--zesty-moonbeam-928dd0.netlify.app/",
+		details: [
+			{
+				imgName: "nodejs-00.jpg",
+				legend: "Restfull API with Node Js and Express",
+			},
+			{
+				imgName: "nodejs-01.jpg",
+				legend:
+					"Mongoose schema in order to define de structure document of each collection in Mongoose",
+			},
+			{
+				imgName: "nodejs-02.jpg",
+				legend:
+					"User creation based off the request boady with a hashed password using bycript",
+			},
+			{
+				imgName: "nodejs-03.jpg",
+				legend:
+					"When tested in Postman, the API sends a 201 status code, if everything went well",
+			},
+			{
+				imgName: "nodejs-04.jpg",
+				legend:
+					"Then the user can login using heir credentials and the API will send a token back (JWT)",
+			},
+		],
+	},
+	{
+		id: 3,
 		projectName: "Authentication Microservice",
 		githubLink: "https://github.com/lostmart/auth-microservice",
 		tags: [
@@ -105,7 +140,7 @@ const projectsData = [
 		],
 	},
 	{
-		id: 2,
+		id: 4,
 		projectName: "University site",
 		githubLink: "https://github.com/lostmart/university-front-react",
 		tags: ["web app", "frontend", "react", "javascript", "vite"],
@@ -135,7 +170,7 @@ const projectsData = [
 		],
 	},
 	{
-		id: 3,
+		id: 5,
 		projectName: "Teachers Group Site",
 		githubLink: "https://github.com/lostmart/university-front-react",
 		tags: ["web app", "frontend", "vue", "javascript", "vite", "wordpress"],
@@ -175,42 +210,7 @@ const projectsData = [
 		],
 	},
 	{
-		id: 4,
-		projectName: "REST API with Node.js",
-		githubLink: "https://github.com/lostmart/rest-api-Node-js",
-		tags: ["rest API", "backend", "nodeJs", "javascript", "mongoDB"],
-		description:
-			"This project includes a Node.js application that implements a REST API using Express.js. It allows you to perform various CRUD (Create, Read, Update, Delete) operations on resources via HTTP requests. The application also uses the Axios library to interact with external APIs.",
-		deploy: "https://main--zesty-moonbeam-928dd0.netlify.app/",
-		details: [
-			{
-				imgName: "nodejs-00.jpg",
-				legend: "Restfull API with Node Js and Express",
-			},
-			{
-				imgName: "nodejs-01.jpg",
-				legend:
-					"Mongoose schema in order to define de structure document of each collection in Mongoose",
-			},
-			{
-				imgName: "nodejs-02.jpg",
-				legend:
-					"User creation based off the request boady with a hashed password using bycript",
-			},
-			{
-				imgName: "nodejs-03.jpg",
-				legend:
-					"When tested in Postman, the API sends a 201 status code, if everything went well",
-			},
-			{
-				imgName: "nodejs-04.jpg",
-				legend:
-					"Then the user can login using heir credentials and the API will send a token back (JWT)",
-			},
-		],
-	},
-	{
-		id: 5,
+		id: 6,
 		projectName: "REST API with Flask-RESTful",
 		githubLink: "https://github.com/lostmart/restfulAPI-python",
 		tags: ["rest API", "backend", "python", "flask", "Swagger UI", "sqlite3"],
