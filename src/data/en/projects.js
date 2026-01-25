@@ -1,5 +1,68 @@
 const projectsData = [
 	{
+		id: 6,
+		projectName: "YouTube Video Script Creator",
+		githubLink: "https://github.com/lostmart/transcript-API",
+		tags: [
+			"full-stack",
+			"react",
+			"typescript",
+			"node.js",
+			"express",
+			"gemini AI",
+			"REST API",
+			"tailwind CSS",
+			"MVC",
+			"clean architecture",
+			"ffmpeg",
+			"context API",
+			"video processing",
+			"TTS",
+			"pexels API",
+			"unsplash API",
+		],
+		description:
+			"Full-stack application that transforms YouTube videos into engaging social media scripts using AI. Extracts transcripts, generates optimized scripts with hooks and CTAs, fetches relevant stock photos from Pexels/Unsplash, and produces text-to-speech audio with Google TTS. Features comprehensive workflow from video URL to final video assets with clean MVC architecture.",
+		deploy: "https://github.com/lostmart/transcript-API#readme",
+		details: [
+			{
+				imgName: "video-transcript/transcript-01.png",
+				legend:
+					"Home page with URL input and online/offline mode toggle for development",
+			},
+			{
+				imgName: "video-transcript/transcript-02.png",
+				legend:
+					"Image selection carousel with stock photo search queries from Pexels and Unsplash",
+			},
+			{
+				imgName: "video-transcript/transcript-03.png",
+				legend:
+					"Audio generation interface with voice and tone customization for each section",
+			},
+			{
+				imgName: "video-transcript/transcript-04.png",
+				legend:
+					"Saved summaries management page with view and delete functionality",
+			},
+			{
+				imgName: "video-transcript/transcript-05.png",
+				legend:
+					"TypeScript interfaces and VideoContext for type-safe state management",
+			},
+			{
+				imgName: "video-transcript/transcript-06.png",
+				legend:
+					"Backend Express server with clean routing structure and static file serving",
+			},
+			{
+				imgName: "video-transcript/transcript-07.png",
+				legend:
+					"Backend MVC architecture with separated controllers, services, and routes",
+			},
+		],
+	},
+	{
 		id: 1,
 		projectName: "Authentication Microservice",
 		githubLink: "https://github.com/lostmart/auth-microservice",
@@ -180,6 +243,61 @@ const projectsData = [
 					"This code snippet defines a User class inheriting from Resource. It's to handle HTTP requests. The post method of this class handles the creation of a new user (sign-up process)",
 			},
 		],
+	},
+	{
+		id: 7,
+		projectName: "NodeJs API Checker",
+		githubLink: "https://github.com/lostmart/NodeJs-api-checker",
+		tags: [
+			"monitoring",
+			"testing",
+			"backend",
+			"nodeJs",
+			"javascript",
+			"DevOps",
+			"reliability",
+			"quality assurance",
+		],
+		description:
+			"An API monitoring and testing tool that demonstrates understanding of reliability and quality concerns in production environments. Useful for ensuring API health and performance tracking.",
+		deploy: "https://github.com/lostmart/NodeJs-api-checker#readme",
+		details: [],
+	},
+	{
+		id: 8,
+		projectName: "Planning Agent",
+		githubLink: "https://github.com/lostmart/planning-agent",
+		tags: [
+			"AI",
+			"agent",
+			"backend",
+			"python",
+			"automation",
+			"business logic",
+			"scheduling",
+		],
+		description:
+			"An intelligent agent for schedule management, integrating complex business logic. Demonstrates understanding of AI-assisted automation and planning algorithms.",
+		deploy: "https://github.com/lostmart/planning-agent#readme",
+		details: [],
+	},
+	{
+		id: 9,
+		projectName: "Recipe Exam Grader",
+		githubLink: "https://github.com/lostmart/recipe-exam-grader",
+		tags: [
+			"full-stack",
+			"CI/CD",
+			"testing",
+			"automation",
+			"build pipeline",
+			"deployment",
+			"documentation",
+		],
+		description:
+			"A complete application featuring a build pipeline, automated tests, and documented deployment process. Showcases DevOps practices and end-to-end project delivery.",
+		deploy: "https://github.com/lostmart/recipe-exam-grader#readme",
+		details: [],
 	},
 ]
 
