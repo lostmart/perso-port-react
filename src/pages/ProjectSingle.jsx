@@ -3,10 +3,15 @@ import projectsData from "../data/en/projects"
 import { FaGithub } from "react-icons/fa"
 import { AiOutlineDeploymentUnit } from "react-icons/ai"
 import AnimatedSection from "../components/AnimatedSection"
+import { useEffect } from "react"
 
 const ProjectSingle = () => {
 	const { id } = useParams() // `userId` matches the `:userId` in your route definition
 	const index = id - 1
+
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [id])
 
 	const RenderDetails = () => {
 		return projectsData[index].details.map((detail, i) => {
@@ -25,9 +30,7 @@ const ProjectSingle = () => {
 								src={`../assests/${detail.imgName}`}
 								alt={detail.legend}
 							/>
-							<figcaption>
-								{detail.legend}
-							</figcaption>
+							<figcaption>{detail.legend}</figcaption>
 						</figure>
 					</article>
 				</AnimatedSection>
