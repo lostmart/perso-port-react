@@ -14,7 +14,7 @@ const Projects = () => {
 					<div className="card__body">
 						<p>{project.description}</p>
 						<div className="card__link">
-							<Link to={`/contact/${project.id}`}>Read more</Link>
+							<Link to={`/project/${project.id}`}>Read more</Link>
 						</div>
 
 						<div className="card__technologies">

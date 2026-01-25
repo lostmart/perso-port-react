@@ -20,8 +20,14 @@ const ProjectSingle = () => {
 						}}
 					>
 						<figure>
-							<img src={`../assests/${detail.imgName}`} alt={detail.legend} />
-							<figcaption>{detail.legend}</figcaption>
+							<img
+								style={{ margin: "1em auto" }}
+								src={`../assests/${detail.imgName}`}
+								alt={detail.legend}
+							/>
+							<figcaption>
+								{detail.legend}
+							</figcaption>
 						</figure>
 					</article>
 				</AnimatedSection>

@@ -31,7 +31,7 @@ const router = createBrowserRouter(
 			<Route path="titles" element={<Titles />} />
 			<Route path="projects" element={<Projects />} />
 			<Route path="contact" element={<Contact />} />
-			<Route path="contact/:id" element={<ProjectSingle />} />
+			<Route path="project/:id" element={<ProjectSingle />} />
 			<Route path="*" element={<ErrorPage />} />
 		</Route>,
 	),
