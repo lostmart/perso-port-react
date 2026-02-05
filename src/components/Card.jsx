@@ -1,10 +1,9 @@
 import PropTypes from "prop-types"
-import portImg from "../assets/martin_pedraza_avatar.jpg"
+import portImg from "../assets/martin_pedraza_avatar.webp"
 import { Mail } from "react-feather"
 import SocialCont from "./SocialCont"
 import { motion } from "framer-motion"
 import { FaAddressCard } from "react-icons/fa"
-
 
 import { useTranslation } from "../hooks/useTranslation"
 
@@ -15,7 +14,6 @@ import CardBody from "./atoms/CardBody"
 
 /* render fn  */
 const RenderBody = ({ textBody }) => {
-
 	const { t } = useTranslation()
 	const item = {
 		hidden: { y: 20, opacity: 0 },
